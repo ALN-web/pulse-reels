@@ -1,0 +1,100 @@
+{
+  "slug": "heart-5-minute-habit",
+  "topic": "The 5-minute daily habit your heart will thank you for",
+  "client": "pulse-health",
+  "mode": "character",
+  "styleId": "warm-clinic",
+  "characterId": "dr-ira-v1",
+  "scenes": [
+    {
+      "id": "s1",
+      "line": "Your heart wants five minutes from you. Today.",
+      "visual": "Dr. Ira faces camera, warm smile, holds up five fingers; small heart icon floats by her shoulder",
+      "animation": "Hard cut in. Big '5:00' pops in at upper third on 'five', scale 0.6 to 1, back.out; heart icon gives one soft pulse on 'Today'",
+      "onScreenText": "5 MINUTES",
+      "durationSec": 3,
+      "shot": "character"
+    },
+    {
+      "id": "s2",
+      "line": "Here's the habit: a brisk five-minute walk, every day.",
+      "visual": "Teal walking-figure icon on a curved cream path, small clock badge reading 5:00",
+      "animation": "Path draws left to right as the figure walks; clock badge counts 5:00 to 4:57 then holds; 'every day' underline sweeps in on 'every'",
+      "onScreenText": "1 brisk walk. Every day.",
+      "durationSec": 4,
+      "shot": "motion"
+    },
+    {
+      "id": "s3",
+      "line": "After lunch, after a call, whenever you've been sitting too long.",
+      "visual": "Three rounded cards: plate icon, phone icon, chair icon",
+      "animation": "Cards slide up one per phrase ('lunch', 'call', 'sitting'), stagger synced to words, power2.out; chair card gets a small walking-figure badge",
+      "onScreenText": "",
+      "durationSec": 4.5,
+      "shot": "motion"
+    },
+    {
+      "id": "s4",
+      "line": "Brisk means you can still talk, but not sing.",
+      "visual": "Dr. Ira, friendly nod, one hand gesturing; speech bubble with tick on her left, music note with cross on her right",
+      "animation": "Speech bubble pops in on 'talk', music note pops in on 'sing', each scale 0 to 1, 0.25 s",
+      "onScreenText": "Talk ✓  Sing ✗",
+      "durationSec": 3.5,
+      "shot": "character"
+    },
+    {
+      "id": "s5",
+      "line": "Regular activity like this can lower your risk of heart disease and stroke.",
+      "visual": "Simple heart and brain outline icons side by side with a downward 'risk' arrow under them",
+      "animation": "Icons fade up; 'risk' arrow slides down on 'lower'; heart outline does a slow, calm pulse",
+      "onScreenText": "Regular activity",
+      "durationSec": 5,
+      "shot": "motion"
+    },
+    {
+      "id": "s6",
+      "line": "The goal for adults is about 150 minutes a week,",
+      "visual": "Ring chart, teal stroke on soft-teal track, number in the centre",
+      "animation": "Ring fills clockwise while the centre number counts 0 to 150, landing on the word '150'",
+      "onScreenText": "150 min / week",
+      "durationSec": 3.5,
+      "shot": "motion"
+    },
+    {
+      "id": "s7",
+      "line": "and you can break it into small chunks.",
+      "visual": "The full ring splits into small rounded segments that line up as a row of blocks",
+      "animation": "Ring breaks into segments on 'break', segments slide into a row, stagger 0.06 s",
+      "onScreenText": "Small chunks count",
+      "durationSec": 3,
+      "shot": "motion"
+    },
+    {
+      "id": "s8",
+      "line": "So start with five. When it feels easy, make it ten.",
+      "visual": "Dr. Ira, encouraging smile, small step-up gesture with her hand",
+      "animation": "Chip '5 min' appears on 'five', morphs to '10 min' on 'ten' with an apricot highlight",
+      "onScreenText": "5 → 10",
+      "durationSec": 4,
+      "shot": "character"
+    },
+    {
+      "id": "s9",
+      "line": "Save this, and take your five-minute walk today.",
+      "visual": "Dr. Ira points up toward a save (bookmark) icon, then a friendly wave",
+      "animation": "Bookmark icon bounces twice on 'Save'; gentle fade toward the end card",
+      "onScreenText": "Save this",
+      "durationSec": 3.5,
+      "shot": "character"
+    },
+    {
+      "id": "s10",
+      "line": "",
+      "visual": "Cream end card with Pulse Health wordmark",
+      "animation": "Fade in 0.3 s, hold",
+      "onScreenText": "Not medical advice. Sources: CDC, NHS",
+      "durationSec": 3,
+      "shot": "disclaimer"
+    }
+  ]
+}

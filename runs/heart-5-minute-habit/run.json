@@ -1,0 +1,63 @@
+{
+  "slug": "heart-5-minute-habit",
+  "topic": "The 5-minute daily habit your heart will thank you for",
+  "client": "pulse-health",
+  "mode": "character",
+  "createdAt": "2026-11-26T17:47:57.897Z",
+  "steps": [
+    {
+      "step": "script",
+      "status": "ok",
+      "startedAt": "2026-11-26T17:50:04.923Z",
+      "durationMs": 0,
+      "costUsd": 0,
+      "provider": "claude-code",
+      "notes": "written in session; sources verified on cdc.gov + nhs.uk; cost covered by Claude Code plan"
+    },
+    {
+      "step": "storyboard",
+      "status": "ok",
+      "startedAt": "2026-11-26T17:50:09.785Z",
+      "durationMs": 0,
+      "costUsd": 0,
+      "provider": "claude-code",
+      "notes": "10 scenes, 4 character shots"
+    },
+    {
+      "step": "voice",
+      "status": "ok",
+      "startedAt": "2026-11-26T19:08:26.213Z",
+      "durationMs": 7269,
+      "costUsd": 0,
+      "provider": "elevenlabs",
+      "notes": "480 chars, voice cjVigY5qzO86Huf0OWal, model eleven_multilingual_v2, loudnorm -23.5 -> -14.8 LUFS"
+    },
+    {
+      "step": "render",
+      "status": "ok",
+      "startedAt": "2026-11-26T19:48:32.964Z",
+      "durationMs": 276900,
+      "costUsd": 0,
+      "provider": "hyperframes",
+      "notes": "35.9 s, 10 scenes, cut drift 0 ms, audio -11.7 -> -14.0 LUFS (post-mix pass)"
+    },
+    {
+      "step": "compliance",
+      "status": "ok",
+      "startedAt": "2026-11-26T20:03:15.093Z",
+      "durationMs": 44,
+      "costUsd": 0,
+      "provider": "local-rules",
+      "notes": "final: 0 errors, 0 warnings"
+    },
+    {
+      "step": "caption",
+      "status": "ok",
+      "startedAt": "2026-11-26T19:59:41.891Z",
+      "durationMs": 198203,
+      "costUsd": 0,
+      "provider": "hyperframes",
+      "notes": "35.9 s, 10 scenes, cut drift 0 ms, caption drift 0 ms (29 lines), audio -14.0 LUFS"
+    }
+  ]
+}

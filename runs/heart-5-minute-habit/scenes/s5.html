@@ -1,0 +1,19 @@
+<style>
+  #scene-s5 .organ { position: absolute; top: 60px; width: 380px; text-align: center; }
+  #scene-s5 .o1 { left: 0; } #scene-s5 .o2 { left: 490px; }
+  #scene-s5 .organ .disc { width: 320px; height: 320px; margin: 0 auto; border-radius: 50%; background: #fff; box-shadow: 0 16px 40px rgba(18,52,59,.10); display: flex; align-items: center; justify-content: center; }
+  #scene-s5 .organ .disc svg { width: 200px; height: 200px; }
+  #scene-s5 .organ .lbl { margin-top: 26px; font: 800 52px var(--font-body); color: var(--ink); }
+  #scene-s5 .riskbar { position: absolute; left: 95px; width: 680px; top: 560px; height: 200px; border-radius: 40px; background: var(--soft); display: flex; align-items: center; justify-content: center; gap: 30px; }
+  #scene-s5 .riskbar .arrow { width: 120px; height: 120px; }
+  #scene-s5 .riskbar .word { font: 800 70px var(--font-body); color: var(--primary); }
+</style>
+<div class="organ o1"><div class="disc"><svg viewBox="0 0 100 100"><path class="beat" d="M50 86 C20 64 6 48 6 30 C6 16 17 6 30 6 C39 6 46 11 50 18 C54 11 61 6 70 6 C83 6 94 16 94 30 C94 48 80 64 50 86 Z" fill="none" stroke="#0F7C7E" stroke-width="7" stroke-linejoin="round"/></svg></div><div class="lbl">Heart disease</div></div>
+<div class="organ o2"><div class="disc"><svg viewBox="0 0 100 100"><path d="M48 14 C34 8 18 16 18 30 C8 34 8 52 18 56 C16 70 30 80 44 74 L48 74 Z M52 14 C66 8 82 16 82 30 C92 34 92 52 82 56 C84 70 70 80 56 74 L52 74 Z" fill="none" stroke="#0F7C7E" stroke-width="7" stroke-linejoin="round"/><path d="M48 74 V90 M52 74 V90" stroke="#0F7C7E" stroke-width="7" stroke-linecap="round"/></svg></div><div class="lbl">Stroke</div></div>
+<div class="riskbar"><svg class="arrow" viewBox="0 0 40 40"><path d="M20 6 V32 M9 22 L20 33 L31 22" fill="none" stroke="#0F7C7E" stroke-width="5" stroke-linecap="round" stroke-linejoin="round"/></svg><span class="word">Lower risk</span></div>
+<script>
+  tl.from(qa(".organ"), { y: 50, opacity: 0, duration: 0.35, stagger: 0.12, ease: "power2.out" }, t + 0.1);
+  tl.from(q(".riskbar"), { scaleX: 0.3, opacity: 0, duration: 0.35, ease: "power3.out" }, w("lower") - 0.1);
+  tl.from(q(".riskbar .arrow"), { y: -50, opacity: 0, duration: 0.4, ease: "bounce.out" }, w("lower"));
+  tl.to(q(".o1 .disc"), { scale: 1.07, duration: 0.5, yoyo: true, repeat: 5, ease: "sine.inOut" }, t + 0.5);
+</script>

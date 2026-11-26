@@ -1,0 +1,25 @@
+{
+  "slug": "heart-habit",
+  "topic": "The 5-minute daily habit your heart will thank you for",
+  "client": "pulse-health",
+  "mode": "character",
+  "hook": {
+    "text": "Five minutes. That's all your heart is asking for.",
+    "estimatedSec": 2.6,
+    "pattern": "small-number promise"
+  },
+  "beats": [
+    { "id": "b1", "text": "A brisk five-minute walk after meals gets your heart pumping and helps your body handle blood sugar." },
+    { "id": "b2", "text": "Adults need about 150 minutes of moderate activity a week. Short walks count, and they add up fast." },
+    { "id": "b3", "text": "Brisk means you can talk, but not sing. Start with one walk a day, then build from there." }
+  ],
+  "cta": "Save this, and take your first five-minute walk today.",
+  "sources": [
+    {
+      "publisher": "CDC",
+      "title": "Physical Activity Guidelines for Adults",
+      "url": "https://www.cdc.gov/physical-activity-basics/guidelines/adults.html"
+    }
+  ],
+  "estimatedTotalSec": 34
+}

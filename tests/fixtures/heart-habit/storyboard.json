@@ -1,0 +1,18 @@
+{
+  "slug": "heart-habit",
+  "topic": "The 5-minute daily habit your heart will thank you for",
+  "client": "pulse-health",
+  "mode": "character",
+  "styleId": "warm-clinic",
+  "characterId": "dr-ira-v1",
+  "scenes": [
+    { "id": "s1", "line": "Five minutes. That's all your heart is asking for.", "visual": "Dr. Ira, chest-up, holds up five fingers, warm smile", "animation": "Big '5:00' timer pops in beside her, scale 0.6 to 1, back.out", "onScreenText": "5 MINUTES", "durationSec": 3, "shot": "character" },
+    { "id": "s2", "line": "A brisk five-minute walk after meals gets your heart pumping and helps your body handle blood sugar.", "visual": "Walking-figure icon on a path, heart icon pulsing", "animation": "Path draws left to right, heart pulses on each beat", "onScreenText": "Walk after meals", "durationSec": 7, "shot": "motion" },
+    { "id": "s3", "line": "Adults need about 150 minutes of moderate activity a week.", "visual": "Ring chart filling to 150 min", "animation": "Ring fills clockwise synced to '150'", "onScreenText": "150 min / week", "durationSec": 5, "shot": "motion" },
+    { "id": "s4", "line": "Short walks count, and they add up fast.", "visual": "Seven small 5-min blocks stacking into a bar", "animation": "Blocks drop in one per word, stagger 0.12 s", "onScreenText": "", "durationSec": 4, "shot": "motion" },
+    { "id": "s5", "line": "Brisk means you can talk, but not sing.", "visual": "Dr. Ira nods, speech bubble with tick, music note with cross", "animation": "Bubble and note pop in on 'talk' and 'sing'", "onScreenText": "Talk ✓  Sing ✗", "durationSec": 4, "shot": "character" },
+    { "id": "s6", "line": "Start with one walk a day, then build from there.", "visual": "Calendar strip with day 1 checked", "animation": "Checkmarks tick across the week", "onScreenText": "1 walk a day", "durationSec": 4, "shot": "motion" },
+    { "id": "s7", "line": "Save this, and take your first five-minute walk today.", "visual": "Dr. Ira points to save icon, friendly wave", "animation": "Save icon bounces", "onScreenText": "Save this", "durationSec": 4, "shot": "character" },
+    { "id": "s8", "line": "", "visual": "Cream card with Pulse Health logo", "animation": "Fade in", "onScreenText": "Not medical advice. Source: CDC", "durationSec": 3, "shot": "disclaimer" }
+  ]
+}

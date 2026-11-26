@@ -1,0 +1,61 @@
+{
+  "id": "pulse-health",
+  "name": "Pulse Health",
+  "industry": "Healthcare: preventive care and telehealth",
+  "audience": "Adults 25-45, busy, health-curious, not medical professionals",
+  "tone": {
+    "summary": "Warm, calm, evidence-based. A kind doctor friend, never alarmist.",
+    "do": [
+      "Plain words; explain any medical term in the same sentence",
+      "One clear, doable action per Reel",
+      "Say 'talk to a doctor' when symptoms are involved"
+    ],
+    "dont": [
+      "Diagnose the viewer ('you have...')",
+      "Promise cures or guaranteed results",
+      "Fear hooks, shock statistics without a source, or shaming"
+    ]
+  },
+  "palette": {
+    "ground": "#F7F4EE",
+    "ink": "#12343B",
+    "primary": "#0F7C7E",
+    "accent": "#E8914A",
+    "soft": "#D9EEEC",
+    "alert": "#B3261E"
+  },
+  "fonts": {
+    "display": "Fraunces",
+    "body": "Inter"
+  },
+  "captionStyle": {
+    "fontFamily": "Inter",
+    "fontWeight": 800,
+    "fontSizePx": 64,
+    "color": "#FFFFFF",
+    "background": "#12343B",
+    "highlightColor": "#F2A65A",
+    "maxWordsPerLine": 4
+  },
+  "character": {
+    "id": "dr-ira-v1",
+    "name": "Dr. Ira",
+    "description": "Friendly male doctor in teal scrubs, short dark hair, warm smile, stethoscope around neck, chest-up framing, soft cream background.",
+    "outfit": "Teal scrubs (#0F7C7E), white undershirt collar, silver stethoscope",
+    "framing": "Chest-up, centred, eyes at upper third, never cropped below the top safe zone",
+    "referenceSheet": "clients/pulse-health/character/dr-ira-sheet.png",
+    "rig": "clients/pulse-health/character/dr-ira.svg"
+  },
+  "voice": {
+    "provider": "elevenlabs",
+    "voiceId": "cjVigY5qzO86Huf0OWal",
+    "style": "ElevenLabs Eric (smooth, trustworthy, American male). Warm, mid-pace (~150 wpm), calm emphasis",
+    "loudnessLufs": -14
+  },
+  "compliance": {
+    "allowedSourceDomains": ["who.int", "cdc.gov", "nhs.uk"],
+    "disclaimer": "Not medical advice. Talk to a doctor about your health.",
+    "minContrastRatio": 4.5
+  },
+  "hashtags": ["#PulseHealth", "#PreventiveCare", "#HealthTips", "#Telehealth"]
+}

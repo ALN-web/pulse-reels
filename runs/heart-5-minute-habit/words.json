@@ -1,0 +1,442 @@
+{
+  "audioFile": "voice.mp3",
+  "durationSec": 32.897,
+  "provider": "elevenlabs:eleven_multilingual_v2",
+  "words": [
+    {
+      "word": "Your",
+      "start": 0,
+      "end": 0.232
+    },
+    {
+      "word": "heart",
+      "start": 0.29,
+      "end": 0.476
+    },
+    {
+      "word": "wants",
+      "start": 0.534,
+      "end": 0.778
+    },
+    {
+      "word": "five",
+      "start": 0.848,
+      "end": 1.161
+    },
+    {
+      "word": "minutes",
+      "start": 1.196,
+      "end": 1.451
+    },
+    {
+      "word": "from",
+      "start": 1.486,
+      "end": 1.614
+    },
+    {
+      "word": "you.",
+      "start": 1.672,
+      "end": 1.962
+    },
+    {
+      "word": "Today.",
+      "start": 2.473,
+      "end": 3.181
+    },
+    {
+      "word": "Here's",
+      "start": 3.994,
+      "end": 4.272
+    },
+    {
+      "word": "the",
+      "start": 4.296,
+      "end": 4.365
+    },
+    {
+      "word": "habit:",
+      "start": 4.435,
+      "end": 4.876
+    },
+    {
+      "word": "a",
+      "start": 5.085,
+      "end": 5.155
+    },
+    {
+      "word": "brisk",
+      "start": 5.271,
+      "end": 5.619
+    },
+    {
+      "word": "five-minute",
+      "start": 5.712,
+      "end": 6.293
+    },
+    {
+      "word": "walk,",
+      "start": 6.327,
+      "end": 6.676
+    },
+    {
+      "word": "every",
+      "start": 6.745,
+      "end": 7.024
+    },
+    {
+      "word": "day.",
+      "start": 7.082,
+      "end": 7.512
+    },
+    {
+      "word": "After",
+      "start": 7.837,
+      "end": 8.139
+    },
+    {
+      "word": "lunch,",
+      "start": 8.208,
+      "end": 8.533
+    },
+    {
+      "word": "after",
+      "start": 8.557,
+      "end": 8.812
+    },
+    {
+      "word": "a",
+      "start": 8.87,
+      "end": 8.893
+    },
+    {
+      "word": "call,",
+      "start": 8.951,
+      "end": 9.497
+    },
+    {
+      "word": "whenever",
+      "start": 9.613,
+      "end": 9.915
+    },
+    {
+      "word": "you've",
+      "start": 9.938,
+      "end": 10.077
+    },
+    {
+      "word": "been",
+      "start": 10.101,
+      "end": 10.228
+    },
+    {
+      "word": "sitting",
+      "start": 10.252,
+      "end": 10.495
+    },
+    {
+      "word": "too",
+      "start": 10.53,
+      "end": 10.658
+    },
+    {
+      "word": "long.",
+      "start": 10.716,
+      "end": 11.134
+    },
+    {
+      "word": "Brisk",
+      "start": 11.459,
+      "end": 11.738
+    },
+    {
+      "word": "means",
+      "start": 11.796,
+      "end": 12.051
+    },
+    {
+      "word": "you",
+      "start": 12.098,
+      "end": 12.167
+    },
+    {
+      "word": "can",
+      "start": 12.225,
+      "end": 12.341
+    },
+    {
+      "word": "still",
+      "start": 12.399,
+      "end": 12.608
+    },
+    {
+      "word": "talk,",
+      "start": 12.666,
+      "end": 13.05
+    },
+    {
+      "word": "but",
+      "start": 13.096,
+      "end": 13.259
+    },
+    {
+      "word": "not",
+      "start": 13.317,
+      "end": 13.479
+    },
+    {
+      "word": "sing.",
+      "start": 13.549,
+      "end": 14.025
+    },
+    {
+      "word": "Regular",
+      "start": 14.721,
+      "end": 15.105
+    },
+    {
+      "word": "activity",
+      "start": 15.163,
+      "end": 15.616
+    },
+    {
+      "word": "like",
+      "start": 15.697,
+      "end": 15.883
+    },
+    {
+      "word": "this",
+      "start": 15.918,
+      "end": 16.15
+    },
+    {
+      "word": "can",
+      "start": 16.219,
+      "end": 16.359
+    },
+    {
+      "word": "lower",
+      "start": 16.428,
+      "end": 16.672
+    },
+    {
+      "word": "your",
+      "start": 16.742,
+      "end": 16.858
+    },
+    {
+      "word": "risk",
+      "start": 16.916,
+      "end": 17.137
+    },
+    {
+      "word": "of",
+      "start": 17.183,
+      "end": 17.229
+    },
+    {
+      "word": "heart",
+      "start": 17.311,
+      "end": 17.496
+    },
+    {
+      "word": "disease",
+      "start": 17.543,
+      "end": 17.938
+    },
+    {
+      "word": "and",
+      "start": 17.972,
+      "end": 18.065
+    },
+    {
+      "word": "stroke.",
+      "start": 18.135,
+      "end": 18.75
+    },
+    {
+      "word": "The",
+      "start": 19.261,
+      "end": 19.377
+    },
+    {
+      "word": "goal",
+      "start": 19.435,
+      "end": 19.621
+    },
+    {
+      "word": "for",
+      "start": 19.679,
+      "end": 19.795
+    },
+    {
+      "word": "adults",
+      "start": 19.842,
+      "end": 20.329
+    },
+    {
+      "word": "is",
+      "start": 20.608,
+      "end": 20.759
+    },
+    {
+      "word": "about",
+      "start": 20.794,
+      "end": 20.979
+    },
+    {
+      "word": "150",
+      "start": 21.038,
+      "end": 21.63
+    },
+    {
+      "word": "minutes",
+      "start": 21.688,
+      "end": 21.943
+    },
+    {
+      "word": "a",
+      "start": 21.978,
+      "end": 22.001
+    },
+    {
+      "word": "week,",
+      "start": 22.048,
+      "end": 22.408
+    },
+    {
+      "word": "and",
+      "start": 22.651,
+      "end": 22.802
+    },
+    {
+      "word": "you",
+      "start": 22.849,
+      "end": 22.918
+    },
+    {
+      "word": "can",
+      "start": 22.965,
+      "end": 23.069
+    },
+    {
+      "word": "break",
+      "start": 23.104,
+      "end": 23.301
+    },
+    {
+      "word": "it",
+      "start": 23.348,
+      "end": 23.418
+    },
+    {
+      "word": "into",
+      "start": 23.464,
+      "end": 23.638
+    },
+    {
+      "word": "small",
+      "start": 23.708,
+      "end": 23.975
+    },
+    {
+      "word": "chunks.",
+      "start": 24.033,
+      "end": 24.613
+    },
+    {
+      "word": "So",
+      "start": 24.997,
+      "end": 25.147
+    },
+    {
+      "word": "start",
+      "start": 25.217,
+      "end": 25.449
+    },
+    {
+      "word": "with",
+      "start": 25.484,
+      "end": 25.6
+    },
+    {
+      "word": "five.",
+      "start": 25.647,
+      "end": 26.262
+    },
+    {
+      "word": "When",
+      "start": 26.773,
+      "end": 26.947
+    },
+    {
+      "word": "it",
+      "start": 26.993,
+      "end": 27.051
+    },
+    {
+      "word": "feels",
+      "start": 27.11,
+      "end": 27.446
+    },
+    {
+      "word": "easy,",
+      "start": 27.539,
+      "end": 28.096
+    },
+    {
+      "word": "make",
+      "start": 28.224,
+      "end": 28.421
+    },
+    {
+      "word": "it",
+      "start": 28.456,
+      "end": 28.526
+    },
+    {
+      "word": "ten.",
+      "start": 28.572,
+      "end": 29.048
+    },
+    {
+      "word": "Save",
+      "start": 29.745,
+      "end": 30.058
+    },
+    {
+      "word": "this,",
+      "start": 30.093,
+      "end": 30.523
+    },
+    {
+      "word": "and",
+      "start": 30.569,
+      "end": 30.732
+    },
+    {
+      "word": "take",
+      "start": 30.79,
+      "end": 30.952
+    },
+    {
+      "word": "your",
+      "start": 30.976,
+      "end": 31.092
+    },
+    {
+      "word": "five-minute",
+      "start": 31.15,
+      "end": 31.695
+    },
+    {
+      "word": "walk",
+      "start": 31.73,
+      "end": 31.951
+    },
+    {
+      "word": "today.",
+      "start": 32.009,
+      "end": 32.647
+    }
+  ]
+}

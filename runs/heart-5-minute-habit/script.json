@@ -1,0 +1,32 @@
+{
+  "slug": "heart-5-minute-habit",
+  "topic": "The 5-minute daily habit your heart will thank you for",
+  "client": "pulse-health",
+  "mode": "character",
+  "hook": {
+    "text": "Your heart wants five minutes from you. Today.",
+    "estimatedSec": 2.6,
+    "pattern": "small-number promise"
+  },
+  "beats": [
+    { "id": "b1", "text": "Here's the habit: a brisk five-minute walk, every day. After lunch, after a call, whenever you've been sitting too long." },
+    { "id": "b2", "text": "Brisk means you can still talk, but not sing." },
+    { "id": "b3", "text": "Regular activity like this can lower your risk of heart disease and stroke." },
+    { "id": "b4", "text": "The goal for adults is about 150 minutes a week, and you can break it into small chunks." },
+    { "id": "b5", "text": "So start with five. When it feels easy, make it ten." }
+  ],
+  "cta": "Save this, and take your five-minute walk today.",
+  "sources": [
+    {
+      "publisher": "CDC",
+      "title": "What Counts as Physical Activity for Adults",
+      "url": "https://www.cdc.gov/physical-activity-basics/adding-adults/what-counts.html"
+    },
+    {
+      "publisher": "NHS",
+      "title": "Physical activity guidelines for adults aged 19 to 64",
+      "url": "https://www.nhs.uk/live-well/exercise/physical-activity-guidelines-for-adults-aged-19-to-64/"
+    }
+  ],
+  "estimatedTotalSec": 35
+}

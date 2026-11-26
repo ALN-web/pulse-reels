@@ -1,0 +1,22 @@
+<style>
+  #scene-s7 .stage { position: absolute; left: 0; top: 0; width: 870px; height: 860px; }
+  #scene-s7 .blk { position: absolute; left: 395px; top: 340px; width: 80px; height: 80px; border-radius: 22px; background: var(--primary); }
+  #scene-s7 .blk:nth-child(odd) { background: #148f91; }
+  #scene-s7 .lbl { position: absolute; left: 0; width: 870px; top: 640px; text-align: center; font: 800 52px var(--font-body); color: var(--ink); }
+</style>
+<div class="stage">
+  <div class="blk"></div><div class="blk"></div><div class="blk"></div><div class="blk"></div><div class="blk"></div>
+  <div class="blk"></div><div class="blk"></div><div class="blk"></div><div class="blk"></div><div class="blk"></div>
+</div>
+<div class="lbl">10 walks × 15 min = 150</div>
+<script>
+  // Blocks start arranged as the ring from the last scene, then break into a row.
+  const blocks = qa(".blk");
+  blocks.forEach((b, i) => {
+    const a = (i / blocks.length) * Math.PI * 2 - Math.PI / 2;
+    tl.set(b, { x: Math.cos(a) * 250, y: Math.sin(a) * 250, rotation: (a * 180) / Math.PI + 90 }, t);
+    const row = i < 5 ? 0 : 1, col = i % 5;
+    tl.to(b, { x: (col - 2) * 150, y: row * 150 - 75, rotation: 0, duration: 0.5, ease: "power3.inOut" }, w("break") + i * 0.04);
+  });
+  tl.from(q(".lbl"), { opacity: 0, y: 24, duration: 0.3 }, w("chunks"));
+</script>

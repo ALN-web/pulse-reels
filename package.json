@@ -1,0 +1,32 @@
+{
+  "name": "pulse-reels",
+  "private": true,
+  "version": "0.1.0",
+  "description": "Team Delta: topic -> Instagram Reel pipeline for Pulse Health (HyperFrames)",
+  "type": "module",
+  "engines": {
+    "node": ">=22"
+  },
+  "scripts": {
+    "validate": "tsx src/cli/validate.ts",
+    "compliance": "tsx src/cli/compliance.ts",
+    "new-run": "tsx src/cli/new-run.ts",
+    "log-step": "tsx src/cli/log-step.ts",
+    "voice": "tsx src/steps/voice.ts",
+    "voices": "tsx src/cli/voices.ts",
+    "render": "tsx src/steps/render.ts",
+    "caption": "tsx src/steps/caption.ts",
+    "typecheck": "tsc --noEmit",
+    "test": "vitest run"
+  },
+  "dependencies": {
+    "zod": "^4.6.7"
+  },
+  "devDependencies": {
+    "@types/node": "^26.6.11",
+    "hyperframes": "^0.9.99",
+    "tsx": "^4.23.15",
+    "typescript": "^7.0.2",
+    "vitest": "^5.1.2"
+  }
+}

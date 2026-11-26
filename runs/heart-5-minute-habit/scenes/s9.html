@@ -1,0 +1,10 @@
+<style>
+  #scene-s9 .save { position: absolute; left: 30px; top: 150px; width: 210px; height: 210px; border-radius: 48px; background: #fff; box-shadow: 0 16px 40px rgba(18,52,59,.16); display: flex; align-items: center; justify-content: center; }
+  #scene-s9 .save svg { width: 110px; height: 110px; }
+</style>
+<div class="save"><svg viewBox="0 0 24 24"><path d="M6 3 H18 V21 L12 16.5 L6 21 Z" fill="#E8914A" stroke="#12343B" stroke-width="1.6" stroke-linejoin="round"/></svg></div>
+<script>
+  tl.from(q(".save"), { scale: 0, opacity: 0, duration: 0.3, ease: "back.out(2)" }, w("save") - 0.1);
+  tl.to(q(".save"), { y: -30, duration: 0.16, yoyo: true, repeat: 3, ease: "power1.out" }, w("save") + 0.2);
+  ira.hand(w("today") - 0.4, "wave");
+</script>

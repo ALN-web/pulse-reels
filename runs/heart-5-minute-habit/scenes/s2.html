@@ -1,0 +1,32 @@
+<style>
+  #scene-s2 .road { position: absolute; left: 0; top: 40px; width: 870px; height: 420px; }
+  #scene-s2 .walker { position: absolute; left: 20px; top: 150px; width: 150px; height: 200px; }
+  #scene-s2 .badge { position: absolute; right: 10px; top: 0; padding: 14px 28px; border-radius: 999px; background: var(--primary); color: #fff; font: 800 52px var(--font-body); }
+  #scene-s2 .week { position: absolute; left: 0; width: 870px; top: 560px; display: flex; justify-content: space-between; }
+  #scene-s2 .day { width: 106px; height: 150px; border-radius: 24px; background: #fff; border: 4px solid var(--soft); display: flex; flex-direction: column; align-items: center; justify-content: center; gap: 10px; font: 700 34px var(--font-body); color: var(--ink); }
+  #scene-s2 .day .dot { width: 44px; height: 44px; border-radius: 50%; background: var(--soft); position: relative; }
+  #scene-s2 .day .dot b { position: absolute; inset: 0; border-radius: 50%; background: var(--primary); }
+</style>
+<svg class="road" viewBox="0 0 870 420">
+  <path class="track" d="M 30 330 C 220 330 260 120 450 140 C 640 160 660 330 840 300" fill="none" stroke="#D9EEEC" stroke-width="34" stroke-linecap="round"/>
+  <path class="trail" d="M 30 330 C 220 330 260 120 450 140 C 640 160 660 330 840 300" fill="none" stroke="#0F7C7E" stroke-width="12" stroke-linecap="round" stroke-dasharray="1000" stroke-dashoffset="1000"/>
+</svg>
+<svg class="walker" viewBox="0 0 60 80">
+  <circle cx="32" cy="10" r="8" fill="#12343B"/>
+  <path d="M30 20 L26 44 L16 70 M26 44 L38 60 L40 74 M28 26 L14 38 M30 26 L44 34" fill="none" stroke="#12343B" stroke-width="7" stroke-linecap="round" stroke-linejoin="round"/>
+</svg>
+<div class="badge">5:00</div>
+<div class="week">
+  <div class="day">M<span class="dot"><b></b></span></div><div class="day">T<span class="dot"><b></b></span></div><div class="day">W<span class="dot"><b></b></span></div>
+  <div class="day">T<span class="dot"><b></b></span></div><div class="day">F<span class="dot"><b></b></span></div><div class="day">S<span class="dot"><b></b></span></div><div class="day">S<span class="dot"><b></b></span></div>
+</div>
+<script>
+  const walkEnd = w("every") + 0.2;
+  tl.to(q(".trail"), { strokeDashoffset: 0, duration: walkEnd - t, ease: "none" }, t);
+  tl.fromTo(q(".walker"), { x: 0, y: 0 }, { x: 330, y: -150, duration: (walkEnd - t) / 2, ease: "none" }, t);
+  tl.to(q(".walker"), { x: 690, y: 0, duration: (walkEnd - t) / 2, ease: "none" }, t + (walkEnd - t) / 2);
+  tl.to(q(".walker"), { rotation: 4, duration: 0.22, yoyo: true, repeat: Math.floor((walkEnd - t) / 0.22), ease: "sine.inOut" }, t);
+  tl.from(q(".badge"), { scale: 0.5, opacity: 0, duration: 0.35, ease: "back.out(2)" }, w("five-minute"));
+  tl.from(qa(".day"), { y: 40, opacity: 0, duration: 0.3, stagger: 0.05, ease: "power2.out" }, t + 0.2);
+  tl.from(qa(".day .dot b"), { scale: 0, duration: 0.18, stagger: 0.08, ease: "back.out(2)" }, w("every"));
+</script>

@@ -1,0 +1,12 @@
+node_modules/
+.env
+.env.*
+!.env.example
+# Generated media: keep run folders' JSON, skip heavy binaries
+runs/**/*.mp3
+runs/**/*.wav
+runs/**/*.mp4
+runs/**/frames/
+runs/**/composition/.hyperframes/
+*.log
+.DS_Store

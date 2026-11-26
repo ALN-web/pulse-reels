@@ -1,0 +1,17 @@
+<style>
+  #scene-s8 .steps { position: absolute; left: 0; top: 120px; width: 280px; height: 380px; }
+  #scene-s8 .chip { position: absolute; left: 0; padding: 18px 30px; border-radius: 999px; font: 800 56px var(--font-body); white-space: nowrap; }
+  #scene-s8 .ch5 { top: 250px; background: #fff; color: var(--ink); box-shadow: 0 12px 30px rgba(18,52,59,.12); }
+  #scene-s8 .ch10 { top: 60px; background: var(--accent); color: var(--ink); }
+  #scene-s8 .up { position: absolute; left: 92px; top: 165px; width: 70px; height: 80px; }
+</style>
+<div class="steps">
+  <div class="chip ch5">5 min</div>
+  <svg class="up" viewBox="0 0 30 34"><path d="M15 32 V4 M5 13 L15 3 L25 13" fill="none" stroke="#0F7C7E" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/></svg>
+  <div class="chip ch10">10 min</div>
+</div>
+<script>
+  tl.from(q(".ch5"), { scale: 0.5, opacity: 0, duration: 0.3, ease: "back.out(2)" }, w("five") - 0.05);
+  tl.from(q(".up"), { y: 30, opacity: 0, duration: 0.3, ease: "power2.out" }, w("easy"));
+  tl.from(q(".ch10"), { scale: 0.5, opacity: 0, duration: 0.32, ease: "back.out(2)" }, w("ten") - 0.05);
+</script>

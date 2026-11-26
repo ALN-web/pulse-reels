@@ -1,0 +1,31 @@
+<style>
+  #scene-s6 .ring { position: absolute; left: 115px; top: 40px; width: 640px; height: 640px; }
+  #scene-s6 .center { position: absolute; left: 115px; top: 40px; width: 640px; height: 640px; display: flex; flex-direction: column; align-items: center; justify-content: center; }
+  #scene-s6 .odo { display: flex; height: 190px; overflow: hidden; font: 800 176px/190px var(--font-body); font-variant-numeric: tabular-nums; letter-spacing: -0.03em; color: var(--ink); }
+  #scene-s6 .col { width: 0.62em; text-align: center; }
+  #scene-s6 .col { display: flex; flex-direction: column; }
+  #scene-s6 .col span { height: 190px; }
+  #scene-s6 .unit { font: 800 48px var(--font-body); color: var(--primary); margin-top: 6px; }
+  #scene-s6 .note { position: absolute; left: 0; width: 870px; top: 730px; text-align: center; font: 700 46px var(--font-body); color: var(--ink); }
+</style>
+<svg class="ring" viewBox="0 0 200 200">
+  <circle cx="100" cy="100" r="84" fill="none" stroke="#D9EEEC" stroke-width="22"/>
+  <circle class="fill" cx="100" cy="100" r="84" fill="none" stroke="#0F7C7E" stroke-width="22" stroke-linecap="round" stroke-dasharray="527.8" stroke-dashoffset="527.8" transform="rotate(-90 100 100)"/>
+</svg>
+<div class="center">
+  <div class="odo">
+    <div class="col c100"><span>0</span><span>1</span></div>
+    <div class="col c10"><span>0</span><span>1</span><span>2</span><span>3</span><span>4</span><span>5</span></div>
+    <div class="col c1"><span>0</span><span>1</span><span>2</span><span>3</span><span>4</span><span>5</span><span>6</span><span>7</span><span>8</span><span>9</span><span>0</span></div>
+  </div>
+  <div class="unit">minutes a week</div>
+</div>
+<div class="note">for adults · moderate activity</div>
+<script>
+  const land = w("150") + 0.25, start = t + 0.15;
+  tl.to(q(".fill"), { strokeDashoffset: 0, duration: land - start, ease: "power2.out" }, start);
+  tl.to(q(".c100"), { y: -190, duration: land - start, ease: "power2.out" }, start);
+  tl.to(q(".c10"), { y: -190 * 5, duration: land - start, ease: "power2.out" }, start);
+  tl.to(q(".c1"), { y: -190 * 10, duration: land - start, ease: "power2.out" }, start);
+  tl.from(q(".note"), { opacity: 0, y: 20, duration: 0.3 }, w("week"));
+</script>
