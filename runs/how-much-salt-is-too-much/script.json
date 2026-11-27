@@ -1,0 +1,37 @@
+{
+  "slug": "how-much-salt-is-too-much",
+  "topic": "How much salt is too much",
+  "client": "pulse-health",
+  "mode": "motion",
+  "hook": {
+    "text": "Never add salt? You may still eat too much.",
+    "estimatedSec": 2.8,
+    "pattern": "myth-bust"
+  },
+  "beats": [
+    { "id": "b1", "text": "The WHO says adults should eat less than 5 grams of salt a day. That's just under a teaspoon." },
+    { "id": "b2", "text": "The NHS says no more than 6 grams. Guidelines differ, so ask your doctor what's right for you." },
+    { "id": "b3", "text": "Around three quarters of the salt we eat is already in food we buy, like bread, breakfast cereals and ready meals." },
+    { "id": "b4", "text": "Too much salt can raise your blood pressure, which increases the risk of heart attacks and strokes." },
+    { "id": "b5", "text": "One easy step: check the label and pick the lower-salt option." }
+  ],
+  "cta": "Save this for your next shop, and talk to your doctor if you're watching your blood pressure.",
+  "sources": [
+    {
+      "publisher": "WHO",
+      "title": "Sodium reduction",
+      "url": "https://www.who.int/news-room/fact-sheets/detail/salt-reduction"
+    },
+    {
+      "publisher": "NHS",
+      "title": "Salt in your diet",
+      "url": "https://www.nhs.uk/live-well/eat-well/food-types/salt-nutrition/"
+    },
+    {
+      "publisher": "CDC",
+      "title": "About Sodium and Health",
+      "url": "https://www.cdc.gov/salt/about/index.html"
+    }
+  ],
+  "estimatedTotalSec": 45
+}

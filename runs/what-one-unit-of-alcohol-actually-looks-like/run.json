@@ -1,0 +1,63 @@
+{
+  "slug": "what-one-unit-of-alcohol-actually-looks-like",
+  "topic": "What one unit of alcohol actually looks like",
+  "client": "pulse-health",
+  "mode": "motion",
+  "createdAt": "2026-11-27T08:15:02.573Z",
+  "steps": [
+    {
+      "step": "script",
+      "status": "ok",
+      "startedAt": "2026-11-27T08:11:26.453Z",
+      "durationMs": 300000,
+      "costUsd": 0,
+      "provider": "claude-code",
+      "notes": "sources verified on nhs.uk and cdc.gov; UK unit 8 g vs US standard drink 14 g stated as 'guidelines differ'"
+    },
+    {
+      "step": "storyboard",
+      "status": "ok",
+      "startedAt": "2026-11-27T08:13:10.315Z",
+      "durationMs": 240000,
+      "costUsd": 0,
+      "provider": "claude-code",
+      "notes": "12 scenes, motion style poster (pair 2, second Reel)"
+    },
+    {
+      "step": "voice",
+      "status": "ok",
+      "startedAt": "2026-11-27T08:17:13.582Z",
+      "durationMs": 8521,
+      "costUsd": 0,
+      "provider": "elevenlabs",
+      "notes": "609 chars, voice cjVigY5qzO86Huf0OWal, model eleven_multilingual_v2, loudnorm -23.6 -> -14.7 LUFS"
+    },
+    {
+      "step": "render",
+      "status": "ok",
+      "startedAt": "2026-11-27T08:18:51.784Z",
+      "durationMs": 22398,
+      "costUsd": 0,
+      "provider": "hyperframes",
+      "notes": "snapshot at 1.78,5.68,9.62,13.96,17.56,20.14,22.70,27.37,33.06,37.06,40.89,44.34; cut drift 0 ms"
+    },
+    {
+      "step": "caption",
+      "status": "ok",
+      "startedAt": "2026-11-27T08:20:41.432Z",
+      "durationMs": 268460,
+      "costUsd": 0,
+      "provider": "hyperframes",
+      "notes": "45.8 s, 12 scenes, cut drift 0 ms, caption drift 0 ms (39 lines), audio -14.0 LUFS"
+    },
+    {
+      "step": "compliance",
+      "status": "ok",
+      "startedAt": "2026-11-27T08:25:19.023Z",
+      "durationMs": 36,
+      "costUsd": 0,
+      "provider": "local-rules",
+      "notes": "final: 0 errors, 0 warnings"
+    }
+  ]
+}

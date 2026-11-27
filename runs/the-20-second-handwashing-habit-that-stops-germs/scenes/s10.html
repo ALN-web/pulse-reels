@@ -1,0 +1,20 @@
+<style>
+  #scene-s10 .bm { position: absolute; left: 60px; top: 60px; width: 200px; height: 240px; }
+  #scene-s10 .share { position: absolute; right: 40px; top: 80px; width: 210px; height: 210px; border-radius: 50%; background: var(--primary); display: flex; align-items: center; justify-content: center; }
+  #scene-s10 .share svg { width: 120px; height: 120px; }
+</style>
+<svg class="bm" viewBox="0 0 100 120">
+  <path d="M18 8 H82 V112 L50 86 L18 112 Z" fill="var(--accent)" stroke="var(--ink)" stroke-width="5" stroke-linejoin="round"/>
+</svg>
+<div class="share">
+  <svg viewBox="0 0 100 100">
+    <path d="M20 80 Q24 44 62 40 V22 L88 50 L62 78 V60 Q36 60 20 80 Z" fill="#fff" stroke="#fff" stroke-width="4" stroke-linejoin="round"/>
+  </svg>
+</div>
+<script>
+  tl.from(q(".bm"), { scale: 0.8, opacity: 0, duration: 0.25, ease: "back.out(2)" }, w("Save"));
+  tl.to(q(".bm"), { scale: 1.1, duration: 0.15, yoyo: true, repeat: 3, ease: "power1.inOut" }, w("Save") + 0.25);
+  tl.from(q(".share"), { scale: 0, opacity: 0, duration: 0.3, ease: "back.out(2)" }, w("share"));
+  ira.hand(w("Save") - 0.05, "wave");
+  ira.handDown(w("live") + 0.2);
+</script>

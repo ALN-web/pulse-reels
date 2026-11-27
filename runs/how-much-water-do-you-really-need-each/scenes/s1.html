@@ -1,0 +1,22 @@
+<style>
+  #scene-s1 .glass { position: absolute; right: 20px; top: 40px; width: 200px; height: 300px; }
+  #scene-s1 .glass svg { width: 200px; height: 300px; }
+  #scene-s1 .qm { position: absolute; left: 30px; top: 80px; width: 150px; height: 150px; border-radius: 50%; background: var(--accent); color: #fff; font: 800 110px var(--font-display); display: flex; align-items: center; justify-content: center; }
+</style>
+<div class="glass">
+  <svg viewBox="0 0 200 300">
+    <defs><clipPath id="s1-cup"><path d="M30 20 L170 20 L150 280 L50 280 Z"/></clipPath></defs>
+    <g clip-path="url(#s1-cup)">
+      <rect class="water" x="0" y="60" width="200" height="240" fill="var(--primary)" opacity="0.85"/>
+    </g>
+    <path d="M30 20 L170 20 L150 280 L50 280 Z" fill="none" stroke="var(--ink)" stroke-width="8" stroke-linejoin="round"/>
+  </svg>
+</div>
+<div class="qm">?</div>
+<script>
+  tl.from(q(".glass"), { opacity: 0, y: 30, duration: 0.3, ease: "power2.out" }, w("water"));
+  tl.from(q(".water"), { scaleY: 0, transformOrigin: "50% 100%", duration: 1.0, ease: "power1.inOut" }, w("really"));
+  tl.from(q(".qm"), { scale: 0, opacity: 0, duration: 0.3, ease: "back.out(2)" }, w("day"));
+  ira.hand(w("How"), "wave");
+  ira.handDown(w("day") + 0.3);
+</script>

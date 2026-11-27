@@ -1,0 +1,108 @@
+{
+  "slug": "how-much-salt-is-too-much",
+  "topic": "How much salt is too much",
+  "client": "pulse-health",
+  "mode": "motion",
+  "styleId": "poster",
+  "scenes": [
+    {
+      "id": "s1",
+      "line": "Never add salt? You may still eat too much.",
+      "visual": "Flat poster salt shaker on an apricot block with a bold ink strike through it; small salt grains gather in a little pile beside it",
+      "animation": "Block wipes up from the bottom at start; shaker drops in on 'salt'; strike draws across on 'Never' timing; grains pile up with 0.05 s stagger on 'still'",
+      "onScreenText": "Never add salt?",
+      "durationSec": 3,
+      "shot": "motion"
+    },
+    {
+      "id": "s2",
+      "line": "The WHO says adults should eat less than 5 grams of salt a day.",
+      "visual": "Big teal block with a huge serif '< 5 g' and an ink chip 'WHO' plus a small label 'salt a day'",
+      "animation": "Chip pops on 'WHO' (back.out); block scales up from 0.8 on 'less'; number slides up on '5'; label fades on 'day'",
+      "onScreenText": "WHO: under 5 g a day",
+      "durationSec": 4,
+      "shot": "motion"
+    },
+    {
+      "id": "s3",
+      "line": "That's just under a teaspoon.",
+      "visual": "Flat teaspoon with a small white salt mound that stops just below the brim, on the paper background",
+      "animation": "Spoon slides in from the left on 'That's'; salt mound grows from 0 on 'under', stopping short of the brim line",
+      "onScreenText": "Just under a teaspoon",
+      "durationSec": 2.5,
+      "shot": "motion"
+    },
+    {
+      "id": "s4",
+      "line": "The NHS says no more than 6 grams.",
+      "visual": "Two blocks side by side: teal 'WHO < 5 g' (already known) and a new apricot block 'NHS 6 g max'",
+      "animation": "WHO block slides left and shrinks at start; apricot block rises in on 'NHS'; '6 g' number pops on '6'",
+      "onScreenText": "NHS: up to 6 g",
+      "durationSec": 2.5,
+      "shot": "motion"
+    },
+    {
+      "id": "s5",
+      "line": "Guidelines differ, so ask your doctor what's right for you.",
+      "visual": "The two blocks tilt slightly apart; an ink speech bubble below reads 'Ask your doctor'",
+      "animation": "Blocks rotate a few degrees apart on 'differ'; speech bubble pops with back.out on 'doctor'",
+      "onScreenText": "Guidelines differ",
+      "durationSec": 3.5,
+      "shot": "motion"
+    },
+    {
+      "id": "s6",
+      "line": "Around three quarters of the salt we eat is already in food we buy,",
+      "visual": "Ink block with a huge serif '¾' and a flat pie chart: three of four slices filled apricot, one slice paper",
+      "animation": "Block wipes in at start; pie slices fill one by one, stagger 0.15 s, on 'three'; label 'in food we buy' fades on 'buy'",
+      "onScreenText": "About ¾ is already in food",
+      "durationSec": 4,
+      "shot": "motion"
+    },
+    {
+      "id": "s7",
+      "line": "like bread, breakfast cereals and ready meals.",
+      "visual": "Three flat food tiles in a column: a bread loaf, a cereal bowl, a ready-meal tray, each with an ink chip label",
+      "animation": "Tile 1 pops on 'bread', tile 2 on 'cereals', tile 3 on 'ready' (back.out, 0.3 s each)",
+      "onScreenText": "Hidden in everyday food",
+      "durationSec": 3,
+      "shot": "motion"
+    },
+    {
+      "id": "s8",
+      "line": "Too much salt can raise your blood pressure, which increases the risk of heart attacks and strokes.",
+      "visual": "Flat half-circle gauge on a paper panel with a needle that moves from teal toward the rose end; two calm ink chips below: 'Heart attack risk' and 'Stroke risk'",
+      "animation": "Gauge arc draws at start; needle rotates toward rose on 'raise'; chips slide up on 'heart' and 'strokes'",
+      "onScreenText": "Can raise blood pressure",
+      "durationSec": 6,
+      "shot": "motion"
+    },
+    {
+      "id": "s9",
+      "line": "One easy step: check the label and pick the lower-salt option.",
+      "visual": "Two flat food packets with front labels: left label shows a rose 'Salt: HIGH' bar, right shows a teal 'Salt: LOW' bar; a magnifier and a tick on the right packet",
+      "animation": "Packets slide up at start; magnifier sweeps across on 'label'; right packet scales up with a tick on 'lower-salt', left packet dims",
+      "onScreenText": "Check the label",
+      "durationSec": 4,
+      "shot": "motion"
+    },
+    {
+      "id": "s10",
+      "line": "Save this for your next shop, and talk to your doctor if you're watching your blood pressure.",
+      "visual": "Teal block with a bookmark icon and a flat shopping basket; ink chip 'Talk to your doctor' below",
+      "animation": "Bookmark drops and bounces on 'Save'; basket slides in on 'shop'; chip pops on 'doctor'",
+      "onScreenText": "Save for your next shop",
+      "durationSec": 5.5,
+      "shot": "motion"
+    },
+    {
+      "id": "s11",
+      "line": "",
+      "visual": "Pulse Health end card",
+      "animation": "Fade in, hold",
+      "onScreenText": "Not medical advice. Sources: WHO, NHS, CDC",
+      "durationSec": 3,
+      "shot": "disclaimer"
+    }
+  ]
+}

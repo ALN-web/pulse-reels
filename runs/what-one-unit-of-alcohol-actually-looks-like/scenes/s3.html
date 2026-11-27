@@ -1,0 +1,21 @@
+<style>
+  #scene-s3 .shot { position: absolute; left: 40px; top: 160px; width: 320px; height: 420px; }
+  #scene-s3 .num { position: absolute; left: 410px; top: 190px; font-size: 200px; color: var(--p-ink); }
+  #scene-s3 .sub { position: absolute; left: 418px; top: 400px; font: 800 48px var(--font-body); color: var(--p-ink); }
+  #scene-s3 .eq { position: absolute; left: 0; top: 660px; width: 870px; text-align: center; }
+  #scene-s3 .eq .chip { background: var(--p-teal); font-size: 52px; padding: 16px 40px; }
+</style>
+<svg class="shot" viewBox="0 0 320 420">
+  <path d="M30 20 H290 L260 400 H60 Z" fill="#fff" stroke="#12343B" stroke-width="10" stroke-linejoin="round"/>
+  <path class="liq" d="M47 140 H273 L256 386 H64 Z" fill="#E8914A"/>
+</svg>
+<div class="num big-num">25 ml</div>
+<div class="sub">spirits, 40% ABV</div>
+<div class="eq"><span class="chip">= 1 unit</span></div>
+<script>
+  tl.from(q(".shot"), { x: -400, opacity: 0, duration: 0.4, ease: "power3.out" }, t);
+  tl.from(q(".liq"), { scaleY: 0, transformOrigin: "50% 100%", duration: 0.45, ease: "power2.out" }, w("single"));
+  tl.from(q(".num"), { scale: 0.6, opacity: 0, transformOrigin: "0% 50%", duration: 0.3, ease: "back.out(2)" }, w("25"));
+  tl.from(q(".sub"), { opacity: 0, y: 20, duration: 0.3 }, w("shot"));
+  tl.from(q(".eq .chip"), { scale: 0.5, opacity: 0, duration: 0.3, ease: "back.out(2)" }, w("spirits"));
+</script>

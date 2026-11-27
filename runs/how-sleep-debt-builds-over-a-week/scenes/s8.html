@@ -1,0 +1,17 @@
+<style>
+  #scene-s8 .blocks { position: absolute; left: 60px; top: 140px; width: 750px; display: flex; gap: 20px; }
+  #scene-s8 .hb { flex: 1; height: 150px; border-radius: 26px; background: var(--screen-2); border: 4px solid var(--mid); }
+  #scene-s8 .phrase { position: absolute; left: 0; width: 870px; top: 360px; text-align: center; font: 800 76px var(--font-body); color: var(--muted); }
+  #scene-s8 .strike { position: absolute; left: 150px; top: 404px; width: 570px; height: 12px; border-radius: 6px; background: var(--warn); }
+  #scene-s8 .wave { position: absolute; left: 40px; top: 560px; width: 790px; height: 200px; }
+</style>
+<div class="blocks"><div class="hb"></div><div class="hb"></div><div class="hb"></div><div class="hb"></div><div class="hb"></div></div>
+<div class="phrase">hour for hour</div>
+<div class="strike"></div>
+<svg class="wave" viewBox="0 0 400 100"><path class="wp" d="M0 50 C25 10 50 10 75 50 S125 90 150 50 S200 10 225 50 S275 90 300 50 S350 10 375 50 L400 50" fill="none" stroke="var(--glow)" stroke-width="6" stroke-linecap="round"/></svg>
+<script>
+  tl.from(q(".wave"), { opacity: 0, scaleX: 0, transformOrigin: "0% 50%", duration: 0.6, ease: "power2.out" }, w("news"));
+  tl.from(qa(".hb"), { opacity: 0, x: -40, duration: 0.25, stagger: 0.07, ease: "power2.out" }, w("repay"));
+  tl.from(q(".phrase"), { opacity: 0, duration: 0.25 }, w("repay"));
+  tl.from(q(".strike"), { scaleX: 0, transformOrigin: "0% 50%", duration: 0.35, ease: "power2.out" }, w("hour", 2));
+</script>

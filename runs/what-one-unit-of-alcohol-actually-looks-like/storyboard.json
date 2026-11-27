@@ -1,0 +1,117 @@
+{
+  "slug": "what-one-unit-of-alcohol-actually-looks-like",
+  "topic": "What one unit of alcohol actually looks like",
+  "client": "pulse-health",
+  "mode": "motion",
+  "styleId": "poster",
+  "scenes": [
+    {
+      "id": "s1",
+      "line": "Is one glass of wine one unit? Usually not.",
+      "visual": "Flat poster wine glass on an apricot block with an ink chip '= 1 unit?'; a bold ink cross stamps over the chip",
+      "animation": "Block wipes up from the bottom at start; glass drops in on 'glass'; chip pops on 'unit' (back.out); cross draws on 'not'",
+      "onScreenText": "One glass = one unit?",
+      "durationSec": 3,
+      "shot": "motion"
+    },
+    {
+      "id": "s2",
+      "line": "In the UK, one unit is 10 millilitres of pure alcohol.",
+      "visual": "Big teal block with a huge serif '10 ml' and an ink chip 'NHS: 1 unit' plus a label 'of pure alcohol'",
+      "animation": "Block scales up from 0.8 at start; chip pops on 'UK'; number slides up on '10'; label fades on 'pure'",
+      "onScreenText": "1 unit: 10 ml pure alcohol",
+      "durationSec": 3.5,
+      "shot": "motion"
+    },
+    {
+      "id": "s3",
+      "line": "That's a single 25 millilitre shot of spirits.",
+      "visual": "Flat shot glass filled with apricot liquid beside a big serif '25 ml' and a teal chip '= 1 unit'",
+      "animation": "Glass slides in from the left at start; liquid rises from 0 on 'single'; number pops on '25'; chip pops on 'shot'",
+      "onScreenText": "Single 25 ml shot: 1 unit",
+      "durationSec": 3,
+      "shot": "motion"
+    },
+    {
+      "id": "s4",
+      "line": "A standard 175 millilitre glass of wine is just over 2 units.",
+      "visual": "Flat wine glass on the left; on the right a column of two full unit tiles plus a thin sliver tile, and a big serif '2.1' with a chip '175 ml glass'",
+      "animation": "Glass slides up at start; chip pops on '175'; unit tiles stack with 0.15 s stagger on 'just'; '2.1' pops on 'units'",
+      "onScreenText": "175 ml wine: 2.1 units",
+      "durationSec": 4,
+      "shot": "motion"
+    },
+    {
+      "id": "s5",
+      "line": "A pint of strong lager is 3.",
+      "visual": "Flat pint glass of lager with foam on an ink block; three apricot unit tiles stacked beside it with a huge serif '3'",
+      "animation": "Block wipes in at start; pint rises on 'pint'; three tiles stack with 0.1 s stagger and the '3' pops on '3'",
+      "onScreenText": "Strong lager pint: 3 units",
+      "durationSec": 2.5,
+      "shot": "motion"
+    },
+    {
+      "id": "s6",
+      "line": "The NHS advises no more than 14 units a week,",
+      "visual": "Teal block with an ink chip 'NHS' and a huge serif '14' with a label 'units a week, at most'",
+      "animation": "Block scales up from 0.8 at start; chip pops on 'NHS'; '14' slides up on '14'; label fades on 'week'",
+      "onScreenText": "NHS: no more than 14 a week",
+      "durationSec": 3.5,
+      "shot": "motion"
+    },
+    {
+      "id": "s7",
+      "line": "spread over 3 or more days.",
+      "visual": "A row of seven flat day tiles (M T W T F S S); three of them fill apricot with small unit marks, the rest stay paper",
+      "animation": "Day tiles fade in with 0.05 s stagger at start; three tiles fill apricot one by one (stagger 0.15 s) on '3'",
+      "onScreenText": "Spread over 3+ days",
+      "durationSec": 2.5,
+      "shot": "motion"
+    },
+    {
+      "id": "s8",
+      "line": "In the US, a standard drink is bigger: 14 grams of alcohol, compared with 8 grams in a UK unit.",
+      "visual": "Two blocks side by side: a taller ink block 'US drink 14 g' and a shorter teal block 'UK unit 8 g', bars rising to different heights",
+      "animation": "Ink block rises from 0 height on 'US'; '14 g' pops on '14'; teal block rises on 'compared'; '8 g' pops on '8'",
+      "onScreenText": "US 14 g vs UK 8 g",
+      "durationSec": 6,
+      "shot": "motion"
+    },
+    {
+      "id": "s9",
+      "line": "Guidelines differ, so ask your doctor what's right for you.",
+      "visual": "The two blocks tilt slightly apart; an ink speech bubble below reads 'Ask your doctor'",
+      "animation": "Blocks rotate a few degrees apart on 'differ'; speech bubble pops with back.out on 'doctor'",
+      "onScreenText": "Guidelines differ",
+      "durationSec": 3.5,
+      "shot": "motion"
+    },
+    {
+      "id": "s10",
+      "line": "One easy step: check the strength on the label before you pour.",
+      "visual": "Flat bottle with a front label showing an 'ABV %' panel; a magnifier sweeps over it and a teal tick appears",
+      "animation": "Bottle slides up at start; magnifier sweeps across on 'strength'; label panel highlights on 'label'; tick pops on 'pour'",
+      "onScreenText": "Check the label first",
+      "durationSec": 4,
+      "shot": "motion"
+    },
+    {
+      "id": "s11",
+      "line": "Save this, and talk to your doctor if you're worried about how much you drink.",
+      "visual": "Teal block with a bookmark icon; ink chip 'Talk to your doctor' below",
+      "animation": "Bookmark drops and bounces on 'Save'; chip pops on 'doctor'",
+      "onScreenText": "Save this",
+      "durationSec": 4.5,
+      "shot": "motion"
+    },
+    {
+      "id": "s12",
+      "line": "",
+      "visual": "Pulse Health end card",
+      "animation": "Fade in, hold",
+      "onScreenText": "Not medical advice. Sources: NHS, CDC",
+      "durationSec": 3,
+      "shot": "disclaimer"
+    }
+  ]
+}

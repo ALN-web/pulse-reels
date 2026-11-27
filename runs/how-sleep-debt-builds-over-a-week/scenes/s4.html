@@ -1,0 +1,28 @@
+<style>
+  #scene-s4 .days { position: absolute; left: 20px; top: 260px; width: 540px; height: 480px; display: flex; justify-content: space-between; align-items: flex-end; }
+  #scene-s4 .day { width: 88px; display: flex; flex-direction: column; align-items: center; gap: 14px; }
+  #scene-s4 .blk { width: 88px; height: 70px; border-radius: 18px; background: var(--mid); }
+  #scene-s4 .sl { width: 88px; height: 260px; border-radius: 18px; background: var(--glow); opacity: 0.85; }
+  #scene-s4 .dl { font: 800 44px var(--font-body); color: var(--muted); }
+  #scene-s4 .meter { position: absolute; left: 620px; top: 120px; width: 200px; height: 620px; }
+  #scene-s4 .mfill { position: absolute; left: 14px; bottom: 14px; width: 166px; height: 586px; border-radius: 24px; background: var(--mid); }
+  #scene-s4 .read { position: absolute; left: 560px; top: 20px; width: 320px; text-align: center; font-size: 96px; line-height: 1; color: var(--mid); }
+  #scene-s4 .mlab { position: absolute; left: 620px; top: 760px; width: 200px; text-align: center; font: 800 38px var(--font-body); color: var(--text); letter-spacing: 0.08em; }
+</style>
+<div class="days">
+  <div class="day"><div class="blk"></div><div class="sl"></div><div class="dl">M</div></div>
+  <div class="day"><div class="blk"></div><div class="sl"></div><div class="dl">T</div></div>
+  <div class="day"><div class="blk"></div><div class="sl"></div><div class="dl">W</div></div>
+  <div class="day"><div class="blk"></div><div class="sl"></div><div class="dl">T</div></div>
+  <div class="day"><div class="blk"></div><div class="sl"></div><div class="dl">F</div></div>
+</div>
+<div class="meter panel"><div class="mfill"></div></div>
+<div class="read lcd">10h</div>
+<div class="mlab">DEBT</div>
+<script>
+  tl.from(qa(".day"), { opacity: 0, y: 40, duration: 0.3, stagger: 0.12, ease: "power2.out" }, w("5"));
+  tl.from([q(".meter"), q(".mlab")], { opacity: 0, duration: 0.3 }, w("debt"));
+  tl.to(qa(".blk"), { opacity: 0.25, duration: 0.2, stagger: 0.1 }, w("grows"));
+  tl.from(q(".mfill"), { scaleY: 0, transformOrigin: "50% 100%", duration: 0.7, ease: "power2.out" }, w("grows"));
+  tl.from(q(".read"), { opacity: 0, scale: 0.6, transformOrigin: "50% 50%", duration: 0.3, ease: "back.out(2)" }, w("10"));
+</script>

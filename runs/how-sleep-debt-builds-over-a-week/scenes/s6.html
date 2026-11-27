@@ -1,0 +1,23 @@
+<style>
+  #scene-s6 .sun { position: absolute; left: 80px; top: 80px; width: 200px; height: 200px; }
+  #scene-s6 .face { position: absolute; left: 235px; top: 230px; width: 400px; height: 400px; }
+  #scene-s6 .lid { transform-box: fill-box; }
+  #scene-s6 .z { position: absolute; font: 800 80px var(--font-display); color: var(--muted); }
+  #scene-s6 .z1 { left: 640px; top: 230px; } #scene-s6 .z2 { left: 700px; top: 140px; font-size: 64px; } #scene-s6 .z3 { left: 750px; top: 60px; font-size: 52px; }
+</style>
+<svg class="sun" viewBox="0 0 100 100"><circle cx="50" cy="50" r="22" fill="var(--mid)"/><g stroke="var(--mid)" stroke-width="6" stroke-linecap="round"><path d="M50 6 L50 18 M50 82 L50 94 M6 50 L18 50 M82 50 L94 50 M19 19 L27 27 M73 73 L81 81 M19 81 L27 73 M73 27 L81 19"/></g></svg>
+<svg class="face" viewBox="0 0 100 100">
+  <circle cx="50" cy="50" r="46" fill="var(--screen-2)" stroke="var(--line)" stroke-width="3"/>
+  <circle cx="34" cy="44" r="8" fill="var(--text)"/><circle cx="66" cy="44" r="8" fill="var(--text)"/>
+  <rect class="lid" x="24" y="34" width="20" height="10" fill="var(--screen-2)"/>
+  <rect class="lid" x="56" y="34" width="20" height="10" fill="var(--screen-2)"/>
+  <path d="M28 44 L40 44 M60 44 L72 44" stroke="var(--glow)" stroke-width="3" stroke-linecap="round"/>
+  <path d="M40 70 Q50 64 60 70" fill="none" stroke="var(--glow)" stroke-width="3" stroke-linecap="round"/>
+</svg>
+<div class="z z1">z</div><div class="z z2">z</div><div class="z z3">z</div>
+<script>
+  tl.from(q(".face"), { opacity: 0, scale: 0.9, transformOrigin: "50% 50%", duration: 0.3 }, t);
+  tl.from(qa(".lid"), { scaleY: 0, transformOrigin: "50% 0%", duration: 0.5, ease: "power2.inOut" }, w("tired"));
+  tl.from(qa(".z"), { opacity: 0, y: 40, duration: 0.4, stagger: 0.2, ease: "power2.out" }, w("sleepy"));
+  tl.from(q(".sun"), { opacity: 0, y: 80, duration: 0.5, ease: "power2.out" }, w("day"));
+</script>

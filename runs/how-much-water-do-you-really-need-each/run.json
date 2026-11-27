@@ -1,0 +1,63 @@
+{
+  "slug": "how-much-water-do-you-really-need-each",
+  "topic": "How much water do you really need each day",
+  "client": "pulse-health",
+  "mode": "character",
+  "createdAt": "2026-11-27T07:48:08.899Z",
+  "steps": [
+    {
+      "step": "script",
+      "status": "ok",
+      "startedAt": "2026-11-27T07:45:54.653Z",
+      "durationMs": 240000,
+      "costUsd": 0,
+      "provider": "claude-code",
+      "notes": "Direct-question hook; NHS x2 + CDC sources verified by fetch; 113 words; compliance PASS"
+    },
+    {
+      "step": "storyboard",
+      "status": "ok",
+      "startedAt": "2026-11-27T07:47:49.948Z",
+      "durationMs": 180000,
+      "costUsd": 0,
+      "provider": "claude-code",
+      "notes": "11 scenes, 46s planned, 5/10 spoken scenes character, compliance PASS"
+    },
+    {
+      "step": "voice",
+      "status": "ok",
+      "startedAt": "2026-11-27T07:50:53.303Z",
+      "durationMs": 7539,
+      "costUsd": 0,
+      "provider": "elevenlabs",
+      "notes": "603 chars, voice cjVigY5qzO86Huf0OWal, model eleven_multilingual_v2, loudnorm -23.3 -> -14.6 LUFS"
+    },
+    {
+      "step": "render",
+      "status": "ok",
+      "startedAt": "2026-11-27T07:53:38.318Z",
+      "durationMs": 16919,
+      "costUsd": 0,
+      "provider": "hyperframes",
+      "notes": "snapshot at 1.39,4.72,7.63,10.79,15.95,21.73,26.19,29.73,33.45,38.03,42.29; cut drift 0 ms"
+    },
+    {
+      "step": "caption",
+      "status": "ok",
+      "startedAt": "2026-11-27T07:55:03.025Z",
+      "durationMs": 375717,
+      "costUsd": 0,
+      "provider": "hyperframes",
+      "notes": "43.8 s, 11 scenes, cut drift 0 ms, caption drift 0 ms (37 lines), audio -14.0 LUFS"
+    },
+    {
+      "step": "compliance",
+      "status": "ok",
+      "startedAt": "2026-11-27T08:01:30.741Z",
+      "durationMs": 70,
+      "costUsd": 0,
+      "provider": "local-rules",
+      "notes": "final: 0 errors, 0 warnings"
+    }
+  ]
+}

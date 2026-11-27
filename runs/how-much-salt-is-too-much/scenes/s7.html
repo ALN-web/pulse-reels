@@ -1,0 +1,25 @@
+<style>
+  #scene-s7 .tile { position: absolute; left: 0; width: 870px; height: 210px; display: flex; align-items: center; gap: 40px; padding-left: 40px; box-sizing: border-box; }
+  #scene-s7 .t1 { top: 100px; } #scene-s7 .t2 { top: 335px; } #scene-s7 .t3 { top: 570px; }
+  #scene-s7 .tile svg { width: 150px; height: 150px; flex: none; }
+  #scene-s7 .name { font: 700 74px var(--font-display); letter-spacing: -0.02em; }
+  #scene-s7 .teal .name, #scene-s7 .ink .name { color: #fff; }
+  #scene-s7 .apricot .name { color: var(--p-ink); }
+</style>
+<div class="block teal tile t1">
+  <svg viewBox="0 0 100 100"><path d="M14 46 Q14 22 50 22 Q86 22 86 46 Q86 54 78 56 V82 H22 V56 Q14 54 14 46 Z" fill="#F3E3C8"/><path d="M36 40 L44 60 M52 38 L60 58" stroke="#E8914A" stroke-width="5" stroke-linecap="round"/></svg>
+  <div class="name">Bread</div>
+</div>
+<div class="block apricot tile t2">
+  <svg viewBox="0 0 100 100"><circle cx="38" cy="44" r="9" fill="#FBF3E6"/><circle cx="56" cy="40" r="9" fill="#FBF3E6"/><circle cx="68" cy="50" r="8" fill="#FBF3E6"/><path d="M10 52 H90 Q86 84 50 86 Q14 84 10 52 Z" fill="#12343B"/></svg>
+  <div class="name">Breakfast cereals</div>
+</div>
+<div class="block ink tile t3">
+  <svg viewBox="0 0 100 100"><rect x="10" y="30" width="80" height="50" rx="10" fill="#FBF3E6"/><path d="M10 52 H90" stroke="#12343B" stroke-width="4"/><rect x="18" y="36" width="30" height="12" rx="5" fill="#E8914A"/><rect x="54" y="36" width="28" height="12" rx="5" fill="#0F7C7E"/><rect x="18" y="58" width="64" height="16" rx="6" fill="#F3E3C8"/></svg>
+  <div class="name">Ready meals</div>
+</div>
+<script>
+  tl.from(q(".t1"), { scale: 0.7, opacity: 0, duration: 0.3, ease: "back.out(1.8)" }, w("bread"));
+  tl.from(q(".t2"), { scale: 0.7, opacity: 0, duration: 0.3, ease: "back.out(1.8)" }, w("cereals"));
+  tl.from(q(".t3"), { scale: 0.7, opacity: 0, duration: 0.3, ease: "back.out(1.8)" }, w("ready"));
+</script>

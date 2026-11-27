@@ -11,3 +11,4 @@ runs/**/composition/.hyperframes/
 *.log
 .DS_Store
 runs/**/agent.log
+showcase/media/

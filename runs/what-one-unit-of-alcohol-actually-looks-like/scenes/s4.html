@@ -1,0 +1,29 @@
+<style>
+  #scene-s4 .glass { position: absolute; left: 30px; top: 120px; width: 320px; height: 520px; }
+  #scene-s4 .tag { position: absolute; left: 40px; top: 30px; }
+  #scene-s4 .tiles { position: absolute; left: 420px; top: 120px; width: 150px; height: 520px; }
+  #scene-s4 .tile { position: absolute; left: 0; width: 150px; border-radius: 24px; background: var(--p-teal); }
+  #scene-s4 .t1 { top: 300px; height: 210px; } #scene-s4 .t2 { top: 80px; height: 210px; }
+  #scene-s4 .t3 { top: 46px; height: 24px; border-radius: 12px; background: var(--p-apricot); }
+  #scene-s4 .num { position: absolute; left: 600px; top: 270px; font-size: 180px; color: var(--p-ink); }
+  #scene-s4 .unit { position: absolute; left: 606px; top: 460px; font: 800 52px var(--font-body); color: var(--p-ink); }
+</style>
+<div class="tag chip">175 ml, 12% ABV</div>
+<svg class="glass" viewBox="0 0 300 480">
+  <path d="M40 20 H260 Q262 200 150 250 Q38 200 40 20 Z" fill="#fff" stroke="#12343B" stroke-width="8"/>
+  <path d="M52 80 H248 Q240 210 150 240 Q60 210 52 80 Z" fill="#C8553D"/>
+  <rect x="140" y="252" width="20" height="166" rx="10" fill="#12343B"/>
+  <rect x="70" y="410" width="160" height="26" rx="13" fill="#12343B"/>
+</svg>
+<div class="tiles">
+  <div class="tile t1"></div><div class="tile t2"></div><div class="tile t3"></div>
+</div>
+<div class="num big-num">2.1</div>
+<div class="unit">units</div>
+<script>
+  tl.from(q(".glass"), { y: 140, opacity: 0, duration: 0.4, ease: "power3.out" }, t);
+  tl.from(q(".tag"), { scale: 0.5, opacity: 0, duration: 0.3, ease: "back.out(2)" }, w("175"));
+  tl.from(qa(".tile"), { y: -120, opacity: 0, duration: 0.3, stagger: 0.15, ease: "bounce.out" }, w("just"));
+  tl.from(q(".num"), { scale: 0.6, opacity: 0, transformOrigin: "0% 50%", duration: 0.3, ease: "back.out(2)" }, w("2"));
+  tl.from(q(".unit"), { opacity: 0, y: 20, duration: 0.3 }, w("units"));
+</script>

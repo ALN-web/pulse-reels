@@ -1,0 +1,26 @@
+<style>
+  #scene-s3 .night { position: absolute; left: 120px; top: 120px; width: 300px; height: 640px; }
+  #scene-s3 .fill { position: absolute; left: 0; bottom: 0; width: 300px; height: 480px; border-radius: 30px; background: var(--glow); }
+  #scene-s3 .gapb { position: absolute; left: 0; bottom: 490px; width: 300px; height: 150px; border-radius: 30px; background: var(--mid); }
+  #scene-s3 .target { position: absolute; left: -30px; top: 0; width: 360px; border-top: 8px dashed var(--text); }
+  #scene-s3 .tl { position: absolute; left: 470px; font: 800 64px var(--font-body); }
+  #scene-s3 .t8 { top: 80px; color: var(--text); }
+  #scene-s3 .t6 { top: 380px; }
+  #scene-s3 .t2 { top: 160px; left: 470px; padding: 18px 28px; border-radius: 24px; background: var(--mid); color: var(--screen); font: 800 56px var(--font-body); }
+  #scene-s3 .lab { position: absolute; left: 470px; font: 700 38px var(--font-body); color: var(--muted); }
+  #scene-s3 .lb8 { top: 154px; } #scene-s3 .lb6 { top: 454px; }
+</style>
+<div class="night"><div class="fill"></div><div class="gapb"></div><div class="target"></div></div>
+<div class="tl t8 lcd" style="color: var(--text)">8h</div>
+<div class="lab lb8">needed</div>
+<div class="tl t6 lcd">6h</div>
+<div class="lab lb6">slept</div>
+<div class="tl t2" style="top: 560px">2h debt</div>
+<script>
+  tl.from(q(".target"), { scaleX: 0, transformOrigin: "0% 50%", duration: 0.35, ease: "power2.out" }, w("8"));
+  tl.from([q(".t8"), q(".lb8")], { opacity: 0, x: 40, duration: 0.3, ease: "power2.out" }, w("8"));
+  tl.from(q(".fill"), { scaleY: 0, transformOrigin: "50% 100%", duration: 0.5, ease: "power2.out" }, w("6"));
+  tl.from([q(".t6"), q(".lb6")], { opacity: 0, x: 40, duration: 0.3, ease: "power2.out" }, w("6"));
+  tl.from(q(".gapb"), { opacity: 0, scale: 0.6, transformOrigin: "50% 50%", duration: 0.35, ease: "back.out(2)" }, w("2"));
+  tl.from(q(".t2"), { opacity: 0, scale: 0.6, transformOrigin: "0% 50%", duration: 0.35, ease: "back.out(2)" }, w("2"));
+</script>

@@ -1,0 +1,14 @@
+<style>
+  #scene-s3 .chip { position: absolute; width: 250px; border-radius: 28px; background: #fff; box-shadow: 0 16px 40px rgba(18,52,59,.12); padding: 20px 14px; font: 800 36px var(--font-body); color: var(--ink); text-align: center; line-height: 1.2; border: 5px solid var(--primary); }
+  #scene-s3 .c1 { left: 0; top: 40px; }
+  #scene-s3 .c2 { left: 310px; top: 0; }
+  #scene-s3 .c3 { right: 0; top: 40px; }
+</style>
+<div class="chip c1">Backs of hands</div>
+<div class="chip c2">Between fingers</div>
+<div class="chip c3">Under nails</div>
+<script>
+  tl.from(q(".c1"), { scale: 0, opacity: 0, duration: 0.3, ease: "back.out(2)" }, w("backs"));
+  tl.from(q(".c2"), { scale: 0, opacity: 0, duration: 0.3, ease: "back.out(2)" }, w("between"));
+  tl.from(q(".c3"), { scale: 0, opacity: 0, duration: 0.3, ease: "back.out(2)" }, w("nails"));
+</script>

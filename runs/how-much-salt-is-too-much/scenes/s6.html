@@ -1,0 +1,22 @@
+<style>
+  #scene-s6 .slab { position: absolute; left: 0; top: 100px; width: 870px; height: 640px; }
+  #scene-s6 .num { position: absolute; left: 50px; top: 90px; font-size: 380px; color: var(--p-apricot); }
+  #scene-s6 .pie { position: absolute; left: 470px; top: 110px; width: 340px; height: 340px; }
+  #scene-s6 .lbl { position: absolute; left: 56px; top: 520px; font: 800 54px var(--font-body); color: #fff; }
+</style>
+<div class="block ink slab">
+  <div class="num big-num">&frac34;</div>
+  <svg class="pie" viewBox="0 0 300 300">
+    <circle cx="150" cy="150" r="146" fill="#FBF3E6" opacity="0.18"/>
+    <path class="sl" d="M150 150 L150 10 A140 140 0 0 1 290 150 Z" fill="#E8914A" stroke="#12343B" stroke-width="6"/>
+    <path class="sl" d="M150 150 L290 150 A140 140 0 0 1 150 290 Z" fill="#E8914A" stroke="#12343B" stroke-width="6"/>
+    <path class="sl" d="M150 150 L150 290 A140 140 0 0 1 10 150 Z" fill="#E8914A" stroke="#12343B" stroke-width="6"/>
+  </svg>
+  <div class="lbl">of the salt we eat</div>
+</div>
+<script>
+  tl.from(q(".slab"), { xPercent: -30, opacity: 0, duration: 0.35, ease: "power3.out" }, t);
+  tl.from(qa(".sl"), { opacity: 0, duration: 0.25, stagger: 0.15 }, w("three"));
+  tl.from(q(".num"), { scale: 0.6, opacity: 0, transformOrigin: "30% 60%", duration: 0.35, ease: "back.out(2)" }, w("quarters"));
+  tl.from(q(".lbl"), { opacity: 0, y: 20, duration: 0.3 }, w("salt"));
+</script>

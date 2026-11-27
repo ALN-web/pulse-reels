@@ -1,0 +1,26 @@
+<style>
+  #scene-s1 .chips { position: absolute; left: 0; top: 0; width: 870px; display: flex; justify-content: space-between; }
+  #scene-s1 .chip { width: 160px; height: 70px; border-radius: 20px; background: var(--primary); display: flex; align-items: center; justify-content: center; font: 800 34px var(--font-body); color: #fff; }
+  #scene-s1 .watch { position: absolute; left: 0; top: 130px; width: 210px; height: 210px; }
+  #scene-s1 .watch .n { font: 800 64px var(--font-body); fill: var(--ink); }
+  #scene-s1 .watch .u { font: 700 28px var(--font-body); fill: var(--primary); }
+</style>
+<div class="chips">
+  <div class="chip">Step 1</div>
+  <div class="chip">Step 2</div>
+  <div class="chip">Step 3</div>
+  <div class="chip">Step 4</div>
+  <div class="chip">Step 5</div>
+</div>
+<svg class="watch" viewBox="0 0 230 230">
+  <rect x="100" y="6" width="30" height="20" rx="6" fill="var(--ink)"/>
+  <circle cx="115" cy="125" r="96" fill="#fff" stroke="var(--primary)" stroke-width="12"/>
+  <text class="n" x="115" y="135" text-anchor="middle">20</text>
+  <text class="u" x="115" y="172" text-anchor="middle">sec</text>
+</svg>
+<script>
+  tl.from(qa(".chip"), { scale: 0.4, opacity: 0, duration: 0.3, ease: "back.out(2)", stagger: 0.08 }, w("Five"));
+  tl.from(q(".watch"), { scale: 0.5, opacity: 0, duration: 0.3, ease: "back.out(2)" }, w("scrub"));
+  ira.hand(w("Five") - 0.05, "five");
+  ira.handDown(w("how") + 0.1);
+</script>

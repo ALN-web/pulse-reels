@@ -1,0 +1,56 @@
+{
+  "slug": "how-much-water-do-you-really-need-each",
+  "topic": "How much water do you really need each day",
+  "client": "pulse-health",
+  "mode": "character",
+  "hook": {
+    "text": "How much water do you really need each day?",
+    "estimatedSec": 2.8,
+    "pattern": "direct question"
+  },
+  "beats": [
+    {
+      "id": "b1",
+      "text": "The NHS suggests six to eight cups or glasses of fluid a day."
+    },
+    {
+      "id": "b2",
+      "text": "And it's not just water. Lower-fat milk, lower-sugar drinks, tea and coffee all count too."
+    },
+    {
+      "id": "b3",
+      "text": "The CDC says daily needs vary with age, sex and activity, so treat it as a guide."
+    },
+    {
+      "id": "b4",
+      "text": "You may need more in hot weather, during exercise, or with a fever, vomiting or diarrhea."
+    },
+    {
+      "id": "b5",
+      "text": "The easy check: aim for pale yellow pee. Dark yellow pee can be a sign you need to drink more."
+    },
+    {
+      "id": "b6",
+      "text": "One simple habit: carry a reusable water bottle with you."
+    }
+  ],
+  "cta": "Save this. And if dizziness or unusual tiredness won't go away, talk to a doctor.",
+  "sources": [
+    {
+      "publisher": "NHS",
+      "title": "Water, drinks and hydration",
+      "url": "https://www.nhs.uk/live-well/eat-well/food-guidelines-and-food-labels/water-drinks-nutrition/"
+    },
+    {
+      "publisher": "NHS",
+      "title": "Dehydration",
+      "url": "https://www.nhs.uk/conditions/dehydration/"
+    },
+    {
+      "publisher": "CDC",
+      "title": "About Water and Healthier Drinks",
+      "url": "https://www.cdc.gov/healthy-weight-growth/water-healthy-drinks/index.html"
+    }
+  ],
+  "estimatedTotalSec": 45
+}

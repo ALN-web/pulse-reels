@@ -1,0 +1,10 @@
+<style>
+  #scene-s8 .shield { position: absolute; right: 10px; top: 40px; width: 220px; height: 250px; }
+</style>
+<svg class="shield" viewBox="0 0 100 114">
+  <path d="M50 6 L90 20 V54 Q90 90 50 108 Q10 90 10 54 V20 Z" fill="var(--primary)" stroke="var(--ink)" stroke-width="4" stroke-linejoin="round"/>
+  <path d="M38 78 V46 Q38 40 43 40 Q48 40 48 46 V36 Q48 30 53 30 Q58 30 58 36 V44 Q58 39 63 39 Q68 39 68 45 V66 Q68 80 54 82 H46 Q40 82 38 78 Z" fill="#fff"/>
+</svg>
+<script>
+  tl.from(q(".shield"), { scale: 0.4, opacity: 0, duration: 0.35, ease: "back.out(2)" }, w("stop"));
+</script>

@@ -1,0 +1,25 @@
+<style>
+  #scene-s5 .card { position: absolute; top: 140px; width: 380px; height: 560px; }
+  #scene-s5 .k1 { left: 20px; } #scene-s5 .k2 { left: 470px; }
+  #scene-s5 svg { position: absolute; left: 90px; top: 50px; width: 200px; height: 220px; }
+  #scene-s5 .nm { position: absolute; left: 0; width: 380px; top: 300px; text-align: center; font: 800 46px var(--font-body); letter-spacing: 0.08em; color: var(--text); }
+  #scene-s5 .track { position: absolute; left: 50px; top: 410px; width: 280px; height: 56px; border-radius: 28px; background: var(--screen); border: 3px solid var(--line); }
+  #scene-s5 .lvl { position: absolute; left: 6px; top: 6px; width: 262px; height: 38px; border-radius: 20px; background: var(--glow); }
+  #scene-s5 .low { position: absolute; left: 6px; top: 6px; width: 262px; height: 38px; border-radius: 20px; background: var(--mid); opacity: 0; }
+</style>
+<div class="card panel k1">
+  <svg viewBox="0 0 100 110"><path d="M50 14 C36 4 16 10 14 28 C2 34 4 54 14 60 C10 76 26 90 40 84 C44 94 56 94 60 84 C74 90 90 76 86 60 C96 54 98 34 86 28 C84 10 64 4 50 14 Z M50 14 L50 88" fill="none" stroke="var(--glow)" stroke-width="5" stroke-linejoin="round"/></svg>
+  <div class="nm">BRAIN</div>
+  <div class="track"><div class="lvl"></div><div class="low"></div></div>
+</div>
+<div class="card panel k2">
+  <svg viewBox="0 0 100 110"><circle cx="50" cy="16" r="12" fill="none" stroke="var(--glow)" stroke-width="5"/><path d="M50 30 L50 70 M24 44 L76 44 M50 70 L32 104 M50 70 L68 104" fill="none" stroke="var(--glow)" stroke-width="6" stroke-linecap="round"/></svg>
+  <div class="nm">BODY</div>
+  <div class="track"><div class="lvl"></div><div class="low"></div></div>
+</div>
+<script>
+  tl.from(q(".k1"), { opacity: 0, y: 40, duration: 0.3, ease: "power2.out" }, w("brain"));
+  tl.from(q(".k2"), { opacity: 0, y: 40, duration: 0.3, ease: "power2.out" }, w("body"));
+  tl.to(qa(".lvl"), { scaleX: 0.35, transformOrigin: "0% 50%", duration: 0.6, ease: "power2.inOut" }, w("less"));
+  tl.to(qa(".low"), { opacity: 1, scaleX: 0.35, transformOrigin: "0% 50%", duration: 0.6, ease: "power2.inOut" }, w("less"));
+</script>

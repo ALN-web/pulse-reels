@@ -1,0 +1,18 @@
+<style>
+  #scene-s10 .slab { position: absolute; left: 0; top: 40px; width: 870px; height: 520px; }
+  #scene-s10 .bm { position: absolute; left: 110px; top: 110px; width: 220px; height: 300px; }
+  #scene-s10 .bk { position: absolute; left: 430px; top: 120px; width: 340px; height: 300px; }
+  #scene-s10 .foot { position: absolute; left: 0; top: 620px; width: 870px; text-align: center; }
+  #scene-s10 .foot .chip { font-size: 46px; padding: 18px 40px; }
+</style>
+<div class="block teal slab">
+  <svg class="bm" viewBox="0 0 100 140"><path d="M10 6 Q10 0 16 0 H84 Q90 0 90 6 V136 L50 104 L10 136 Z" fill="#E8914A"/></svg>
+  <svg class="bk" viewBox="0 0 160 140"><path d="M40 50 L66 10 M120 50 L94 10" stroke="#FBF3E6" stroke-width="10" stroke-linecap="round"/><path d="M8 50 H152 L136 130 H24 Z" fill="#FBF3E6"/><path d="M56 70 V112 M80 70 V112 M104 70 V112" stroke="#0F7C7E" stroke-width="9" stroke-linecap="round"/></svg>
+</div>
+<div class="foot"><span class="chip">Talk to your doctor</span></div>
+<script>
+  tl.from(q(".slab"), { scale: 0.85, opacity: 0, duration: 0.35, ease: "power2.out" }, t);
+  tl.from(q(".bm"), { y: -220, opacity: 0, duration: 0.5, ease: "bounce.out" }, w("save"));
+  tl.from(q(".bk"), { x: 300, opacity: 0, duration: 0.4, ease: "power3.out" }, w("shop"));
+  tl.from(q(".foot .chip"), { scale: 0.6, opacity: 0, duration: 0.3, ease: "back.out(2)" }, w("doctor"));
+</script>

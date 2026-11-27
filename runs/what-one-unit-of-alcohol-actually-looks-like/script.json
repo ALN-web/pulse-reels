@@ -1,0 +1,32 @@
+{
+  "slug": "what-one-unit-of-alcohol-actually-looks-like",
+  "topic": "What one unit of alcohol actually looks like",
+  "client": "pulse-health",
+  "mode": "motion",
+  "hook": {
+    "text": "Is one glass of wine one unit? Usually not.",
+    "estimatedSec": 2.8,
+    "pattern": "myth-bust"
+  },
+  "beats": [
+    { "id": "b1", "text": "In the UK, one unit is 10 millilitres of pure alcohol. That's a single 25 millilitre shot of spirits." },
+    { "id": "b2", "text": "A standard 175 millilitre glass of wine is just over 2 units. A pint of strong lager is 3." },
+    { "id": "b3", "text": "The NHS advises no more than 14 units a week, spread over 3 or more days." },
+    { "id": "b4", "text": "In the US, a standard drink is bigger: 14 grams of alcohol, compared with 8 grams in a UK unit. Guidelines differ, so ask your doctor what's right for you." },
+    { "id": "b5", "text": "One easy step: check the strength on the label before you pour." }
+  ],
+  "cta": "Save this, and talk to your doctor if you're worried about how much you drink.",
+  "sources": [
+    {
+      "publisher": "NHS",
+      "title": "Alcohol units",
+      "url": "https://www.nhs.uk/live-well/alcohol-advice/calculating-alcohol-units/"
+    },
+    {
+      "publisher": "CDC",
+      "title": "About Standard Drink Sizes",
+      "url": "https://www.cdc.gov/alcohol/standard-drink-sizes/index.html"
+    }
+  ],
+  "estimatedTotalSec": 48
+}

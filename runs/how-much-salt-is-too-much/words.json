@@ -1,0 +1,567 @@
+{
+  "audioFile": "voice.mp3",
+  "durationSec": 37.727,
+  "provider": "elevenlabs:eleven_multilingual_v2",
+  "words": [
+    {
+      "word": "Never",
+      "start": 0,
+      "end": 0.279
+    },
+    {
+      "word": "add",
+      "start": 0.325,
+      "end": 0.499
+    },
+    {
+      "word": "salt?",
+      "start": 0.569,
+      "end": 1.138
+    },
+    {
+      "word": "You",
+      "start": 1.463,
+      "end": 1.591
+    },
+    {
+      "word": "may",
+      "start": 1.637,
+      "end": 1.741
+    },
+    {
+      "word": "still",
+      "start": 1.788,
+      "end": 1.997
+    },
+    {
+      "word": "eat",
+      "start": 2.055,
+      "end": 2.171
+    },
+    {
+      "word": "too",
+      "start": 2.206,
+      "end": 2.357
+    },
+    {
+      "word": "much.",
+      "start": 2.415,
+      "end": 2.891
+    },
+    {
+      "word": "The",
+      "start": 3.495,
+      "end": 3.622
+    },
+    {
+      "word": "WHO",
+      "start": 3.692,
+      "end": 4.412
+    },
+    {
+      "word": "says",
+      "start": 4.528,
+      "end": 4.853
+    },
+    {
+      "word": "adults",
+      "start": 4.946,
+      "end": 5.422
+    },
+    {
+      "word": "should",
+      "start": 5.468,
+      "end": 5.724
+    },
+    {
+      "word": "eat",
+      "start": 5.793,
+      "end": 5.968
+    },
+    {
+      "word": "less",
+      "start": 6.049,
+      "end": 6.269
+    },
+    {
+      "word": "than",
+      "start": 6.304,
+      "end": 6.444
+    },
+    {
+      "word": "5",
+      "start": 6.536,
+      "end": 6.711
+    },
+    {
+      "word": "grams",
+      "start": 6.78,
+      "end": 7.047
+    },
+    {
+      "word": "of",
+      "start": 7.094,
+      "end": 7.14
+    },
+    {
+      "word": "salt",
+      "start": 7.21,
+      "end": 7.488
+    },
+    {
+      "word": "a",
+      "start": 7.535,
+      "end": 7.57
+    },
+    {
+      "word": "day.",
+      "start": 7.628,
+      "end": 8.092
+    },
+    {
+      "word": "That's",
+      "start": 8.417,
+      "end": 8.673
+    },
+    {
+      "word": "just",
+      "start": 8.731,
+      "end": 8.928
+    },
+    {
+      "word": "under",
+      "start": 8.975,
+      "end": 9.137
+    },
+    {
+      "word": "a",
+      "start": 9.183,
+      "end": 9.207
+    },
+    {
+      "word": "teaspoon.",
+      "start": 9.265,
+      "end": 9.903
+    },
+    {
+      "word": "The",
+      "start": 10.344,
+      "end": 10.461
+    },
+    {
+      "word": "NHS",
+      "start": 10.519,
+      "end": 10.937
+    },
+    {
+      "word": "says",
+      "start": 10.971,
+      "end": 11.18
+    },
+    {
+      "word": "no",
+      "start": 11.25,
+      "end": 11.331
+    },
+    {
+      "word": "more",
+      "start": 11.401,
+      "end": 11.54
+    },
+    {
+      "word": "than",
+      "start": 11.575,
+      "end": 11.691
+    },
+    {
+      "word": "6",
+      "start": 11.761,
+      "end": 11.935
+    },
+    {
+      "word": "grams.",
+      "start": 12.016,
+      "end": 12.562
+    },
+    {
+      "word": "Guidelines",
+      "start": 13.166,
+      "end": 13.653
+    },
+    {
+      "word": "differ,",
+      "start": 13.7,
+      "end": 14.199
+    },
+    {
+      "word": "so",
+      "start": 14.408,
+      "end": 14.663
+    },
+    {
+      "word": "ask",
+      "start": 14.756,
+      "end": 15.023
+    },
+    {
+      "word": "your",
+      "start": 15.07,
+      "end": 15.174
+    },
+    {
+      "word": "doctor",
+      "start": 15.232,
+      "end": 15.581
+    },
+    {
+      "word": "what's",
+      "start": 15.662,
+      "end": 15.894
+    },
+    {
+      "word": "right",
+      "start": 15.952,
+      "end": 16.138
+    },
+    {
+      "word": "for",
+      "start": 16.184,
+      "end": 16.324
+    },
+    {
+      "word": "you.",
+      "start": 16.382,
+      "end": 16.649
+    },
+    {
+      "word": "Around",
+      "start": 17.253,
+      "end": 17.554
+    },
+    {
+      "word": "three",
+      "start": 17.601,
+      "end": 17.81
+    },
+    {
+      "word": "quarters",
+      "start": 17.845,
+      "end": 18.181
+    },
+    {
+      "word": "of",
+      "start": 18.216,
+      "end": 18.263
+    },
+    {
+      "word": "the",
+      "start": 18.309,
+      "end": 18.379
+    },
+    {
+      "word": "salt",
+      "start": 18.425,
+      "end": 18.669
+    },
+    {
+      "word": "we",
+      "start": 18.704,
+      "end": 18.82
+    },
+    {
+      "word": "eat",
+      "start": 18.89,
+      "end": 19.064
+    },
+    {
+      "word": "is",
+      "start": 19.122,
+      "end": 19.215
+    },
+    {
+      "word": "already",
+      "start": 19.284,
+      "end": 19.563
+    },
+    {
+      "word": "in",
+      "start": 19.609,
+      "end": 19.668
+    },
+    {
+      "word": "food",
+      "start": 19.737,
+      "end": 19.923
+    },
+    {
+      "word": "we",
+      "start": 19.969,
+      "end": 20.062
+    },
+    {
+      "word": "buy,",
+      "start": 20.132,
+      "end": 20.585
+    },
+    {
+      "word": "like",
+      "start": 20.759,
+      "end": 20.945
+    },
+    {
+      "word": "bread,",
+      "start": 20.991,
+      "end": 21.537
+    },
+    {
+      "word": "breakfast",
+      "start": 21.653,
+      "end": 22.024
+    },
+    {
+      "word": "cereals",
+      "start": 22.048,
+      "end": 22.489
+    },
+    {
+      "word": "and",
+      "start": 22.535,
+      "end": 22.616
+    },
+    {
+      "word": "ready",
+      "start": 22.674,
+      "end": 22.872
+    },
+    {
+      "word": "meals.",
+      "start": 22.93,
+      "end": 23.452
+    },
+    {
+      "word": "Too",
+      "start": 23.963,
+      "end": 24.114
+    },
+    {
+      "word": "much",
+      "start": 24.161,
+      "end": 24.311
+    },
+    {
+      "word": "salt",
+      "start": 24.346,
+      "end": 24.579
+    },
+    {
+      "word": "can",
+      "start": 24.625,
+      "end": 24.741
+    },
+    {
+      "word": "raise",
+      "start": 24.811,
+      "end": 25.02
+    },
+    {
+      "word": "your",
+      "start": 25.043,
+      "end": 25.147
+    },
+    {
+      "word": "blood",
+      "start": 25.194,
+      "end": 25.414
+    },
+    {
+      "word": "pressure,",
+      "start": 25.461,
+      "end": 25.937
+    },
+    {
+      "word": "which",
+      "start": 26.007,
+      "end": 26.204
+    },
+    {
+      "word": "increases",
+      "start": 26.25,
+      "end": 26.668
+    },
+    {
+      "word": "the",
+      "start": 26.715,
+      "end": 26.784
+    },
+    {
+      "word": "risk",
+      "start": 26.831,
+      "end": 27.017
+    },
+    {
+      "word": "of",
+      "start": 27.063,
+      "end": 27.109
+    },
+    {
+      "word": "heart",
+      "start": 27.179,
+      "end": 27.342
+    },
+    {
+      "word": "attacks",
+      "start": 27.377,
+      "end": 27.794
+    },
+    {
+      "word": "and",
+      "start": 27.829,
+      "end": 27.922
+    },
+    {
+      "word": "strokes.",
+      "start": 27.992,
+      "end": 28.584
+    },
+    {
+      "word": "One",
+      "start": 29.188,
+      "end": 29.362
+    },
+    {
+      "word": "easy",
+      "start": 29.385,
+      "end": 29.606
+    },
+    {
+      "word": "step:",
+      "start": 29.652,
+      "end": 30.093
+    },
+    {
+      "word": "check",
+      "start": 30.476,
+      "end": 30.697
+    },
+    {
+      "word": "the",
+      "start": 30.743,
+      "end": 30.813
+    },
+    {
+      "word": "label",
+      "start": 30.86,
+      "end": 31.138
+    },
+    {
+      "word": "and",
+      "start": 31.219,
+      "end": 31.336
+    },
+    {
+      "word": "pick",
+      "start": 31.394,
+      "end": 31.545
+    },
+    {
+      "word": "the",
+      "start": 31.591,
+      "end": 31.661
+    },
+    {
+      "word": "lower-salt",
+      "start": 31.707,
+      "end": 32.23
+    },
+    {
+      "word": "option.",
+      "start": 32.288,
+      "end": 32.74
+    },
+    {
+      "word": "Save",
+      "start": 33.344,
+      "end": 33.588
+    },
+    {
+      "word": "this",
+      "start": 33.623,
+      "end": 33.762
+    },
+    {
+      "word": "for",
+      "start": 33.808,
+      "end": 33.901
+    },
+    {
+      "word": "your",
+      "start": 33.936,
+      "end": 34.029
+    },
+    {
+      "word": "next",
+      "start": 34.076,
+      "end": 34.238
+    },
+    {
+      "word": "shop,",
+      "start": 34.273,
+      "end": 34.702
+    },
+    {
+      "word": "and",
+      "start": 34.946,
+      "end": 35.132
+    },
+    {
+      "word": "talk",
+      "start": 35.19,
+      "end": 35.376
+    },
+    {
+      "word": "to",
+      "start": 35.399,
+      "end": 35.445
+    },
+    {
+      "word": "your",
+      "start": 35.48,
+      "end": 35.573
+    },
+    {
+      "word": "doctor",
+      "start": 35.631,
+      "end": 35.91
+    },
+    {
+      "word": "if",
+      "start": 35.945,
+      "end": 36.003
+    },
+    {
+      "word": "you're",
+      "start": 36.026,
+      "end": 36.165
+    },
+    {
+      "word": "watching",
+      "start": 36.189,
+      "end": 36.421
+    },
+    {
+      "word": "your",
+      "start": 36.456,
+      "end": 36.548
+    },
+    {
+      "word": "blood",
+      "start": 36.572,
+      "end": 36.757
+    },
+    {
+      "word": "pressure.",
+      "start": 36.804,
+      "end": 37.477
+    }
+  ]
+}

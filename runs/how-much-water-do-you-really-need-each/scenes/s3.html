@@ -1,0 +1,10 @@
+<style>
+  #scene-s3 .plus { position: absolute; left: 30px; top: 70px; width: 170px; height: 170px; border-radius: 50%; background: var(--primary); display: flex; align-items: center; justify-content: center; box-shadow: 0 16px 40px rgba(18,52,59,.14); }
+  #scene-s3 .plus svg { width: 90px; height: 90px; }
+</style>
+<div class="plus"><svg viewBox="0 0 100 100"><path d="M50 12 V88 M12 50 H88" stroke="#fff" stroke-width="16" stroke-linecap="round"/></svg></div>
+<script>
+  tl.from(q(".plus"), { scale: 0, opacity: 0, duration: 0.3, ease: "back.out(2)" }, w("just"));
+  ira.hand(w("not"), "wave");
+  ira.handDown(w("water") + 0.4);
+</script>

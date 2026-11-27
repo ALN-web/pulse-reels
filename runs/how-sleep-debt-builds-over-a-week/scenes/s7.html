@@ -1,0 +1,30 @@
+<style>
+  #scene-s7 .cal { position: absolute; left: 60px; top: 40px; width: 300px; height: 230px; }
+  #scene-s7 .cal .top { position: absolute; left: 0; top: 0; width: 300px; height: 64px; border-radius: 33px 33px 0 0; background: var(--line); }
+  #scene-s7 .cal .w { position: absolute; left: 0; width: 300px; top: 100px; text-align: center; font: 800 58px var(--font-body); color: var(--text); }
+  #scene-s7 .warn { position: absolute; left: 400px; top: 70px; width: 170px; height: 170px; }
+  #scene-s7 .rows { position: absolute; left: 0; top: 330px; width: 870px; height: 440px; }
+  #scene-s7 .row { position: absolute; left: 40px; width: 790px; }
+  #scene-s7 .r1 { top: 50px; } #scene-s7 .r2 { top: 240px; }
+  #scene-s7 .nm { font: 800 40px var(--font-body); letter-spacing: 0.08em; color: var(--muted); margin-bottom: 18px; }
+  #scene-s7 .track { position: relative; width: 790px; height: 64px; border-radius: 32px; background: var(--screen); border: 3px solid var(--line); }
+  #scene-s7 .bar { position: absolute; left: 6px; top: 6px; height: 46px; border-radius: 24px; }
+  #scene-s7 .b1 { width: 560px; background: var(--glow); }
+  #scene-s7 .b2 { width: 380px; background: var(--mid); }
+  #scene-s7 .norm { position: absolute; left: 560px; top: -14px; height: 92px; border-left: 6px solid var(--text); }
+</style>
+<div class="cal panel"><div class="top"></div><div class="w">LATER</div></div>
+<svg class="warn" viewBox="0 0 100 100"><path d="M50 8 L94 88 L6 88 Z" fill="none" stroke="var(--warn)" stroke-width="7" stroke-linejoin="round"/><path d="M50 36 L50 62" stroke="var(--warn)" stroke-width="8" stroke-linecap="round"/><circle cx="50" cy="75" r="5" fill="var(--warn)"/></svg>
+<div class="rows panel">
+  <div class="row r1"><div class="nm">SLEEPINESS</div><div class="track"><div class="bar b1"></div><div class="norm"></div></div></div>
+  <div class="row r2"><div class="nm">FOCUS</div><div class="track"><div class="bar b2"></div><div class="norm"></div></div></div>
+</div>
+<script>
+  tl.from(q(".cal"), { opacity: 0, scale: 0.7, transformOrigin: "50% 50%", duration: 0.3, ease: "back.out(2)" }, w("later"));
+  tl.from(q(".warn"), { opacity: 0, duration: 0.2 }, w("risky"));
+  tl.fromTo(q(".warn"), { rotation: -8 }, { rotation: 8, transformOrigin: "50% 80%", duration: 0.1, yoyo: true, repeat: 5, ease: "sine.inOut" }, w("risky"));
+  tl.from(q(".rows"), { opacity: 0, y: 40, duration: 0.3, ease: "power2.out" }, w("even"));
+  tl.fromTo(q(".b1"), { width: 780 }, { width: 560, duration: 0.6, ease: "power2.inOut" }, w("fades"));
+  tl.from(q(".b2"), { scaleX: 0, transformOrigin: "0% 50%", duration: 0.6, ease: "power2.out" }, w("may"));
+  tl.fromTo(q(".r2 .norm"), { opacity: 1 }, { opacity: 0.3, duration: 0.15, yoyo: true, repeat: 3 }, w("best"));
+</script>

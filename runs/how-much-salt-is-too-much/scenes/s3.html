@@ -1,0 +1,18 @@
+<style>
+  #scene-s3 .spoon { position: absolute; left: 35px; top: 140px; width: 800px; height: 420px; }
+  #scene-s3 .note { position: absolute; left: 0; top: 620px; width: 870px; text-align: center; }
+</style>
+<svg class="spoon" viewBox="0 0 800 420">
+  <rect x="380" y="185" width="400" height="50" rx="25" fill="#0F7C7E"/>
+  <ellipse cx="210" cy="210" rx="200" ry="150" fill="#0F7C7E"/>
+  <ellipse cx="210" cy="210" rx="168" ry="120" fill="#F3E3C8"/>
+  <path class="mound" d="M70 250 Q210 120 350 250 Q210 300 70 250 Z" fill="#fff"/>
+  <path class="brim" d="M42 150 H378" stroke="#12343B" stroke-width="8" stroke-dasharray="20 14" stroke-linecap="round"/>
+</svg>
+<div class="note"><span class="chip">Just below the brim</span></div>
+<script>
+  tl.from(q(".spoon"), { x: -500, opacity: 0, duration: 0.4, ease: "power3.out" }, t);
+  tl.from(q(".mound"), { scaleY: 0, transformOrigin: "50% 100%", duration: 0.45, ease: "power2.out" }, w("under"));
+  tl.from(q(".brim"), { opacity: 0, duration: 0.25 }, w("under"));
+  tl.from(q(".note"), { y: 30, opacity: 0, duration: 0.3, ease: "power2.out" }, w("teaspoon"));
+</script>

@@ -7,12 +7,13 @@
 set -euo pipefail
 cd "$(dirname "$0")"
 
-TOPIC="" CLIENT="pulse-health" MODE="character"
+TOPIC="" CLIENT="pulse-health" MODE="character" STYLE=""
 while [[ $# -gt 0 ]]; do
   case "$1" in
     --topic)  TOPIC="$2"; shift 2 ;;
     --client) CLIENT="$2"; shift 2 ;;
     --mode)   MODE="$2"; shift 2 ;;
+    --style)  STYLE="$2"; shift 2 ;;   # motion: reuse a style theme, e.g. --style poster
     -h|--help) sed -n '2,6p' "$0"; exit 0 ;;
     *) echo "unknown option: $1" >&2; exit 2 ;;
   esac
@@ -37,7 +38,9 @@ echo "log:  $LOG"
 
 START=$(date +%s)
 # Only the tools the pipeline needs. Anything else is denied (headless mode never prompts).
-claude -p "/reel $TOPIC --client $CLIENT --mode $MODE (run slug: $SLUG). Work fully autonomously; nobody will answer questions." \
+HINT=""
+[[ -n "$STYLE" ]] && HINT=" Use storyboard styleId '$STYLE' (theme file clients/$CLIENT/styles/$STYLE.css); build the scene fragments with its variables and classes."
+claude -p "/reel $TOPIC --client $CLIENT --mode $MODE (run slug: $SLUG).$HINT Look at the finished runs in runs/ for examples of scene fragments. Count list items before writing the hook. Every on-screen number must appear in a cited WHO/CDC/NHS page. Work fully autonomously; nobody will answer questions." \
   --output-format stream-json --verbose \
   --allowedTools "Bash(npm run:*)" "Bash(npm test:*)" "Bash(npx hyperframes:*)" "Bash(ffmpeg:*)" "Bash(ffprobe:*)" \
                  "Bash(mkdir:*)" "Bash(ls:*)" "Read" "Write" "Edit" "Glob" "Grep" "WebSearch" "WebFetch" "Skill" \

@@ -1,0 +1,36 @@
+<style>
+  #scene-s2 .card { position: absolute; left: 40px; top: 60px; width: 790px; height: 700px; background: #fff; border-radius: 40px; box-shadow: 0 16px 40px rgba(18,52,59,.10); }
+  #scene-s2 .num { position: absolute; left: 40px; top: 36px; width: 96px; height: 96px; border-radius: 50%; background: var(--primary); color: #fff; font: 800 56px var(--font-body); display: flex; align-items: center; justify-content: center; }
+  #scene-s2 .art { position: absolute; left: 40px; top: 110px; width: 520px; height: 580px; }
+  #scene-s2 .soap { position: absolute; right: 40px; top: 300px; width: 150px; height: 260px; }
+  #scene-s2 .lbl { position: absolute; left: 160px; top: 52px; font: 800 52px var(--font-body); color: var(--ink); }
+</style>
+<div class="card">
+  <div class="num">1</div>
+  <div class="lbl">Wet</div>
+  <svg class="art" viewBox="0 0 440 560">
+    <path d="M60 60 H260 Q300 60 300 100 V150" fill="none" stroke="var(--ink)" stroke-width="22" stroke-linecap="round"/>
+    <rect x="270" y="140" width="60" height="30" rx="8" fill="var(--ink)"/>
+    <g class="drops">
+      <path class="drop" d="M300 200 Q288 222 300 234 Q312 222 300 200 Z" fill="var(--primary)"/>
+      <path class="drop" d="M300 200 Q288 222 300 234 Q312 222 300 200 Z" fill="var(--primary)"/>
+      <path class="drop" d="M300 200 Q288 222 300 234 Q312 222 300 200 Z" fill="var(--primary)"/>
+    </g>
+    <path d="M150 470 Q160 380 220 360 L300 350 Q380 360 390 400 Q395 440 360 450 L250 455 Q200 470 150 470 Z" fill="var(--soft)" stroke="var(--ink)" stroke-width="8" stroke-linejoin="round"/>
+    <path d="M150 500 Q160 430 230 420 L320 418 Q400 430 405 470 Q405 500 370 505 L250 510 Q200 520 150 500 Z" fill="var(--soft)" stroke="var(--ink)" stroke-width="8" stroke-linejoin="round"/>
+  </svg>
+  <svg class="soap" viewBox="0 0 150 260">
+    <rect x="62" y="10" width="26" height="40" rx="6" fill="var(--ink)"/>
+    <path d="M40 30 H90" stroke="var(--ink)" stroke-width="10" stroke-linecap="round"/>
+    <rect x="20" y="60" width="110" height="190" rx="30" fill="var(--accent)" stroke="var(--ink)" stroke-width="8"/>
+    <text x="75" y="170" text-anchor="middle" style="font: 800 30px var(--font-body); fill: var(--ink)">SOAP</text>
+  </svg>
+</div>
+<script>
+  tl.from(q(".card"), { y: 80, opacity: 0, duration: 0.35, ease: "power2.out" }, w("one"));
+  const reps = Math.max(0, Math.floor((t + d - w("wet")) / 0.6) - 2);
+  qa(".drop").forEach((el, i) => {
+    tl.fromTo(el, { y: 0, opacity: 1 }, { y: 120, opacity: 0, duration: 0.6, ease: "power1.in", repeat: reps }, w("wet") + i * 0.2);
+  });
+  tl.from(q(".soap"), { x: 120, opacity: 0, duration: 0.35, ease: "power2.out" }, w("soap"));
+</script>

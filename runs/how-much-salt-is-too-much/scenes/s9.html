@@ -1,0 +1,26 @@
+<style>
+  #scene-s9 .pk { position: absolute; top: 80px; width: 390px; height: 560px; border-radius: 40px; }
+  #scene-s9 .p1 { left: 15px; background: #fff; } #scene-s9 .p2 { left: 465px; background: #fff; }
+  #scene-s9 .pk { box-shadow: 0 0 0 6px var(--p-ink) inset; }
+  #scene-s9 .lab { position: absolute; left: 35px; top: 230px; width: 320px; height: 250px; border-radius: 26px; background: var(--paper); }
+  #scene-s9 .lab .k { position: absolute; left: 28px; top: 26px; font: 800 44px var(--font-body); color: var(--p-ink); }
+  #scene-s9 .lab .bar { position: absolute; left: 28px; top: 110px; width: 264px; height: 96px; border-radius: 20px; color: #fff; font: 800 52px var(--font-body);
+    display: flex; align-items: center; justify-content: center; letter-spacing: 0.04em; }
+  #scene-s9 .top { position: absolute; left: 35px; top: 50px; width: 320px; height: 130px; border-radius: 26px; }
+  #scene-s9 .p1 .top { background: var(--p-apricot); } #scene-s9 .p2 .top { background: var(--p-teal); }
+  #scene-s9 .tick { position: absolute; left: 700px; top: 20px; width: 150px; height: 150px; }
+  #scene-s9 .mag { position: absolute; left: 40px; top: 260px; width: 230px; height: 230px; }
+</style>
+<div class="pk p1"><div class="top"></div><div class="lab"><div class="k">Salt</div><div class="bar block rose">HIGH</div></div></div>
+<div class="pk p2"><div class="top"></div><div class="lab"><div class="k">Salt</div><div class="bar block teal">LOW</div></div></div>
+<svg class="mag" viewBox="0 0 100 100"><circle cx="42" cy="42" r="30" fill="none" stroke="#12343B" stroke-width="9"/><path d="M64 64 L90 90" stroke="#12343B" stroke-width="12" stroke-linecap="round"/></svg>
+<svg class="tick" viewBox="0 0 100 100"><circle cx="50" cy="50" r="48" fill="#12343B"/><path d="M28 52 L44 68 L74 36" fill="none" stroke="#fff" stroke-width="10" stroke-linecap="round" stroke-linejoin="round"/></svg>
+<script>
+  tl.from(qa(".pk"), { y: 120, opacity: 0, duration: 0.4, stagger: 0.1, ease: "power3.out" }, t);
+  tl.from(q(".mag"), { opacity: 0, duration: 0.2 }, w("check"));
+  tl.to(q(".mag"), { x: 460, duration: 0.8, ease: "power2.inOut" }, w("label"));
+  tl.to(q(".mag"), { opacity: 0, duration: 0.2 }, w("lower-salt"));
+  tl.to(q(".p1"), { opacity: 0.45, scale: 0.94, duration: 0.3 }, w("lower-salt"));
+  tl.to(q(".p2"), { scale: 1.05, duration: 0.3, ease: "back.out(2)" }, w("lower-salt"));
+  tl.from(q(".tick"), { scale: 0, opacity: 0, transformOrigin: "50% 50%", duration: 0.3, ease: "back.out(2.5)" }, w("lower-salt"));
+</script>

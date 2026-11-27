@@ -1,0 +1,109 @@
+{
+  "slug": "how-much-water-do-you-really-need-each",
+  "topic": "How much water do you really need each day",
+  "client": "pulse-health",
+  "mode": "character",
+  "styleId": "clean-clinic",
+  "characterId": "dr-ira-v1",
+  "scenes": [
+    {
+      "id": "s1",
+      "line": "How much water do you really need each day?",
+      "visual": "Dr. Ira faces camera with a curious head tilt and friendly smile, one hand raised in a small wave; a tall glass outline at the right fills with teal water",
+      "animation": "Hard cut in. Glass fades in on 'water'; water level rises from 0 to full on 'really' through 'day', power1.inOut; question mark pops beside it on 'day', back.out 0.3 s",
+      "onScreenText": "How much water, really?",
+      "durationSec": 3.0,
+      "shot": "character"
+    },
+    {
+      "id": "s2",
+      "line": "The NHS suggests six to eight cups or glasses of fluid a day.",
+      "visual": "Row of eight glass icons on a white card: glasses 1-6 filled solid teal, glasses 7-8 filled light teal to show the range; small 'NHS guide' label above",
+      "animation": "Card slides up on 'NHS'; glasses 1-6 pop in left to right on 'six', stagger 0.08 s, back.out; glasses 7-8 pop in on 'eight'; range bracket draws under all eight on 'glasses'",
+      "onScreenText": "6 to 8 glasses a day",
+      "durationSec": 5.0,
+      "shot": "motion"
+    },
+    {
+      "id": "s3",
+      "line": "And it's not just water.",
+      "visual": "Dr. Ira, warm knowing smile, small wave of the hand as if correcting a common idea",
+      "animation": "Plus-sign badge pops in at the upper left on 'just', scale 0 to 1, back.out 0.3 s",
+      "onScreenText": "Not just water",
+      "durationSec": 2.0,
+      "shot": "character"
+    },
+    {
+      "id": "s4",
+      "line": "Lower-fat milk, lower-sugar drinks, tea and coffee all count too.",
+      "visual": "Two-by-two grid of rounded white cards: milk carton, lower-sugar drink can, tea cup with tag, coffee mug; each labelled",
+      "animation": "Cards slide up one by one on 'milk', 'drinks', 'tea', 'coffee', power2.out 0.35 s; a teal check stamps on every card on 'count', stagger 0.06 s",
+      "onScreenText": "These all count too",
+      "durationSec": 4.0,
+      "shot": "motion"
+    },
+    {
+      "id": "s5",
+      "line": "The CDC says daily needs vary with age, sex and activity, so treat it as a guide.",
+      "visual": "Dr. Ira, open palms, calm reassuring look; three small chips labelled Age, Sex and Activity float in at the sides",
+      "animation": "Chips pop in on 'age', 'sex', 'activity', scale 0 to 1, back.out 0.3 s; a 'Guide, not a rule' tag fades in on 'guide'",
+      "onScreenText": "Needs vary: it's a guide",
+      "durationSec": 6.5,
+      "shot": "character"
+    },
+    {
+      "id": "s6",
+      "line": "You may need more in hot weather, during exercise, or with a fever, vomiting or diarrhea.",
+      "visual": "Four rounded white cards in a two-by-two grid: sun icon 'Hot weather', running shoe 'Exercise', thermometer 'Fever', stomach outline 'Vomiting or diarrhea'",
+      "animation": "Cards slide up on 'weather', 'exercise', 'fever', 'vomiting', power2.out 0.35 s each",
+      "onScreenText": "When to drink more",
+      "durationSec": 6.0,
+      "shot": "motion"
+    },
+    {
+      "id": "s7",
+      "line": "The easy check: aim for pale yellow pee.",
+      "visual": "Horizontal colour strip of four swatches from pale yellow to dark amber; a teal check-mark ring circles the palest swatch",
+      "animation": "Swatches wipe in left to right on 'check', stagger 0.08 s; check ring scales in on 'pale', back.out 0.35 s",
+      "onScreenText": "Aim for pale yellow",
+      "durationSec": 3.0,
+      "shot": "motion"
+    },
+    {
+      "id": "s8",
+      "line": "Dark yellow pee can be a sign you need to drink more.",
+      "visual": "Dr. Ira, gentle nod and caring look; a small dark-amber swatch at upper left and a teal water glass at upper right",
+      "animation": "Dark swatch fades in on 'Dark'; glass pops in on 'drink', back.out 0.3 s",
+      "onScreenText": "Dark yellow? Drink more",
+      "durationSec": 4.0,
+      "shot": "character"
+    },
+    {
+      "id": "s9",
+      "line": "One simple habit: carry a reusable water bottle with you.",
+      "visual": "Large teal reusable water bottle illustration on a white card, with a small orange tag reading 'Daily habit'",
+      "animation": "Card rises in on 'habit'; bottle slides up and tilts 6 degrees on 'carry', back.out; tag swings in on 'bottle'",
+      "onScreenText": "Carry a water bottle",
+      "durationSec": 4.0,
+      "shot": "motion"
+    },
+    {
+      "id": "s10",
+      "line": "Save this. And if dizziness or unusual tiredness won't go away, talk to a doctor.",
+      "visual": "Dr. Ira, direct warm gaze, friendly wave at the end; bookmark icon at upper right, then a small stethoscope card at upper left",
+      "animation": "Bookmark bounces on 'Save', scale 0.8 to 1.1 to 1.0, back.out; stethoscope card slides in on 'doctor', power2.out 0.3 s",
+      "onScreenText": "Talk to a doctor",
+      "durationSec": 5.5,
+      "shot": "character"
+    },
+    {
+      "id": "s11",
+      "line": "",
+      "visual": "Cream end card with Pulse Health wordmark centred",
+      "animation": "Fade in 0.3 s, hold",
+      "onScreenText": "Not medical advice. Sources: NHS, CDC",
+      "durationSec": 3.0,
+      "shot": "disclaimer"
+    }
+  ]
+}

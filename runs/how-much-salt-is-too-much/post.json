@@ -1,0 +1,12 @@
+{
+  "hook": "Never add salt to your food? You may still be eating too much. 🧂",
+  "body": "The WHO says adults should have less than 5 g of salt a day, just under a teaspoon. The NHS says no more than 6 g. Guidelines differ, so ask your doctor what's right for you.\n\nAround three quarters of the salt we eat is already in food we buy, like bread, breakfast cereals and ready meals.\n\nToo much salt can raise your blood pressure, which increases the risk of heart attacks and strokes. One easy step: check the label and pick the lower-salt option.",
+  "cta": "Save this for your next shop 📌 and talk to your doctor if you're watching your blood pressure.",
+  "sources": [
+    { "publisher": "WHO", "title": "Sodium reduction", "url": "https://www.who.int/news-room/fact-sheets/detail/salt-reduction" },
+    { "publisher": "NHS", "title": "Salt in your diet", "url": "https://www.nhs.uk/live-well/eat-well/food-types/salt-nutrition/" },
+    { "publisher": "CDC", "title": "About Sodium and Health", "url": "https://www.cdc.gov/salt/about/index.html" }
+  ],
+  "disclaimer": "Not medical advice. Talk to a doctor about your health.",
+  "hashtags": ["#PulseHealth", "#PreventiveCare", "#HealthTips", "#Telehealth", "#Salt", "#BloodPressure", "#HealthyEating"]
+}

@@ -1,0 +1,34 @@
+{
+  "slug": "how-sleep-debt-builds-over-a-week",
+  "topic": "How sleep debt builds over a week",
+  "client": "pulse-health",
+  "mode": "motion",
+  "hook": {
+    "text": "Sleeping 6 hours when you need 8? Watch your week.",
+    "estimatedSec": 3,
+    "pattern": "direct question"
+  },
+  "beats": [
+    { "id": "b1", "text": "Sleep debt is the gap between the sleep you need and the sleep you get." },
+    { "id": "b2", "text": "Need 8 hours but get 6? That's 2 hours of debt that day." },
+    { "id": "b3", "text": "Do that for 5 days, and the debt grows to 10 hours." },
+    { "id": "b4", "text": "As it builds, your brain and body work less well. You may feel tired and sleepy during the day." },
+    { "id": "b5", "text": "Paying it all back later is risky. Even when sleepiness fades, you may not be at your best." },
+    { "id": "b6", "text": "Good news: you don't need to repay it hour for hour." },
+    { "id": "b7", "text": "If you were short last night, allow extra time and go to bed a little earlier." }
+  ],
+  "cta": "Save this, and talk to a doctor if you feel tired all the time.",
+  "sources": [
+    {
+      "publisher": "CDC",
+      "title": "Module 2. Sleep Pressure: Homeostatic Sleep Drive (Continued) | NIOSH",
+      "url": "https://www.cdc.gov/niosh/work-hour-training-for-nurses/longhours/mod2/12.html"
+    },
+    {
+      "publisher": "CDC",
+      "title": "Sleep Debt | NIOSH",
+      "url": "https://archive.cdc.gov/www_cdc_gov/niosh/emres/longhourstraining/debt.html"
+    }
+  ],
+  "estimatedTotalSec": 50
+}

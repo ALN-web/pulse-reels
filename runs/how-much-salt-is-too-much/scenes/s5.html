@@ -1,0 +1,20 @@
+<style>
+  #scene-s5 .b { position: absolute; top: 40px; width: 410px; height: 400px; }
+  #scene-s5 .b1 { left: 0; } #scene-s5 .b2 { left: 460px; }
+  #scene-s5 .b .chip { position: absolute; left: 40px; top: 36px; }
+  #scene-s5 .b1 .chip { background: #fff; color: var(--p-ink); }
+  #scene-s5 .num { position: absolute; left: 36px; top: 150px; font-size: 190px; }
+  #scene-s5 .b1 .num { color: #fff; } #scene-s5 .b2 .num { color: var(--p-ink); }
+  #scene-s5 .bubble { position: absolute; left: 95px; top: 530px; width: 680px; height: 190px; border-radius: 48px; background: var(--p-ink); color: #fff;
+    display: flex; align-items: center; justify-content: center; font: 800 64px var(--font-body); }
+  #scene-s5 .tail { position: absolute; left: 400px; top: 495px; width: 0; height: 0; border-left: 36px solid transparent; border-right: 36px solid transparent; border-bottom: 40px solid var(--p-ink); }
+</style>
+<div class="block teal b b1"><div class="chip">WHO</div><div class="num big-num">&lt;5 g</div></div>
+<div class="block apricot b b2"><div class="chip">NHS</div><div class="num big-num">6 g</div></div>
+<div class="tail"></div>
+<div class="bubble">Ask your doctor</div>
+<script>
+  tl.to(q(".b1"), { rotation: -6, x: -10, duration: 0.4, ease: "power2.out" }, w("differ"));
+  tl.to(q(".b2"), { rotation: 6, x: 10, duration: 0.4, ease: "power2.out" }, w("differ"));
+  tl.from([q(".bubble"), q(".tail")], { scale: 0.6, opacity: 0, transformOrigin: "50% 0%", duration: 0.35, ease: "back.out(2)" }, w("ask"));
+</script>

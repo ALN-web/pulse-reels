@@ -1,0 +1,23 @@
+<style>
+  #scene-s7 .day { position: absolute; top: 200px; width: 110px; height: 300px; border-radius: 28px; background: var(--paper);
+    box-shadow: 0 0 0 6px var(--p-ink) inset; }
+  #scene-s7 .day .d { position: absolute; left: 0; top: 30px; width: 110px; text-align: center; font: 800 48px var(--font-body); color: var(--p-ink); }
+  #scene-s7 .fill { position: absolute; left: 0; top: 0; width: 110px; height: 300px; border-radius: 28px; background: var(--p-apricot);
+    box-shadow: 0 0 0 6px var(--p-ink) inset; }
+  #scene-s7 .fill .d { position: absolute; left: 0; top: 30px; width: 110px; text-align: center; font: 800 48px var(--font-body); color: var(--p-ink); }
+  #scene-s7 .foot { position: absolute; left: 0; top: 590px; width: 870px; text-align: center; }
+  #scene-s7 .foot .chip { font-size: 50px; padding: 16px 40px; }
+</style>
+<div class="day" style="left:2px"><div class="d">M</div><div class="fill"><div class="d">M</div></div></div>
+<div class="day" style="left:128px"><div class="d">T</div></div>
+<div class="day" style="left:254px"><div class="d">W</div><div class="fill"><div class="d">W</div></div></div>
+<div class="day" style="left:380px"><div class="d">T</div></div>
+<div class="day" style="left:506px"><div class="d">F</div><div class="fill"><div class="d">F</div></div></div>
+<div class="day" style="left:632px"><div class="d">S</div></div>
+<div class="day" style="left:758px"><div class="d">S</div></div>
+<div class="foot"><span class="chip">3 or more days</span></div>
+<script>
+  tl.from(qa(".day"), { y: 60, opacity: 0, duration: 0.25, stagger: 0.05, ease: "power2.out" }, t);
+  tl.from(qa(".fill"), { scaleY: 0, transformOrigin: "50% 100%", duration: 0.3, stagger: 0.15, ease: "power2.out" }, w("3"));
+  tl.from(q(".foot .chip"), { scale: 0.6, opacity: 0, duration: 0.3, ease: "back.out(2)" }, w("days"));
+</script>

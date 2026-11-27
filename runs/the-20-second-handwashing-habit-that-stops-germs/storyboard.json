@@ -1,0 +1,109 @@
+{
+  "slug": "the-20-second-handwashing-habit-that-stops-germs",
+  "topic": "The 20-second handwashing habit that stops germs spreading",
+  "client": "pulse-health",
+  "mode": "character",
+  "styleId": "clean-clinic",
+  "characterId": "dr-ira-v1",
+  "scenes": [
+    {
+      "id": "s1",
+      "line": "Five steps. One twenty-second scrub. Here's how.",
+      "visual": "Dr. Ira faces camera with a warm smile and holds up five fingers; five small numbered teal step chips stack in at the right, a 20 s stopwatch badge at the left",
+      "animation": "Hard cut in. Step chips pop in on 'Five' with 0.08 s stagger, scale 0.4 to 1, back.out; stopwatch badge scales in on 'scrub', back.out 0.3 s",
+      "onScreenText": "5 steps, 20-second scrub",
+      "durationSec": 3.0,
+      "shot": "character"
+    },
+    {
+      "id": "s2",
+      "line": "Step one: wet your hands with clean, running water, warm or cold, and apply soap.",
+      "visual": "Large step-1 card: a simple tap with three falling water drops over two open hands; a soap bottle slides in at the side",
+      "animation": "Card rises on 'one', power2.out 0.35 s; drops fall in a loop from 'wet'; soap bottle slides in from the right on 'soap', power2.out",
+      "onScreenText": "1. Wet, then soap",
+      "durationSec": 6.0,
+      "shot": "motion"
+    },
+    {
+      "id": "s3",
+      "line": "Step two: lather. Rub the backs of your hands, between your fingers, and under your nails.",
+      "visual": "Dr. Ira, friendly and focused, mimes rubbing hands; three small label chips at the sides: backs, between fingers, under nails",
+      "animation": "Chips pop in on 'backs', 'between' and 'nails', scale 0 to 1, back.out 0.3 s each",
+      "onScreenText": "2. Lather everywhere",
+      "durationSec": 6.4,
+      "shot": "character"
+    },
+    {
+      "id": "s4",
+      "line": "Step three: scrub for at least twenty seconds.",
+      "visual": "Big circular timer ring in teal with the number 20 in the centre and a soft bubble pattern behind it",
+      "animation": "Ring draws clockwise from 0 to full starting on 'scrub', linear over the scene; number 20 scales in on 'twenty', back.out 0.3 s",
+      "onScreenText": "3. Scrub 20 seconds",
+      "durationSec": 3.2,
+      "shot": "motion"
+    },
+    {
+      "id": "s5",
+      "line": "No timer? Hum Happy Birthday twice.",
+      "visual": "Dr. Ira, playful smile, gives a little wave; two music-note badges float up beside the head",
+      "animation": "First note badge pops in on 'Happy', second on 'twice', scale 0 to 1, back.out 0.3 s; both bob gently",
+      "onScreenText": "Hum Happy Birthday twice",
+      "durationSec": 2.4,
+      "shot": "character"
+    },
+    {
+      "id": "s6",
+      "line": "Step four: rinse well under clean, running water.",
+      "visual": "Step-4 card: two hands under a tap with a stream of water lines and small bubbles sliding off",
+      "animation": "Card rises on 'four', power2.out 0.35 s; water stream lines draw down on 'rinse'; bubbles drift downward and fade",
+      "onScreenText": "4. Rinse well",
+      "durationSec": 3.2,
+      "shot": "motion"
+    },
+    {
+      "id": "s7",
+      "line": "Step five: dry with a clean towel or an air dryer.",
+      "visual": "Step-5 card split in two: a folded towel on the left, an air-dryer outline with airflow lines on the right",
+      "animation": "Towel slides in on 'towel', dryer slides in on 'air', power2.out 0.3 s; airflow lines pulse",
+      "onScreenText": "5. Dry fully",
+      "durationSec": 4.4,
+      "shot": "motion"
+    },
+    {
+      "id": "s8",
+      "line": "Clean hands help stop germs spreading.",
+      "visual": "Dr. Ira, warm reassuring nod, open palms; a soft shield badge with a hand outline at the upper right",
+      "animation": "Shield badge scales in on 'stop', back.out 0.35 s",
+      "onScreenText": "Clean hands, fewer germs shared",
+      "durationSec": 2.4,
+      "shot": "character"
+    },
+    {
+      "id": "s9",
+      "line": "Wash before you eat, after the toilet, and after you cough, sneeze, or blow your nose.",
+      "visual": "Three rounded cards in a row: plate with fork, toilet outline, tissue box",
+      "animation": "Cards slide up one by one on 'eat', 'toilet' and 'cough', stagger, power2.out 0.35 s",
+      "onScreenText": "Key times to wash",
+      "durationSec": 6.4,
+      "shot": "motion"
+    },
+    {
+      "id": "s10",
+      "line": "Save this, and share it with someone you live with.",
+      "visual": "Dr. Ira, direct friendly gaze, waves; a bookmark icon and a share-arrow badge appear above the shoulders",
+      "animation": "Bookmark bounces in on 'Save', share badge pops in on 'share', back.out 0.3 s",
+      "onScreenText": "Save and share",
+      "durationSec": 4.0,
+      "shot": "character"
+    },
+    {
+      "id": "s11",
+      "line": "",
+      "visual": "Cream end card with Pulse Health wordmark centred",
+      "animation": "Fade in 0.3 s, hold",
+      "onScreenText": "Not medical advice. Sources: CDC, NHS",
+      "durationSec": 3.0,
+      "shot": "disclaimer"
+    }
+  ]
+}

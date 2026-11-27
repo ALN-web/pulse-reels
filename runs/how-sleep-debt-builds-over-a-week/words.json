@@ -1,0 +1,647 @@
+{
+  "audioFile": "voice.mp3",
+  "durationSec": 37.774,
+  "provider": "elevenlabs:eleven_multilingual_v2",
+  "words": [
+    {
+      "word": "Sleeping",
+      "start": 0,
+      "end": 0.43
+    },
+    {
+      "word": "6",
+      "start": 0.511,
+      "end": 0.685
+    },
+    {
+      "word": "hours",
+      "start": 0.755,
+      "end": 1.01
+    },
+    {
+      "word": "when",
+      "start": 1.045,
+      "end": 1.161
+    },
+    {
+      "word": "you",
+      "start": 1.207,
+      "end": 1.277
+    },
+    {
+      "word": "need",
+      "start": 1.335,
+      "end": 1.521
+    },
+    {
+      "word": "8?",
+      "start": 1.591,
+      "end": 1.939
+    },
+    {
+      "word": "Watch",
+      "start": 2.38,
+      "end": 2.694
+    },
+    {
+      "word": "your",
+      "start": 2.728,
+      "end": 2.844
+    },
+    {
+      "word": "week.",
+      "start": 2.902,
+      "end": 3.309
+    },
+    {
+      "word": "Sleep",
+      "start": 3.75,
+      "end": 4.052
+    },
+    {
+      "word": "debt",
+      "start": 4.098,
+      "end": 4.249
+    },
+    {
+      "word": "is",
+      "start": 4.284,
+      "end": 4.354
+    },
+    {
+      "word": "the",
+      "start": 4.412,
+      "end": 4.481
+    },
+    {
+      "word": "gap",
+      "start": 4.54,
+      "end": 4.783
+    },
+    {
+      "word": "between",
+      "start": 4.841,
+      "end": 5.143
+    },
+    {
+      "word": "the",
+      "start": 5.166,
+      "end": 5.236
+    },
+    {
+      "word": "sleep",
+      "start": 5.283,
+      "end": 5.55
+    },
+    {
+      "word": "you",
+      "start": 5.608,
+      "end": 5.689
+    },
+    {
+      "word": "need",
+      "start": 5.759,
+      "end": 5.979
+    },
+    {
+      "word": "and",
+      "start": 6.049,
+      "end": 6.153
+    },
+    {
+      "word": "the",
+      "start": 6.188,
+      "end": 6.258
+    },
+    {
+      "word": "sleep",
+      "start": 6.281,
+      "end": 6.49
+    },
+    {
+      "word": "you",
+      "start": 6.536,
+      "end": 6.606
+    },
+    {
+      "word": "get.",
+      "start": 6.687,
+      "end": 7.14
+    },
+    {
+      "word": "Need",
+      "start": 7.744,
+      "end": 7.976
+    },
+    {
+      "word": "8",
+      "start": 8.057,
+      "end": 8.208
+    },
+    {
+      "word": "hours",
+      "start": 8.255,
+      "end": 8.51
+    },
+    {
+      "word": "but",
+      "start": 8.557,
+      "end": 8.661
+    },
+    {
+      "word": "get",
+      "start": 8.696,
+      "end": 8.824
+    },
+    {
+      "word": "6?",
+      "start": 8.905,
+      "end": 9.427
+    },
+    {
+      "word": "That's",
+      "start": 9.81,
+      "end": 10.077
+    },
+    {
+      "word": "2",
+      "start": 10.136,
+      "end": 10.252
+    },
+    {
+      "word": "hours",
+      "start": 10.31,
+      "end": 10.553
+    },
+    {
+      "word": "of",
+      "start": 10.6,
+      "end": 10.658
+    },
+    {
+      "word": "debt",
+      "start": 10.716,
+      "end": 10.902
+    },
+    {
+      "word": "that",
+      "start": 10.937,
+      "end": 11.088
+    },
+    {
+      "word": "day.",
+      "start": 11.146,
+      "end": 11.517
+    },
+    {
+      "word": "Do",
+      "start": 11.842,
+      "end": 11.97
+    },
+    {
+      "word": "that",
+      "start": 12.028,
+      "end": 12.19
+    },
+    {
+      "word": "for",
+      "start": 12.249,
+      "end": 12.365
+    },
+    {
+      "word": "5",
+      "start": 12.434,
+      "end": 12.643
+    },
+    {
+      "word": "days,",
+      "start": 12.713,
+      "end": 13.166
+    },
+    {
+      "word": "and",
+      "start": 13.317,
+      "end": 13.456
+    },
+    {
+      "word": "the",
+      "start": 13.502,
+      "end": 13.572
+    },
+    {
+      "word": "debt",
+      "start": 13.607,
+      "end": 13.781
+    },
+    {
+      "word": "grows",
+      "start": 13.827,
+      "end": 14.118
+    },
+    {
+      "word": "to",
+      "start": 14.176,
+      "end": 14.234
+    },
+    {
+      "word": "10",
+      "start": 14.315,
+      "end": 14.478
+    },
+    {
+      "word": "hours.",
+      "start": 14.525,
+      "end": 15.024
+    },
+    {
+      "word": "As",
+      "start": 15.836,
+      "end": 16.011
+    },
+    {
+      "word": "it",
+      "start": 16.08,
+      "end": 16.15
+    },
+    {
+      "word": "builds,",
+      "start": 16.196,
+      "end": 16.51
+    },
+    {
+      "word": "your",
+      "start": 16.533,
+      "end": 16.649
+    },
+    {
+      "word": "brain",
+      "start": 16.696,
+      "end": 16.939
+    },
+    {
+      "word": "and",
+      "start": 16.974,
+      "end": 17.044
+    },
+    {
+      "word": "body",
+      "start": 17.102,
+      "end": 17.334
+    },
+    {
+      "word": "work",
+      "start": 17.392,
+      "end": 17.613
+    },
+    {
+      "word": "less",
+      "start": 17.694,
+      "end": 17.891
+    },
+    {
+      "word": "well.",
+      "start": 17.938,
+      "end": 18.414
+    },
+    {
+      "word": "You",
+      "start": 19.227,
+      "end": 19.354
+    },
+    {
+      "word": "may",
+      "start": 19.401,
+      "end": 19.505
+    },
+    {
+      "word": "feel",
+      "start": 19.552,
+      "end": 19.714
+    },
+    {
+      "word": "tired",
+      "start": 19.772,
+      "end": 20.086
+    },
+    {
+      "word": "and",
+      "start": 20.121,
+      "end": 20.19
+    },
+    {
+      "word": "sleepy",
+      "start": 20.248,
+      "end": 20.562
+    },
+    {
+      "word": "during",
+      "start": 20.608,
+      "end": 20.829
+    },
+    {
+      "word": "the",
+      "start": 20.864,
+      "end": 20.933
+    },
+    {
+      "word": "day.",
+      "start": 20.98,
+      "end": 21.409
+    },
+    {
+      "word": "Paying",
+      "start": 21.85,
+      "end": 22.117
+    },
+    {
+      "word": "it",
+      "start": 22.164,
+      "end": 22.21
+    },
+    {
+      "word": "all",
+      "start": 22.245,
+      "end": 22.35
+    },
+    {
+      "word": "back",
+      "start": 22.396,
+      "end": 22.559
+    },
+    {
+      "word": "later",
+      "start": 22.628,
+      "end": 22.861
+    },
+    {
+      "word": "is",
+      "start": 22.919,
+      "end": 22.988
+    },
+    {
+      "word": "risky.",
+      "start": 23.058,
+      "end": 23.58
+    },
+    {
+      "word": "Even",
+      "start": 23.905,
+      "end": 24.114
+    },
+    {
+      "word": "when",
+      "start": 24.138,
+      "end": 24.265
+    },
+    {
+      "word": "sleepiness",
+      "start": 24.323,
+      "end": 24.799
+    },
+    {
+      "word": "fades,",
+      "start": 24.857,
+      "end": 25.368
+    },
+    {
+      "word": "you",
+      "start": 25.577,
+      "end": 25.67
+    },
+    {
+      "word": "may",
+      "start": 25.705,
+      "end": 25.809
+    },
+    {
+      "word": "not",
+      "start": 25.856,
+      "end": 25.96
+    },
+    {
+      "word": "be",
+      "start": 26.007,
+      "end": 26.076
+    },
+    {
+      "word": "at",
+      "start": 26.111,
+      "end": 26.169
+    },
+    {
+      "word": "your",
+      "start": 26.216,
+      "end": 26.32
+    },
+    {
+      "word": "best.",
+      "start": 26.367,
+      "end": 26.854
+    },
+    {
+      "word": "Good",
+      "start": 27.458,
+      "end": 27.644
+    },
+    {
+      "word": "news:",
+      "start": 27.69,
+      "end": 28.108
+    },
+    {
+      "word": "you",
+      "start": 28.224,
+      "end": 28.306
+    },
+    {
+      "word": "don't",
+      "start": 28.34,
+      "end": 28.48
+    },
+    {
+      "word": "need",
+      "start": 28.503,
+      "end": 28.642
+    },
+    {
+      "word": "to",
+      "start": 28.665,
+      "end": 28.712
+    },
+    {
+      "word": "repay",
+      "start": 28.77,
+      "end": 29.072
+    },
+    {
+      "word": "it",
+      "start": 29.107,
+      "end": 29.177
+    },
+    {
+      "word": "hour",
+      "start": 29.235,
+      "end": 29.455
+    },
+    {
+      "word": "for",
+      "start": 29.525,
+      "end": 29.629
+    },
+    {
+      "word": "hour.",
+      "start": 29.687,
+      "end": 30.105
+    },
+    {
+      "word": "If",
+      "start": 30.489,
+      "end": 30.616
+    },
+    {
+      "word": "you",
+      "start": 30.651,
+      "end": 30.721
+    },
+    {
+      "word": "were",
+      "start": 30.756,
+      "end": 30.872
+    },
+    {
+      "word": "short",
+      "start": 30.895,
+      "end": 31.104
+    },
+    {
+      "word": "last",
+      "start": 31.15,
+      "end": 31.359
+    },
+    {
+      "word": "night,",
+      "start": 31.417,
+      "end": 31.661
+    },
+    {
+      "word": "allow",
+      "start": 31.684,
+      "end": 31.963
+    },
+    {
+      "word": "extra",
+      "start": 32.044,
+      "end": 32.311
+    },
+    {
+      "word": "time",
+      "start": 32.369,
+      "end": 32.648
+    },
+    {
+      "word": "and",
+      "start": 32.683,
+      "end": 32.752
+    },
+    {
+      "word": "go",
+      "start": 32.811,
+      "end": 32.892
+    },
+    {
+      "word": "to",
+      "start": 32.938,
+      "end": 32.985
+    },
+    {
+      "word": "bed",
+      "start": 33.031,
+      "end": 33.136
+    },
+    {
+      "word": "a",
+      "start": 33.17,
+      "end": 33.194
+    },
+    {
+      "word": "little",
+      "start": 33.229,
+      "end": 33.437
+    },
+    {
+      "word": "earlier.",
+      "start": 33.484,
+      "end": 33.948
+    },
+    {
+      "word": "Save",
+      "start": 34.389,
+      "end": 34.657
+    },
+    {
+      "word": "this,",
+      "start": 34.691,
+      "end": 34.912
+    },
+    {
+      "word": "and",
+      "start": 34.935,
+      "end": 35.028
+    },
+    {
+      "word": "talk",
+      "start": 35.074,
+      "end": 35.26
+    },
+    {
+      "word": "to",
+      "start": 35.307,
+      "end": 35.353
+    },
+    {
+      "word": "a",
+      "start": 35.411,
+      "end": 35.434
+    },
+    {
+      "word": "doctor",
+      "start": 35.492,
+      "end": 35.818
+    },
+    {
+      "word": "if",
+      "start": 35.864,
+      "end": 35.934
+    },
+    {
+      "word": "you",
+      "start": 35.98,
+      "end": 36.05
+    },
+    {
+      "word": "feel",
+      "start": 36.108,
+      "end": 36.27
+    },
+    {
+      "word": "tired",
+      "start": 36.328,
+      "end": 36.642
+    },
+    {
+      "word": "all",
+      "start": 36.677,
+      "end": 36.781
+    },
+    {
+      "word": "the",
+      "start": 36.828,
+      "end": 36.897
+    },
+    {
+      "word": "time.",
+      "start": 36.944,
+      "end": 37.524
+    }
+  ]
+}

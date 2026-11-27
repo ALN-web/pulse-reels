@@ -1,0 +1,219 @@
+<title>Pulse Reels</title>
+<meta name="claude:viewport-fit-sides" content="cover">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,600;9..144,700&family=Inter:wght@400;500;600;700;800&family=JetBrains+Mono:wght@500&display=swap">
+<style>
+  /* Layout: a clinical record for a video pipeline. Thesis + command up top, phone-shaped Reels as the gallery,
+     then the real chain and the compliance gate as reference tables. */
+  :root {
+    --bg: #EEF4F3; --surface: #FFFFFF; --ink: #12343B; --muted: #4D6A6F; --line: #CFE0DD;
+    --teal: #0F7C7E; --teal-soft: #D9EEEC; --apricot: #B85F1A; --apricot-soft: #FBE6D3; --pass: #1E7A4F;
+    --display: "Fraunces", Georgia, serif; --body: "Inter", system-ui, -apple-system, sans-serif; --mono: "JetBrains Mono", ui-monospace, Consolas, monospace;
+  }
+  @media (prefers-color-scheme: dark) { :root:not([data-theme="light"]) {
+    --bg: #0B1D21; --surface: #12292E; --ink: #E7F2F0; --muted: #9EBDB8; --line: #24464C;
+    --teal: #5CC9BC; --teal-soft: #173B3F; --apricot: #F2A65A; --apricot-soft: #3A2A1A; --pass: #6FD3A0; color-scheme: dark } }
+  :root[data-theme="dark"] {
+    --bg: #0B1D21; --surface: #12292E; --ink: #E7F2F0; --muted: #9EBDB8; --line: #24464C;
+    --teal: #5CC9BC; --teal-soft: #173B3F; --apricot: #F2A65A; --apricot-soft: #3A2A1A; --pass: #6FD3A0; color-scheme: dark }
+  body { background: var(--bg); color: var(--ink); font: 400 16px/1.55 var(--body); }
+  .wrap { max-width: 1180px; margin: 0 auto; padding-left: max(16px, env(safe-area-inset-left, 0px)); padding-right: max(16px, env(safe-area-inset-right, 0px)); }
+  h1, h2, h3 { font-family: var(--display); font-weight: 700; letter-spacing: -0.02em; text-wrap: balance; margin: 0; }
+  a { color: var(--teal); }
+  a:focus-visible, video:focus-visible, button:focus-visible { outline: 3px solid var(--apricot); outline-offset: 2px; }
+  .eyebrow { font: 700 12px var(--body); letter-spacing: 0.12em; text-transform: uppercase; color: var(--teal); }
+
+  header { padding-block: 56px 32px; display: grid; grid-template-columns: minmax(0, 1.3fr) minmax(0, 1fr); gap: 40px; align-items: end; }
+  header h1 { font-size: clamp(40px, 6vw, 72px); line-height: 1.0; margin-top: 12px; }
+  header p { color: var(--muted); max-width: 58ch; margin: 18px 0 0; font-size: 18px; }
+  .cmd { background: var(--ink); color: var(--bg); border-radius: 16px; padding: 18px 20px; font: 500 14px/1.6 var(--mono); overflow-x: auto; white-space: pre; }
+  .cmd .c { color: #8FB7B2; }
+  .cmd-label { font: 600 13px var(--body); color: var(--muted); margin-bottom: 8px; }
+
+  .stats { display: grid; grid-template-columns: repeat(6, minmax(0, 1fr)); border-top: 1px solid var(--line); border-bottom: 1px solid var(--line); }
+  .stat { padding: 18px 16px; border-left: 1px solid var(--line); }
+  .stat:first-child { border-left: 0; padding-left: 0; }
+  .stat b { display: block; font: 700 30px/1.1 var(--display); font-variant-numeric: tabular-nums; }
+  .stat span { font-size: 13px; color: var(--muted); }
+
+  section { padding-block: 48px; }
+  .section-head { display: flex; justify-content: space-between; align-items: baseline; gap: 16px; flex-wrap: wrap; margin-bottom: 24px; }
+  .section-head h2 { font-size: 34px; }
+  .section-head p { color: var(--muted); margin: 0; max-width: 60ch; }
+
+  .filters { display: flex; gap: 8px; flex-wrap: wrap; }
+  .filters button { font: 600 14px var(--body); border: 1px solid var(--line); background: var(--surface); color: var(--ink); border-radius: 999px; padding: 8px 16px; cursor: pointer; }
+  .filters button[aria-pressed="true"] { background: var(--ink); color: var(--bg); border-color: var(--ink); }
+
+  .gallery { display: grid; grid-template-columns: repeat(auto-fill, minmax(250px, 1fr)); gap: 28px 22px; }
+  .reel { display: flex; flex-direction: column; gap: 12px; min-width: 0; }
+  .phone { position: relative; aspect-ratio: 9 / 16; max-width: 100%; border-radius: 26px; overflow: hidden; background: #000; border: 6px solid var(--ink); }
+  .phone video { width: 100%; height: 100%; object-fit: cover; display: block; }
+  .chips { display: flex; gap: 6px; flex-wrap: wrap; }
+  .chip { font: 700 11px var(--body); letter-spacing: 0.06em; text-transform: uppercase; padding: 4px 9px; border-radius: 999px; background: var(--teal-soft); color: var(--teal); }
+  .chip.motion { background: var(--apricot-soft); color: var(--apricot); }
+  .chip.pass { background: transparent; border: 1px solid var(--pass); color: var(--pass); }
+  .chip.headless { background: var(--ink); color: var(--bg); }
+  .reel h3 { font-size: 21px; line-height: 1.2; }
+  .hook { margin: 0; color: var(--muted); font-style: italic; }
+  .meta { display: grid; grid-template-columns: auto 1fr; gap: 2px 12px; font-size: 13px; margin: 0; }
+  .meta dt { color: var(--muted); }
+  .meta dd { margin: 0; font-variant-numeric: tabular-nums; min-width: 0; }
+
+  .chain { display: grid; grid-template-columns: repeat(auto-fit, minmax(150px, 1fr)); gap: 0; border: 1px solid var(--line); border-radius: 18px; overflow: hidden; background: var(--surface); }
+  .step { padding: 18px 16px; border-right: 1px solid var(--line); min-width: 0; }
+  .step:last-child { border-right: 0; }
+  .step .n { font: 500 12px var(--mono); color: var(--muted); }
+  .step h3 { font-size: 18px; margin: 6px 0 6px; }
+  .step p { margin: 0; font-size: 13px; color: var(--muted); }
+  .step code { font: 500 12px var(--mono); color: var(--teal); word-break: break-word; }
+  .step.gate { background: var(--teal-soft); }
+
+  .table-wrap { overflow-x: auto; border: 1px solid var(--line); border-radius: 18px; background: var(--surface); }
+  table { border-collapse: collapse; width: 100%; min-width: 620px; font-size: 15px; }
+  th, td { text-align: left; padding: 14px 18px; border-bottom: 1px solid var(--line); vertical-align: top; }
+  tr:last-child td { border-bottom: 0; }
+  th { font: 700 12px var(--body); letter-spacing: 0.08em; text-transform: uppercase; color: var(--muted); }
+  td code { font: 500 13px var(--mono); color: var(--teal); }
+  .example { color: var(--muted); }
+
+  footer { padding-block: 32px 56px; border-top: 1px solid var(--line); color: var(--muted); font-size: 14px; display: flex; justify-content: space-between; gap: 16px; flex-wrap: wrap; }
+
+  @media (max-width: 860px) {
+    header { grid-template-columns: 1fr; padding-block: 36px 24px; }
+    .stats { grid-template-columns: repeat(3, minmax(0, 1fr)); }
+    .stat:nth-child(4) { border-left: 0; padding-left: 0; }
+    .stat:nth-child(n+4) { border-top: 1px solid var(--line); }
+  }
+  @media (max-width: 480px) {
+    .stats { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+    .stat:nth-child(odd) { border-left: 0; padding-left: 0; }
+    .stat:nth-child(4) { border-left: 1px solid var(--line); padding-left: 16px; }
+    .stat:nth-child(n+3) { border-top: 1px solid var(--line); }
+  }
+  @media (prefers-reduced-motion: reduce) { * { scroll-behavior: auto; } }
+</style>
+
+<div class="wrap">
+  <header>
+    <div>
+      <div class="eyebrow">Team Delta · Pulse Health</div>
+      <h1>One topic in. A checked, captioned Reel out.</h1>
+      <p>A chain of Claude Code skills that writes, fact-checks, voices, animates and captions 30–60 second Instagram Reels for a preventive-care brand, with a medical compliance gate in front of every publish.</p>
+    </div>
+    <div>
+      <div class="cmd-label">The whole pipeline is one command</div>
+      <div class="cmd"><span class="c"># topic, client and mode in; reel.mp4 + post.txt out</span>
+./generate.sh \
+  --topic "When a headache means see a doctor" \
+  --client pulse-health --mode character</div>
+    </div>
+  </header>
+
+  <div class="stats" id="stats" aria-label="Pipeline totals"></div>
+
+  <section aria-labelledby="reels-h">
+    <div class="section-head">
+      <h2 id="reels-h">The Reels</h2>
+      <div class="filters" role="group" aria-label="Filter by mode">
+        <button type="button" id="f-all" data-mode="all" aria-pressed="true">All</button>
+        <button type="button" id="f-character" data-mode="character" aria-pressed="false">Character: Dr. Ira</button>
+        <button type="button" id="f-motion" data-mode="motion" aria-pressed="false">Motion graphics</button>
+      </div>
+    </div>
+    <div class="gallery" id="gallery"></div>
+  </section>
+
+  <section aria-labelledby="chain-h">
+    <div class="section-head">
+      <h2 id="chain-h">The chain</h2>
+      <p>Each step is a skill that reads and writes validated JSON in <code>runs/&lt;slug&gt;/</code>, so any step can be re-run and a stopped run resumes where it left off.</p>
+    </div>
+    <div class="chain">
+      <div class="step"><div class="n">01</div><h3>Script</h3><p>Hook-first, 30–60 s, every number from a WHO, CDC or NHS page.</p><code>script.json</code></div>
+      <div class="step gate"><div class="n">02</div><h3>Compliance</h3><p>Blocks diagnoses, cure claims and unsafe advice.</p><code>compliance.json</code></div>
+      <div class="step"><div class="n">03</div><h3>Storyboard</h3><p>Scenes, visuals, on-screen text, shot type.</p><code>storyboard.json</code></div>
+      <div class="step"><div class="n">04</div><h3>Voice</h3><p>ElevenLabs with per-word timing, -14 LUFS.</p><code>voice.mp3 · words.json</code></div>
+      <div class="step"><div class="n">05</div><h3>Render</h3><p>HyperFrames, cuts land on the spoken word.</p><code>composition/</code></div>
+      <div class="step"><div class="n">06</div><h3>Captions</h3><p>Word-synced, inside Instagram's safe zone, plus the post text.</p><code>reel.mp4 · post.txt</code></div>
+      <div class="step gate"><div class="n">07</div><h3>Final gate</h3><p>Every file present and passing before it counts.</p><code>--final</code></div>
+    </div>
+  </section>
+
+  <section aria-labelledby="gate-h">
+    <div class="section-head">
+      <h2 id="gate-h">The compliance gate</h2>
+      <p>Hard mode for healthcare. It scans the script, every scene line, every visual prompt and the post, and the run stops until it passes.</p>
+    </div>
+    <div class="table-wrap">
+      <table>
+        <thead><tr><th>Rule</th><th>Blocks</th><th>Allowed instead</th></tr></thead>
+        <tbody>
+          <tr><td><code>no-diagnosis</code></td><td>"You have high blood pressure."</td><td class="example">"If you have high blood pressure, talk to your doctor about a plan."</td></tr>
+          <tr><td><code>no-cure-claim</code></td><td>"This walk cures high blood pressure."</td><td class="example">"Regular activity can lower your risk of heart disease and stroke."</td></tr>
+          <tr><td><code>no-unsafe-advice</code></td><td>"No need to see a doctor for this."</td><td class="example">"If any of these match, talk to a doctor right away."</td></tr>
+          <tr><td><code>credible-source</code></td><td>A script or post whose only source is not who.int, cdc.gov or nhs.uk. Look-alike domains are rejected.</td><td class="example">NHS and CDC pages, cited in the caption with links.</td></tr>
+          <tr><td><code>disclaimer</code></td><td>No "Not medical advice" card on screen or line in the post.</td><td class="example">A silent end card and the caption line, on every Reel.</td></tr>
+          <tr><td><code>caption-contrast</code></td><td>Caption colours under WCAG 4.5:1.</td><td class="example">White and apricot on deep teal, checked in code.</td></tr>
+        </tbody>
+      </table>
+    </div>
+  </section>
+
+  <footer>
+    <span>Team Delta · Pulse Health is a fictional client made for this challenge. Nothing here is medical advice.</span>
+    <span id="generated"></span>
+  </footer>
+</div>
+
+<script id="reel-data" type="application/json">{"generatedAt":"2026-11-27T08:41:30.740Z","edits":5,"reels":[{"slug":"heart-5-minute-habit","topic":"The 5-minute daily habit your heart will thank you for","mode":"character","style":"warm-clinic","createdAt":"2026-11-26T17:47:57.897Z","hook":"Your heart wants five minutes from you. Today.","hookPattern":"small-number promise","seconds":35.9,"words":87,"scenes":10,"characterShots":4,"sources":[{"publisher":"CDC","title":"What Counts as Physical Activity for Adults","url":"https://www.cdc.gov/physical-activity-basics/adding-adults/what-counts.html"},{"publisher":"NHS","title":"Physical activity guidelines for adults aged 19 to 64","url":"https://www.nhs.uk/live-well/exercise/physical-activity-guidelines-for-adults-aged-19-to-64/"}],"post":{"hook":"Your heart wants 5 minutes from you today 💚","hashtags":["#PulseHealth","#PreventiveCare","#HealthTips","#Telehealth","#HeartHealth","#WalkingHabit","#DailyWalk"]},"machineSec":482,"renderSec":475,"apiUsd":0,"headless":null,"checks":{"error":0,"warning":0,"info":0},"mb":4.6},{"slug":"what-your-blood-pressure-numbers-mean","topic":"What your blood pressure numbers mean","mode":"motion","style":"monitor","createdAt":"2026-11-27T06:04:27.825Z","hook":"120 over 80. What does that even mean?","hookPattern":"direct question","seconds":38.5,"words":96,"scenes":10,"characterShots":0,"sources":[{"publisher":"NHS","title":"Blood pressure test","url":"https://www.nhs.uk/conditions/blood-pressure-test/"},{"publisher":"CDC","title":"About High Blood Pressure","url":"https://www.cdc.gov/high-blood-pressure/about/index.html"}],"post":{"hook":"120/80… but what do those two numbers actually mean? 🩺","hashtags":["#PulseHealth","#PreventiveCare","#HealthTips","#Telehealth","#BloodPressure","#HeartHealth","#KnowYourNumbers"]},"machineSec":321,"renderSec":314,"apiUsd":0,"headless":null,"checks":{"error":0,"warning":0,"info":0},"mb":3.6},{"slug":"when-a-headache-means-see-a-doctor","topic":"When a headache means see a doctor","mode":"character","style":"clean-clinic","createdAt":"2026-11-27T06:28:04.338Z","hook":"Five headache red flags worth taking seriously.","hookPattern":"small-number promise","seconds":46.3,"words":129,"scenes":12,"characterShots":6,"sources":[{"publisher":"NHS","title":"Headaches","url":"https://www.nhs.uk/conditions/headaches/"},{"publisher":"CDC","title":"Migraine","url":"https://www.cdc.gov/migraine/"}],"post":{"hook":"Most headaches pass on their own. These five red flags are worth taking seriously.","hashtags":["#PulseHealth","#PreventiveCare","#HealthTips","#Telehealth","#Headache","#StrokeAwareness","#Meningitis"]},"machineSec":337,"renderSec":179,"apiUsd":0,"headless":{"usd":3.93,"turns":105},"checks":{"error":0,"warning":0,"info":0},"mb":6},{"slug":"how-sleep-debt-builds-over-a-week","topic":"How sleep debt builds over a week","mode":"motion","style":"monitor","createdAt":"2026-11-27T07:33:16.277Z","hook":"Sleeping 6 hours when you need 8? Watch your week.","hookPattern":"direct question","seconds":40.8,"words":128,"scenes":11,"characterShots":0,"sources":[{"publisher":"CDC","title":"Module 2. Sleep Pressure: Homeostatic Sleep Drive (Continued) | NIOSH","url":"https://www.cdc.gov/niosh/work-hour-training-for-nurses/longhours/mod2/12.html"},{"publisher":"CDC","title":"Sleep Debt | NIOSH","url":"https://archive.cdc.gov/www_cdc_gov/niosh/emres/longhourstraining/debt.html"}],"post":{"hook":"Sleeping 6 hours when you need 8? Here's how that adds up over a week. 😴","hashtags":["#PulseHealth","#PreventiveCare","#HealthTips","#Telehealth","#SleepDebt","#SleepHealth","#Sleep"]},"machineSec":1077,"renderSec":587,"apiUsd":0,"headless":{"usd":1.87,"turns":46},"checks":{"error":0,"warning":0,"info":0},"mb":3.9},{"slug":"how-much-water-do-you-really-need-each","topic":"How much water do you really need each day","mode":"character","style":"clean-clinic","createdAt":"2026-11-27T07:48:08.899Z","hook":"How much water do you really need each day?","hookPattern":"direct question","seconds":43.8,"words":115,"scenes":11,"characterShots":5,"sources":[{"publisher":"NHS","title":"Water, drinks and hydration","url":"https://www.nhs.uk/live-well/eat-well/food-guidelines-and-food-labels/water-drinks-nutrition/"},{"publisher":"NHS","title":"Dehydration","url":"https://www.nhs.uk/conditions/dehydration/"},{"publisher":"CDC","title":"About Water and Healthier Drinks","url":"https://www.cdc.gov/healthy-weight-growth/water-healthy-drinks/index.html"}],"post":{"hook":"How much water do you really need each day? Here's what the NHS and CDC say.","hashtags":["#PulseHealth","#PreventiveCare","#HealthTips","#Telehealth","#Hydration","#DrinkWater"]},"machineSec":820,"renderSec":393,"apiUsd":0,"headless":{"usd":2.24,"turns":68},"checks":{"error":0,"warning":0,"info":0},"mb":5.4},{"slug":"how-much-salt-is-too-much","topic":"How much salt is too much","mode":"motion","style":"poster","createdAt":"2026-11-27T08:01:56.504Z","hook":"Never add salt? You may still eat too much.","hookPattern":"myth-bust","seconds":40.7,"words":112,"scenes":11,"characterShots":0,"sources":[{"publisher":"WHO","title":"Sodium reduction","url":"https://www.who.int/news-room/fact-sheets/detail/salt-reduction"},{"publisher":"NHS","title":"Salt in your diet","url":"https://www.nhs.uk/live-well/eat-well/food-types/salt-nutrition/"},{"publisher":"CDC","title":"About Sodium and Health","url":"https://www.cdc.gov/salt/about/index.html"}],"post":{"hook":"Never add salt to your food? You may still be eating too much. 🧂","hashtags":["#PulseHealth","#PreventiveCare","#HealthTips","#Telehealth","#Salt","#BloodPressure","#HealthyEating"]},"machineSec":1201,"renderSec":353,"apiUsd":0,"headless":{"usd":2.06,"turns":67},"checks":{"error":0,"warning":0,"info":0},"mb":4.7},{"slug":"what-one-unit-of-alcohol-actually-looks-like","topic":"What one unit of alcohol actually looks like","mode":"motion","style":"poster","createdAt":"2026-11-27T08:15:02.573Z","hook":"Is one glass of wine one unit? Usually not.","hookPattern":"myth-bust","seconds":45.8,"words":120,"scenes":12,"characterShots":0,"sources":[{"publisher":"NHS","title":"Alcohol units","url":"https://www.nhs.uk/live-well/alcohol-advice/calculating-alcohol-units/"},{"publisher":"CDC","title":"About Standard Drink Sizes","url":"https://www.cdc.gov/alcohol/standard-drink-sizes/index.html"}],"post":{"hook":"Is one glass of wine one unit of alcohol? Usually not. 🍷","hashtags":["#PulseHealth","#PreventiveCare","#HealthTips","#Telehealth","#AlcoholUnits","#AlcoholAwareness"]},"machineSec":839,"renderSec":291,"apiUsd":0,"headless":{"usd":1.88,"turns":52},"checks":{"error":0,"warning":0,"info":0},"mb":4.6},{"slug":"the-20-second-handwashing-habit-that-stops-germs","topic":"The 20-second handwashing habit that stops germs spreading","mode":"character","style":"clean-clinic","createdAt":"2026-11-27T08:25:41.729Z","hook":"Five steps. One twenty-second scrub. Here's how.","hookPattern":"small-number promise","seconds":41.1,"words":103,"scenes":11,"characterShots":5,"sources":[{"publisher":"CDC","title":"About Handwashing","url":"https://www.cdc.gov/clean-hands/about/index.html"},{"publisher":"NHS","title":"How to wash your hands","url":"https://www.nhs.uk/live-well/healthy-body/best-way-to-wash-your-hands/"}],"post":{"hook":"Five steps and one 20-second scrub: the handwashing habit that helps stop germs spreading.","hashtags":["#PulseHealth","#PreventiveCare","#HealthTips","#Telehealth","#Handwashing","#CleanHands"]},"machineSec":821,"renderSec":413,"apiUsd":0,"headless":{"usd":1.89,"turns":67},"checks":{"error":0,"warning":0,"info":0},"mb":5.1}]}</script>
+<script>
+  const data = JSON.parse(document.getElementById("reel-data").textContent);
+  const reels = data.reels;
+  const esc = (s) => String(s).replace(/[&<>"]/g, (c) => ({ "&": "&amp;", "<": "&lt;", ">": "&gt;", '"': "&quot;" })[c]);
+  const fmtMin = (sec) => (sec >= 60 ? `${Math.floor(sec / 60)}m ${String(sec % 60).padStart(2, "0")}s` : `${sec}s`);
+
+  const avg = (k) => reels.length ? reels.reduce((t, r) => t + r[k], 0) / reels.length : 0;
+  const passed = reels.filter((r) => r.checks.error === 0).length;
+  const stats = [
+    [reels.length, "finished Reels"],
+    [`${reels.filter((r) => r.mode === "character").length} / ${reels.filter((r) => r.mode === "motion").length}`, "character / motion"],
+    [`${avg("seconds").toFixed(0)} s`, "average length"],
+    [fmtMin(Math.round(avg("renderSec"))), "average render time"],
+    [`$${reels.reduce((t, r) => t + r.apiUsd, 0).toFixed(2)}`, "API spend (free tiers)"],
+    [`${passed} / ${reels.length}`, "passed the final gate"],
+  ];
+  document.getElementById("stats").innerHTML = stats.map(([v, l]) => `<div class="stat"><b>${esc(v)}</b><span>${esc(l)}</span></div>`).join("");
+
+  function card(r) {
+    const sources = r.sources.map((s) => `<a href="${esc(s.url)}" target="_blank" rel="noopener">${esc(s.publisher)}</a>`).join(", ");
+    const made = r.headless ? `headless, ${r.headless.turns} agent turns, $${r.headless.usd.toFixed(2)} model use` : "step by step in Claude Code";
+    return `<article class="reel" data-mode="${esc(r.mode)}">
+      <div class="phone"><video controls playsinline preload="none" poster="media/${esc(r.slug)}.jpg" src="media/${esc(r.slug)}.mp4" aria-label="${esc(r.topic)} Reel"></video></div>
+      <div class="chips">
+        <span class="chip ${r.mode === "motion" ? "motion" : ""}">${r.mode === "motion" ? `Motion · ${esc(r.style)}` : "Dr. Ira"}</span>
+        <span class="chip pass">Gate passed</span>
+        ${r.headless ? '<span class="chip headless">One command</span>' : ""}
+      </div>
+      <h3>${esc(r.topic)}</h3>
+      <p class="hook">“${esc(r.hook)}”</p>
+      <dl class="meta">
+        <dt>Length</dt><dd>${r.seconds} s · ${r.scenes} scenes · ${r.words} words</dd>
+        <dt>Render</dt><dd>${fmtMin(r.renderSec)}</dd>
+        <dt>Made</dt><dd>${esc(made)}</dd>
+        <dt>Sources</dt><dd>${sources}</dd>
+      </dl>
+    </article>`;
+  }
+  const gallery = document.getElementById("gallery");
+  gallery.innerHTML = reels.map(card).join("");
+
+  // One video plays at a time.
+  gallery.addEventListener("play", (e) => gallery.querySelectorAll("video").forEach((v) => { if (v !== e.target) v.pause(); }), true);
+
+  document.querySelectorAll(".filters button").forEach((b) => b.addEventListener("click", () => {
+    document.querySelectorAll(".filters button").forEach((x) => x.setAttribute("aria-pressed", String(x === b)));
+    gallery.querySelectorAll(".reel").forEach((el) => { el.hidden = b.dataset.mode !== "all" && el.dataset.mode !== b.dataset.mode; });
+  }));
+  document.getElementById("generated").textContent = `Built from runs/ on ${new Date(data.generatedAt).toLocaleDateString("en-GB", { day: "numeric", month: "short", year: "numeric" })}`;
+</script>

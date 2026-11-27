@@ -1,0 +1,26 @@
+<style>
+  #scene-s6 .card { position: absolute; left: 40px; top: 60px; width: 790px; height: 700px; background: #fff; border-radius: 40px; box-shadow: 0 16px 40px rgba(18,52,59,.10); }
+  #scene-s6 .num { position: absolute; left: 40px; top: 36px; width: 96px; height: 96px; border-radius: 50%; background: var(--primary); color: #fff; font: 800 56px var(--font-body); display: flex; align-items: center; justify-content: center; }
+  #scene-s6 .lbl { position: absolute; left: 160px; top: 52px; font: 800 52px var(--font-body); color: var(--ink); }
+  #scene-s6 .art { position: absolute; left: 175px; top: 90px; width: 440px; height: 580px; }
+</style>
+<div class="card">
+  <div class="num">4</div>
+  <div class="lbl">Rinse</div>
+  <svg class="art" viewBox="0 0 440 580">
+    <path d="M60 60 H200 Q240 60 240 100 V150" fill="none" stroke="var(--ink)" stroke-width="22" stroke-linecap="round"/>
+    <rect x="210" y="140" width="60" height="30" rx="8" fill="var(--ink)"/>
+    <path class="stream" d="M228 180 V420" stroke="var(--primary)" stroke-width="10" stroke-linecap="round"/>
+    <path class="stream" d="M240 180 V420" stroke="var(--primary)" stroke-width="10" stroke-linecap="round"/>
+    <path class="stream" d="M252 180 V420" stroke="var(--primary)" stroke-width="10" stroke-linecap="round"/>
+    <path d="M90 470 Q100 380 170 360 L250 350 Q330 360 340 400 Q345 440 310 450 L200 455 Q150 470 90 470 Z" fill="var(--soft)" stroke="var(--ink)" stroke-width="8" stroke-linejoin="round"/>
+    <circle class="bub" cx="120" cy="490" r="14" fill="none" stroke="var(--primary)" stroke-width="5"/>
+    <circle class="bub" cx="300" cy="480" r="10" fill="none" stroke="var(--primary)" stroke-width="5"/>
+    <circle class="bub" cx="210" cy="500" r="12" fill="none" stroke="var(--primary)" stroke-width="5"/>
+  </svg>
+</div>
+<script>
+  tl.from(q(".card"), { y: 80, opacity: 0, duration: 0.35, ease: "power2.out" }, w("four"));
+  tl.from(qa(".stream"), { scaleY: 0, transformOrigin: "50% 0%", duration: 0.4, ease: "power2.out", stagger: 0.06 }, w("rinse"));
+  tl.fromTo(qa(".bub"), { y: 0, opacity: 1 }, { y: 60, opacity: 0, duration: 1.0, ease: "power1.in", stagger: 0.2 }, w("rinse") + 0.4);
+</script>

@@ -1,0 +1,18 @@
+<style>
+  #scene-s4 .b { position: absolute; top: 120px; width: 410px; height: 560px; }
+  #scene-s4 .b1 { left: 0; } #scene-s4 .b2 { left: 460px; }
+  #scene-s4 .b .chip { position: absolute; left: 40px; top: 40px; }
+  #scene-s4 .b1 .chip { background: #fff; color: var(--p-ink); }
+  #scene-s4 .num { position: absolute; left: 36px; top: 170px; font-size: 190px; }
+  #scene-s4 .b1 .num { color: #fff; } #scene-s4 .b2 .num { color: var(--p-ink); }
+  #scene-s4 .sub { position: absolute; left: 42px; top: 400px; font: 800 46px var(--font-body); }
+  #scene-s4 .b1 .sub { color: var(--paper); } #scene-s4 .b2 .sub { color: var(--p-ink); }
+</style>
+<div class="block teal b b1"><div class="chip">WHO</div><div class="num big-num">&lt;5 g</div><div class="sub">less than</div></div>
+<div class="block apricot b b2"><div class="chip">NHS</div><div class="num big-num">6 g</div><div class="sub">no more than</div></div>
+<script>
+  tl.from(q(".b1"), { x: 230, scale: 1.1, duration: 0.4, ease: "power2.out" }, t);
+  tl.from(q(".b2"), { y: 120, opacity: 0, duration: 0.4, ease: "power3.out" }, w("nhs"));
+  tl.from(q(".b2 .num"), { scale: 0.5, opacity: 0, transformOrigin: "0% 50%", duration: 0.3, ease: "back.out(2)" }, w("6"));
+  tl.from(q(".b2 .sub"), { opacity: 0, duration: 0.25 }, w("more"));
+</script>

@@ -1,0 +1,23 @@
+<style>
+  #scene-s2 .col { position: absolute; bottom: 120px; width: 230px; }
+  #scene-s2 .c1 { left: 150px; } #scene-s2 .c2 { left: 490px; }
+  #scene-s2 .bar { position: absolute; bottom: 0; left: 0; width: 230px; border-radius: 28px; }
+  #scene-s2 .needbar { height: 600px; border: 6px dashed var(--muted); background: transparent; }
+  #scene-s2 .gotbar { height: 420px; background: var(--glow); }
+  #scene-s2 .gap { position: absolute; bottom: 430px; left: 0; width: 230px; height: 170px; border-radius: 28px; background: var(--mid); }
+  #scene-s2 .gap span { position: absolute; left: 0; width: 230px; top: 56px; text-align: center; font: 800 46px var(--font-body); color: var(--screen); letter-spacing: 0.06em; }
+  #scene-s2 .lbl { position: absolute; bottom: 30px; width: 230px; text-align: center; font: 800 44px var(--font-body); letter-spacing: 0.08em; color: var(--text); }
+  #scene-s2 .l1 { left: 150px; } #scene-s2 .l2 { left: 490px; }
+</style>
+<div class="col c1" style="height:600px"><div class="bar needbar"></div></div>
+<div class="col c2" style="height:600px"><div class="bar gotbar"></div><div class="gap"><span>DEBT</span></div></div>
+<div class="lbl l1">NEED</div>
+<div class="lbl l2">GOT</div>
+<script>
+  tl.from([q(".needbar"), q(".gotbar")], { scaleY: 0, transformOrigin: "50% 100%", duration: 0.45, stagger: 0.15, ease: "power2.out" }, t);
+  tl.from([q(".l1"), q(".l2")], { opacity: 0, duration: 0.25, stagger: 0.15 }, t + 0.2);
+  tl.from(q(".gap"), { opacity: 0, duration: 0.3 }, w("gap"));
+  tl.fromTo(q(".gap"), { scale: 1 }, { scale: 1.06, transformOrigin: "50% 50%", duration: 0.18, yoyo: true, repeat: 3, ease: "power2.inOut" }, w("gap"));
+  tl.fromTo(q(".l1"), { scale: 1 }, { scale: 1.15, transformOrigin: "50% 50%", duration: 0.2, yoyo: true, repeat: 1 }, w("need"));
+  tl.fromTo(q(".l2"), { scale: 1 }, { scale: 1.15, transformOrigin: "50% 50%", duration: 0.2, yoyo: true, repeat: 1 }, w("get"));
+</script>

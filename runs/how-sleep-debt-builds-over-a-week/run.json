@@ -1,0 +1,63 @@
+{
+  "slug": "how-sleep-debt-builds-over-a-week",
+  "topic": "How sleep debt builds over a week",
+  "client": "pulse-health",
+  "mode": "motion",
+  "createdAt": "2026-11-27T07:33:16.277Z",
+  "steps": [
+    {
+      "step": "script",
+      "status": "ok",
+      "startedAt": "2026-11-27T07:31:57.562Z",
+      "durationMs": 300000,
+      "costUsd": 0,
+      "provider": "claude-code",
+      "notes": "numbers 8/6/2/5/10 taken verbatim from CDC NIOSH sleep-debt example; no derived numbers"
+    },
+    {
+      "step": "storyboard",
+      "status": "ok",
+      "startedAt": "2026-11-27T07:34:44.320Z",
+      "durationMs": 180000,
+      "costUsd": 0,
+      "provider": "claude-code",
+      "notes": "11 scenes, motion style 'monitor' (pair 1, second Reel)"
+    },
+    {
+      "step": "voice",
+      "status": "ok",
+      "startedAt": "2026-11-27T07:37:47.624Z",
+      "durationMs": 10409,
+      "costUsd": 0,
+      "provider": "elevenlabs",
+      "notes": "615 chars, voice cjVigY5qzO86Huf0OWal, model eleven_multilingual_v2, loudnorm -23.6 -> -14.7 LUFS"
+    },
+    {
+      "step": "render",
+      "status": "ok",
+      "startedAt": "2026-11-27T07:37:07.024Z",
+      "durationMs": 240000,
+      "costUsd": 0,
+      "provider": "hyperframes",
+      "notes": "snapshot review only (no separate render.mp4); final encode happens in the caption step; s2 fixed after first snapshot"
+    },
+    {
+      "step": "caption",
+      "status": "ok",
+      "startedAt": "2026-11-27T07:41:49.220Z",
+      "durationMs": 347019,
+      "costUsd": 0,
+      "provider": "hyperframes",
+      "notes": "40.8 s, 11 scenes, cut drift 0 ms, caption drift 0 ms (40 lines), audio -14.0 LUFS"
+    },
+    {
+      "step": "compliance",
+      "status": "ok",
+      "startedAt": "2026-11-27T07:47:41.322Z",
+      "durationMs": 28,
+      "costUsd": 0,
+      "provider": "local-rules",
+      "notes": "final: 0 errors, 0 warnings"
+    }
+  ]
+}

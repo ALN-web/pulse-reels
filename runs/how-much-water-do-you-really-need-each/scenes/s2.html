@@ -1,0 +1,31 @@
+<style>
+  #scene-s2 .card { position: absolute; left: 15px; top: 120px; width: 840px; height: 520px; background: #fff; border-radius: 36px; box-shadow: 0 16px 40px rgba(18,52,59,.10); }
+  #scene-s2 .tag { position: absolute; left: 40px; top: 34px; padding: 10px 24px; border-radius: 999px; background: var(--soft); font: 800 34px var(--font-body); color: var(--primary); }
+  #scene-s2 .row { position: absolute; left: 40px; top: 140px; width: 760px; display: flex; justify-content: space-between; }
+  #scene-s2 .g svg { width: 80px; height: 150px; display: block; }
+  #scene-s2 .lbl { font: 800 30px var(--font-body); color: var(--ink); text-align: center; margin-top: 10px; }
+  #scene-s2 .bracket { position: absolute; left: 40px; top: 360px; width: 760px; height: 40px; }
+  #scene-s2 .range { position: absolute; left: 0; width: 840px; top: 420px; text-align: center; font: 700 38px var(--font-body); color: var(--ink); }
+</style>
+<div class="card">
+  <div class="tag">NHS guide</div>
+  <div class="row">
+    <div class="g g1"><svg viewBox="0 0 80 150"><path d="M8 8 H72 L64 142 H16 Z" fill="var(--primary)" stroke="var(--ink)" stroke-width="6" stroke-linejoin="round"/></svg><div class="lbl">1</div></div>
+    <div class="g g1"><svg viewBox="0 0 80 150"><path d="M8 8 H72 L64 142 H16 Z" fill="var(--primary)" stroke="var(--ink)" stroke-width="6" stroke-linejoin="round"/></svg><div class="lbl">2</div></div>
+    <div class="g g1"><svg viewBox="0 0 80 150"><path d="M8 8 H72 L64 142 H16 Z" fill="var(--primary)" stroke="var(--ink)" stroke-width="6" stroke-linejoin="round"/></svg><div class="lbl">3</div></div>
+    <div class="g g1"><svg viewBox="0 0 80 150"><path d="M8 8 H72 L64 142 H16 Z" fill="var(--primary)" stroke="var(--ink)" stroke-width="6" stroke-linejoin="round"/></svg><div class="lbl">4</div></div>
+    <div class="g g1"><svg viewBox="0 0 80 150"><path d="M8 8 H72 L64 142 H16 Z" fill="var(--primary)" stroke="var(--ink)" stroke-width="6" stroke-linejoin="round"/></svg><div class="lbl">5</div></div>
+    <div class="g g1"><svg viewBox="0 0 80 150"><path d="M8 8 H72 L64 142 H16 Z" fill="var(--primary)" stroke="var(--ink)" stroke-width="6" stroke-linejoin="round"/></svg><div class="lbl">6</div></div>
+    <div class="g g2"><svg viewBox="0 0 80 150"><path d="M8 8 H72 L64 142 H16 Z" fill="var(--soft)" stroke="var(--primary)" stroke-width="6" stroke-linejoin="round" stroke-dasharray="10 8"/></svg><div class="lbl">7</div></div>
+    <div class="g g2"><svg viewBox="0 0 80 150"><path d="M8 8 H72 L64 142 H16 Z" fill="var(--soft)" stroke="var(--primary)" stroke-width="6" stroke-linejoin="round" stroke-dasharray="10 8"/></svg><div class="lbl">8</div></div>
+  </div>
+  <svg class="bracket" viewBox="0 0 760 40"><path d="M4 4 V30 H756 V4" fill="none" stroke="var(--accent)" stroke-width="6" stroke-linecap="round" stroke-linejoin="round"/></svg>
+  <div class="range">6 to 8 cups or glasses of fluid</div>
+</div>
+<script>
+  tl.from(q(".card"), { y: 40, opacity: 0, duration: 0.35, ease: "power2.out" }, w("NHS"));
+  tl.from(qa(".g1"), { scale: 0.4, opacity: 0, duration: 0.25, stagger: 0.08, ease: "back.out(2)" }, w("six"));
+  tl.from(qa(".g2"), { scale: 0.4, opacity: 0, duration: 0.25, stagger: 0.08, ease: "back.out(2)" }, w("eight"));
+  tl.from(q(".bracket"), { scaleX: 0, transformOrigin: "0% 50%", duration: 0.4, ease: "power2.out" }, w("glasses"));
+  tl.from(q(".range"), { opacity: 0, y: 10, duration: 0.3 }, w("glasses"));
+</script>

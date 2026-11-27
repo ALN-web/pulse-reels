@@ -1,0 +1,582 @@
+{
+  "audioFile": "voice.mp3",
+  "durationSec": 40.792,
+  "provider": "elevenlabs:eleven_multilingual_v2",
+  "words": [
+    {
+      "word": "How",
+      "start": 0,
+      "end": 0.163
+    },
+    {
+      "word": "much",
+      "start": 0.197,
+      "end": 0.337
+    },
+    {
+      "word": "water",
+      "start": 0.383,
+      "end": 0.615
+    },
+    {
+      "word": "do",
+      "start": 0.65,
+      "end": 0.697
+    },
+    {
+      "word": "you",
+      "start": 0.731,
+      "end": 0.801
+    },
+    {
+      "word": "really",
+      "start": 0.859,
+      "end": 1.091
+    },
+    {
+      "word": "need",
+      "start": 1.138,
+      "end": 1.312
+    },
+    {
+      "word": "each",
+      "start": 1.347,
+      "end": 1.509
+    },
+    {
+      "word": "day?",
+      "start": 1.567,
+      "end": 1.962
+    },
+    {
+      "word": "The",
+      "start": 2.775,
+      "end": 2.914
+    },
+    {
+      "word": "NHS",
+      "start": 2.972,
+      "end": 3.413
+    },
+    {
+      "word": "suggests",
+      "start": 3.448,
+      "end": 3.831
+    },
+    {
+      "word": "six",
+      "start": 3.866,
+      "end": 4.075
+    },
+    {
+      "word": "to",
+      "start": 4.145,
+      "end": 4.203
+    },
+    {
+      "word": "eight",
+      "start": 4.272,
+      "end": 4.458
+    },
+    {
+      "word": "cups",
+      "start": 4.505,
+      "end": 4.772
+    },
+    {
+      "word": "or",
+      "start": 4.83,
+      "end": 4.934
+    },
+    {
+      "word": "glasses",
+      "start": 4.992,
+      "end": 5.364
+    },
+    {
+      "word": "of",
+      "start": 5.41,
+      "end": 5.457
+    },
+    {
+      "word": "fluid",
+      "start": 5.503,
+      "end": 5.782
+    },
+    {
+      "word": "a",
+      "start": 5.817,
+      "end": 5.84
+    },
+    {
+      "word": "day.",
+      "start": 5.886,
+      "end": 6.281
+    },
+    {
+      "word": "And",
+      "start": 6.664,
+      "end": 6.803
+    },
+    {
+      "word": "it's",
+      "start": 6.85,
+      "end": 6.978
+    },
+    {
+      "word": "not",
+      "start": 7.024,
+      "end": 7.163
+    },
+    {
+      "word": "just",
+      "start": 7.221,
+      "end": 7.419
+    },
+    {
+      "word": "water.",
+      "start": 7.488,
+      "end": 7.988
+    },
+    {
+      "word": "Lower-fat",
+      "start": 8.591,
+      "end": 9.114
+    },
+    {
+      "word": "milk,",
+      "start": 9.195,
+      "end": 9.601
+    },
+    {
+      "word": "lower-sugar",
+      "start": 9.683,
+      "end": 10.217
+    },
+    {
+      "word": "drinks,",
+      "start": 10.263,
+      "end": 10.635
+    },
+    {
+      "word": "tea",
+      "start": 10.693,
+      "end": 10.902
+    },
+    {
+      "word": "and",
+      "start": 10.937,
+      "end": 11.018
+    },
+    {
+      "word": "coffee",
+      "start": 11.088,
+      "end": 11.459
+    },
+    {
+      "word": "all",
+      "start": 11.505,
+      "end": 11.633
+    },
+    {
+      "word": "count",
+      "start": 11.703,
+      "end": 11.923
+    },
+    {
+      "word": "too.",
+      "start": 11.97,
+      "end": 12.388
+    },
+    {
+      "word": "The",
+      "start": 12.992,
+      "end": 13.119
+    },
+    {
+      "word": "CDC",
+      "start": 13.166,
+      "end": 13.549
+    },
+    {
+      "word": "says",
+      "start": 13.793,
+      "end": 14.06
+    },
+    {
+      "word": "daily",
+      "start": 14.141,
+      "end": 14.454
+    },
+    {
+      "word": "needs",
+      "start": 14.512,
+      "end": 14.733
+    },
+    {
+      "word": "vary",
+      "start": 14.803,
+      "end": 15.116
+    },
+    {
+      "word": "with",
+      "start": 15.162,
+      "end": 15.313
+    },
+    {
+      "word": "age,",
+      "start": 15.383,
+      "end": 15.836
+    },
+    {
+      "word": "sex",
+      "start": 15.952,
+      "end": 16.219
+    },
+    {
+      "word": "and",
+      "start": 16.277,
+      "end": 16.347
+    },
+    {
+      "word": "activity,",
+      "start": 16.382,
+      "end": 17.008
+    },
+    {
+      "word": "so",
+      "start": 17.217,
+      "end": 17.403
+    },
+    {
+      "word": "treat",
+      "start": 17.473,
+      "end": 17.705
+    },
+    {
+      "word": "it",
+      "start": 17.74,
+      "end": 17.81
+    },
+    {
+      "word": "as",
+      "start": 17.868,
+      "end": 17.949
+    },
+    {
+      "word": "a",
+      "start": 17.995,
+      "end": 18.03
+    },
+    {
+      "word": "guide.",
+      "start": 18.088,
+      "end": 18.576
+    },
+    {
+      "word": "You",
+      "start": 18.901,
+      "end": 19.029
+    },
+    {
+      "word": "may",
+      "start": 19.075,
+      "end": 19.18
+    },
+    {
+      "word": "need",
+      "start": 19.238,
+      "end": 19.4
+    },
+    {
+      "word": "more",
+      "start": 19.447,
+      "end": 19.598
+    },
+    {
+      "word": "in",
+      "start": 19.621,
+      "end": 19.667
+    },
+    {
+      "word": "hot",
+      "start": 19.725,
+      "end": 19.865
+    },
+    {
+      "word": "weather,",
+      "start": 19.911,
+      "end": 20.201
+    },
+    {
+      "word": "during",
+      "start": 20.224,
+      "end": 20.468
+    },
+    {
+      "word": "exercise,",
+      "start": 20.55,
+      "end": 21.293
+    },
+    {
+      "word": "or",
+      "start": 21.536,
+      "end": 21.687
+    },
+    {
+      "word": "with",
+      "start": 21.745,
+      "end": 21.896
+    },
+    {
+      "word": "a",
+      "start": 21.931,
+      "end": 21.966
+    },
+    {
+      "word": "fever,",
+      "start": 22.047,
+      "end": 22.57
+    },
+    {
+      "word": "vomiting",
+      "start": 22.663,
+      "end": 23.173
+    },
+    {
+      "word": "or",
+      "start": 23.243,
+      "end": 23.348
+    },
+    {
+      "word": "diarrhea.",
+      "start": 23.406,
+      "end": 24.044
+    },
+    {
+      "word": "The",
+      "start": 24.555,
+      "end": 24.683
+    },
+    {
+      "word": "easy",
+      "start": 24.752,
+      "end": 25.031
+    },
+    {
+      "word": "check:",
+      "start": 25.089,
+      "end": 25.565
+    },
+    {
+      "word": "aim",
+      "start": 25.739,
+      "end": 25.925
+    },
+    {
+      "word": "for",
+      "start": 26.006,
+      "end": 26.134
+    },
+    {
+      "word": "pale",
+      "start": 26.215,
+      "end": 26.54
+    },
+    {
+      "word": "yellow",
+      "start": 26.598,
+      "end": 26.865
+    },
+    {
+      "word": "pee.",
+      "start": 26.947,
+      "end": 27.388
+    },
+    {
+      "word": "Dark",
+      "start": 27.829,
+      "end": 28.096
+    },
+    {
+      "word": "yellow",
+      "start": 28.142,
+      "end": 28.375
+    },
+    {
+      "word": "pee",
+      "start": 28.433,
+      "end": 28.642
+    },
+    {
+      "word": "can",
+      "start": 28.7,
+      "end": 28.909
+    },
+    {
+      "word": "be",
+      "start": 28.978,
+      "end": 29.083
+    },
+    {
+      "word": "a",
+      "start": 29.129,
+      "end": 29.153
+    },
+    {
+      "word": "sign",
+      "start": 29.234,
+      "end": 29.663
+    },
+    {
+      "word": "you",
+      "start": 29.907,
+      "end": 30.023
+    },
+    {
+      "word": "need",
+      "start": 30.081,
+      "end": 30.244
+    },
+    {
+      "word": "to",
+      "start": 30.279,
+      "end": 30.325
+    },
+    {
+      "word": "drink",
+      "start": 30.371,
+      "end": 30.604
+    },
+    {
+      "word": "more.",
+      "start": 30.662,
+      "end": 31.033
+    },
+    {
+      "word": "One",
+      "start": 31.637,
+      "end": 31.846
+    },
+    {
+      "word": "simple",
+      "start": 31.892,
+      "end": 32.171
+    },
+    {
+      "word": "habit:",
+      "start": 32.217,
+      "end": 32.659
+    },
+    {
+      "word": "carry",
+      "start": 32.937,
+      "end": 33.227
+    },
+    {
+      "word": "a",
+      "start": 33.274,
+      "end": 33.309
+    },
+    {
+      "word": "reusable",
+      "start": 33.378,
+      "end": 33.854
+    },
+    {
+      "word": "water",
+      "start": 33.889,
+      "end": 34.121
+    },
+    {
+      "word": "bottle",
+      "start": 34.156,
+      "end": 34.377
+    },
+    {
+      "word": "with",
+      "start": 34.4,
+      "end": 34.528
+    },
+    {
+      "word": "you.",
+      "start": 34.574,
+      "end": 34.818
+    },
+    {
+      "word": "Save",
+      "start": 35.259,
+      "end": 35.549
+    },
+    {
+      "word": "this.",
+      "start": 35.584,
+      "end": 36.014
+    },
+    {
+      "word": "And",
+      "start": 36.525,
+      "end": 36.676
+    },
+    {
+      "word": "if",
+      "start": 36.734,
+      "end": 36.815
+    },
+    {
+      "word": "dizziness",
+      "start": 36.885,
+      "end": 37.372
+    },
+    {
+      "word": "or",
+      "start": 37.419,
+      "end": 37.512
+    },
+    {
+      "word": "unusual",
+      "start": 37.581,
+      "end": 37.976
+    },
+    {
+      "word": "tiredness",
+      "start": 38.034,
+      "end": 38.464
+    },
+    {
+      "word": "won't",
+      "start": 38.498,
+      "end": 38.649
+    },
+    {
+      "word": "go",
+      "start": 38.684,
+      "end": 38.789
+    },
+    {
+      "word": "away,",
+      "start": 38.847,
+      "end": 39.288
+    },
+    {
+      "word": "talk",
+      "start": 39.416,
+      "end": 39.625
+    },
+    {
+      "word": "to",
+      "start": 39.671,
+      "end": 39.717
+    },
+    {
+      "word": "a",
+      "start": 39.776,
+      "end": 39.799
+    },
+    {
+      "word": "doctor.",
+      "start": 39.845,
+      "end": 40.542
+    }
+  ]
+}

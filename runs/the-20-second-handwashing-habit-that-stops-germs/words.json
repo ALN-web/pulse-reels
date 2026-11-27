@@ -1,0 +1,522 @@
+{
+  "audioFile": "voice.mp3",
+  "durationSec": 38.052,
+  "provider": "elevenlabs:eleven_multilingual_v2",
+  "words": [
+    {
+      "word": "Five",
+      "start": 0,
+      "end": 0.313
+    },
+    {
+      "word": "steps.",
+      "start": 0.348,
+      "end": 0.708
+    },
+    {
+      "word": "One",
+      "start": 0.755,
+      "end": 0.964
+    },
+    {
+      "word": "twenty-second",
+      "start": 0.987,
+      "end": 1.544
+    },
+    {
+      "word": "scrub.",
+      "start": 1.591,
+      "end": 2.148
+    },
+    {
+      "word": "Here's",
+      "start": 2.426,
+      "end": 2.694
+    },
+    {
+      "word": "how.",
+      "start": 2.728,
+      "end": 3.088
+    },
+    {
+      "word": "Step",
+      "start": 3.17,
+      "end": 3.437
+    },
+    {
+      "word": "one:",
+      "start": 3.553,
+      "end": 3.913
+    },
+    {
+      "word": "wet",
+      "start": 4.087,
+      "end": 4.261
+    },
+    {
+      "word": "your",
+      "start": 4.296,
+      "end": 4.423
+    },
+    {
+      "word": "hands",
+      "start": 4.47,
+      "end": 4.714
+    },
+    {
+      "word": "with",
+      "start": 4.748,
+      "end": 4.876
+    },
+    {
+      "word": "clean,",
+      "start": 4.946,
+      "end": 5.306
+    },
+    {
+      "word": "running",
+      "start": 5.352,
+      "end": 5.619
+    },
+    {
+      "word": "water,",
+      "start": 5.689,
+      "end": 6.188
+    },
+    {
+      "word": "warm",
+      "start": 6.362,
+      "end": 6.641
+    },
+    {
+      "word": "or",
+      "start": 6.687,
+      "end": 6.757
+    },
+    {
+      "word": "cold,",
+      "start": 6.827,
+      "end": 7.279
+    },
+    {
+      "word": "and",
+      "start": 7.303,
+      "end": 7.465
+    },
+    {
+      "word": "apply",
+      "start": 7.5,
+      "end": 7.744
+    },
+    {
+      "word": "soap.",
+      "start": 7.825,
+      "end": 8.266
+    },
+    {
+      "word": "Step",
+      "start": 8.591,
+      "end": 8.858
+    },
+    {
+      "word": "two:",
+      "start": 8.916,
+      "end": 9.369
+    },
+    {
+      "word": "lather.",
+      "start": 9.543,
+      "end": 10.17
+    },
+    {
+      "word": "Rub",
+      "start": 10.553,
+      "end": 10.751
+    },
+    {
+      "word": "the",
+      "start": 10.809,
+      "end": 10.879
+    },
+    {
+      "word": "backs",
+      "start": 10.925,
+      "end": 11.169
+    },
+    {
+      "word": "of",
+      "start": 11.204,
+      "end": 11.262
+    },
+    {
+      "word": "your",
+      "start": 11.308,
+      "end": 11.424
+    },
+    {
+      "word": "hands,",
+      "start": 11.482,
+      "end": 11.819
+    },
+    {
+      "word": "between",
+      "start": 11.854,
+      "end": 12.167
+    },
+    {
+      "word": "your",
+      "start": 12.19,
+      "end": 12.295
+    },
+    {
+      "word": "fingers,",
+      "start": 12.353,
+      "end": 12.922
+    },
+    {
+      "word": "and",
+      "start": 13.073,
+      "end": 13.259
+    },
+    {
+      "word": "under",
+      "start": 13.34,
+      "end": 13.502
+    },
+    {
+      "word": "your",
+      "start": 13.549,
+      "end": 13.653
+    },
+    {
+      "word": "nails.",
+      "start": 13.7,
+      "end": 14.222
+    },
+    {
+      "word": "Step",
+      "start": 14.663,
+      "end": 14.907
+    },
+    {
+      "word": "three:",
+      "start": 14.953,
+      "end": 15.418
+    },
+    {
+      "word": "scrub",
+      "start": 15.592,
+      "end": 15.905
+    },
+    {
+      "word": "for",
+      "start": 15.964,
+      "end": 16.068
+    },
+    {
+      "word": "at",
+      "start": 16.114,
+      "end": 16.172
+    },
+    {
+      "word": "least",
+      "start": 16.207,
+      "end": 16.381
+    },
+    {
+      "word": "twenty",
+      "start": 16.405,
+      "end": 16.648
+    },
+    {
+      "word": "seconds.",
+      "start": 16.718,
+      "end": 17.264
+    },
+    {
+      "word": "No",
+      "start": 17.38,
+      "end": 17.519
+    },
+    {
+      "word": "timer?",
+      "start": 17.589,
+      "end": 18.077
+    },
+    {
+      "word": "Hum",
+      "start": 18.158,
+      "end": 18.471
+    },
+    {
+      "word": "Happy",
+      "start": 18.587,
+      "end": 18.866
+    },
+    {
+      "word": "Birthday",
+      "start": 18.912,
+      "end": 19.284
+    },
+    {
+      "word": "twice.",
+      "start": 19.33,
+      "end": 19.888
+    },
+    {
+      "word": "Step",
+      "start": 20.491,
+      "end": 20.735
+    },
+    {
+      "word": "four:",
+      "start": 20.805,
+      "end": 21.118
+    },
+    {
+      "word": "rinse",
+      "start": 21.234,
+      "end": 21.467
+    },
+    {
+      "word": "well",
+      "start": 21.513,
+      "end": 21.71
+    },
+    {
+      "word": "under",
+      "start": 21.768,
+      "end": 21.931
+    },
+    {
+      "word": "clean,",
+      "start": 21.977,
+      "end": 22.221
+    },
+    {
+      "word": "running",
+      "start": 22.256,
+      "end": 22.488
+    },
+    {
+      "word": "water.",
+      "start": 22.546,
+      "end": 22.999
+    },
+    {
+      "word": "Step",
+      "start": 23.603,
+      "end": 23.847
+    },
+    {
+      "word": "five:",
+      "start": 23.916,
+      "end": 24.392
+    },
+    {
+      "word": "dry",
+      "start": 24.474,
+      "end": 24.683
+    },
+    {
+      "word": "with",
+      "start": 24.729,
+      "end": 24.834
+    },
+    {
+      "word": "a",
+      "start": 24.868,
+      "end": 24.892
+    },
+    {
+      "word": "clean",
+      "start": 24.938,
+      "end": 25.147
+    },
+    {
+      "word": "towel",
+      "start": 25.205,
+      "end": 25.53
+    },
+    {
+      "word": "or",
+      "start": 25.588,
+      "end": 25.658
+    },
+    {
+      "word": "an",
+      "start": 25.704,
+      "end": 25.762
+    },
+    {
+      "word": "air",
+      "start": 25.797,
+      "end": 25.925
+    },
+    {
+      "word": "dryer.",
+      "start": 25.971,
+      "end": 26.447
+    },
+    {
+      "word": "Clean",
+      "start": 27.144,
+      "end": 27.399
+    },
+    {
+      "word": "hands",
+      "start": 27.457,
+      "end": 27.701
+    },
+    {
+      "word": "help",
+      "start": 27.736,
+      "end": 27.899
+    },
+    {
+      "word": "stop",
+      "start": 27.945,
+      "end": 28.189
+    },
+    {
+      "word": "germs",
+      "start": 28.27,
+      "end": 28.595
+    },
+    {
+      "word": "spreading.",
+      "start": 28.63,
+      "end": 29.199
+    },
+    {
+      "word": "Wash",
+      "start": 29.71,
+      "end": 30.035
+    },
+    {
+      "word": "before",
+      "start": 30.081,
+      "end": 30.372
+    },
+    {
+      "word": "you",
+      "start": 30.418,
+      "end": 30.499
+    },
+    {
+      "word": "eat,",
+      "start": 30.569,
+      "end": 30.848
+    },
+    {
+      "word": "after",
+      "start": 30.906,
+      "end": 31.196
+    },
+    {
+      "word": "the",
+      "start": 31.242,
+      "end": 31.312
+    },
+    {
+      "word": "toilet,",
+      "start": 31.359,
+      "end": 31.823
+    },
+    {
+      "word": "and",
+      "start": 31.974,
+      "end": 32.125
+    },
+    {
+      "word": "after",
+      "start": 32.171,
+      "end": 32.357
+    },
+    {
+      "word": "you",
+      "start": 32.403,
+      "end": 32.473
+    },
+    {
+      "word": "cough,",
+      "start": 32.554,
+      "end": 32.879
+    },
+    {
+      "word": "sneeze,",
+      "start": 32.914,
+      "end": 33.518
+    },
+    {
+      "word": "or",
+      "start": 33.727,
+      "end": 33.89
+    },
+    {
+      "word": "blow",
+      "start": 33.959,
+      "end": 34.168
+    },
+    {
+      "word": "your",
+      "start": 34.226,
+      "end": 34.331
+    },
+    {
+      "word": "nose.",
+      "start": 34.389,
+      "end": 34.842
+    },
+    {
+      "word": "Save",
+      "start": 35.654,
+      "end": 35.921
+    },
+    {
+      "word": "this,",
+      "start": 35.956,
+      "end": 36.142
+    },
+    {
+      "word": "and",
+      "start": 36.165,
+      "end": 36.235
+    },
+    {
+      "word": "share",
+      "start": 36.27,
+      "end": 36.444
+    },
+    {
+      "word": "it",
+      "start": 36.467,
+      "end": 36.525
+    },
+    {
+      "word": "with",
+      "start": 36.548,
+      "end": 36.653
+    },
+    {
+      "word": "someone",
+      "start": 36.688,
+      "end": 36.931
+    },
+    {
+      "word": "you",
+      "start": 36.955,
+      "end": 37.024
+    },
+    {
+      "word": "live",
+      "start": 37.094,
+      "end": 37.245
+    },
+    {
+      "word": "with.",
+      "start": 37.268,
+      "end": 37.802
+    }
+  ]
+}

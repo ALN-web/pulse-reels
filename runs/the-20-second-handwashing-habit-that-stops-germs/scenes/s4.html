@@ -1,0 +1,28 @@
+<style>
+  #scene-s4 .bubbles { position: absolute; left: 0; top: 0; width: 870px; height: 860px; }
+  #scene-s4 .timer { position: absolute; left: 175px; top: 110px; width: 520px; height: 520px; }
+  #scene-s4 .n { font: 800 200px var(--font-body); fill: var(--ink); }
+  #scene-s4 .u { font: 700 52px var(--font-body); fill: var(--primary); }
+</style>
+<svg class="bubbles" viewBox="0 0 870 860">
+  <circle cx="90" cy="160" r="40" fill="var(--soft)"/>
+  <circle cx="150" cy="620" r="28" fill="var(--soft)"/>
+  <circle cx="780" cy="220" r="34" fill="var(--soft)"/>
+  <circle cx="740" cy="660" r="48" fill="var(--soft)"/>
+  <circle cx="70" cy="420" r="18" fill="var(--soft)"/>
+  <circle cx="820" cy="450" r="20" fill="var(--soft)"/>
+</svg>
+<svg class="timer" viewBox="0 0 520 520">
+  <circle cx="260" cy="260" r="220" fill="#fff" stroke="var(--soft)" stroke-width="36"/>
+  <circle class="ring" cx="260" cy="260" r="220" fill="none" stroke="var(--primary)" stroke-width="36" stroke-linecap="round" transform="rotate(-90 260 260)" stroke-dasharray="1382.3" stroke-dashoffset="1382.3"/>
+  <g class="num">
+    <text class="n" x="260" y="300" text-anchor="middle">20</text>
+    <text class="u" x="260" y="370" text-anchor="middle">seconds</text>
+  </g>
+</svg>
+<script>
+  tl.from(q(".timer"), { scale: 0.8, opacity: 0, duration: 0.3, ease: "power2.out" }, t);
+  tl.to(q(".ring"), { attr: { "stroke-dashoffset": 0 }, duration: Math.max(0.5, t + d - w("scrub") - 0.1), ease: "none" }, w("scrub"));
+  tl.from(q(".num"), { scale: 0.5, opacity: 0, transformOrigin: "50% 50%", duration: 0.3, ease: "back.out(2)" }, w("scrub"));
+  tl.to(q(".num"), { scale: 1.12, transformOrigin: "50% 50%", duration: 0.15, yoyo: true, repeat: 1, ease: "power1.inOut" }, w("twenty"));
+</script>

@@ -1,0 +1,17 @@
+<style>
+  #scene-s10 .bm { position: absolute; right: 30px; top: 60px; width: 150px; height: 190px; }
+  #scene-s10 .doc { position: absolute; left: 20px; top: 70px; width: 220px; height: 220px; background: #fff; border-radius: 28px; box-shadow: 0 16px 40px rgba(18,52,59,.14); overflow: hidden; }
+  #scene-s10 .doc .top { height: 60px; background: var(--primary); }
+  #scene-s10 .doc svg { width: 120px; height: 120px; margin: 20px auto 0; display: block; }
+</style>
+<svg class="bm" viewBox="0 0 150 190"><path d="M20 10 H130 V180 L75 140 L20 180 Z" fill="var(--accent)" stroke="var(--ink)" stroke-width="8" stroke-linejoin="round"/></svg>
+<div class="doc">
+  <div class="top"></div>
+  <svg viewBox="0 0 100 100"><path d="M30 10 V40 C30 56 70 56 70 40 V10" fill="none" stroke="var(--ink)" stroke-width="6" stroke-linecap="round"/><path d="M50 52 V68 C50 84 78 84 78 68 V60" fill="none" stroke="var(--ink)" stroke-width="6" stroke-linecap="round"/><circle cx="78" cy="54" r="9" fill="var(--primary)"/></svg>
+</div>
+<script>
+  tl.from(q(".bm"), { scale: 0.8, opacity: 0, duration: 0.25, ease: "back.out(3)" }, w("Save"));
+  tl.to(q(".bm"), { scale: 1.1, duration: 0.15, yoyo: true, repeat: 1, ease: "power1.inOut" }, w("Save") + 0.25);
+  tl.from(q(".doc"), { x: -40, opacity: 0, duration: 0.3, ease: "power2.out" }, w("doctor"));
+  ira.hand(w("doctor") + 0.2, "wave");
+</script>

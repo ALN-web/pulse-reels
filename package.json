@@ -15,6 +15,7 @@
     "voice": "tsx src/steps/voice.ts",
     "voices": "tsx src/cli/voices.ts",
     "render": "tsx src/steps/render.ts",
+    "showcase": "tsx src/cli/showcase.ts",
     "caption": "tsx src/steps/caption.ts",
     "typecheck": "tsc --noEmit",
     "test": "vitest run"

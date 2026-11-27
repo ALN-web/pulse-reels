@@ -1,0 +1,63 @@
+{
+  "slug": "the-20-second-handwashing-habit-that-stops-germs",
+  "topic": "The 20-second handwashing habit that stops germs spreading",
+  "client": "pulse-health",
+  "mode": "character",
+  "createdAt": "2026-11-27T08:25:41.729Z",
+  "steps": [
+    {
+      "step": "script",
+      "status": "ok",
+      "startedAt": "2026-11-27T08:23:41.488Z",
+      "durationMs": 240000,
+      "costUsd": 0,
+      "provider": "claude-code",
+      "notes": "Script by Claude; 5 steps counted from CDC page before hook; numbers 5, 20, twice sourced from CDC + NHS; compliance PASS"
+    },
+    {
+      "step": "storyboard",
+      "status": "ok",
+      "startedAt": "2026-11-27T08:25:59.928Z",
+      "durationMs": 150000,
+      "costUsd": 0,
+      "provider": "claude-code",
+      "notes": "Storyboard by Claude, 11 scenes, 44.4s planned, 5/10 spoken scenes character, compliance PASS"
+    },
+    {
+      "step": "voice",
+      "status": "ok",
+      "startedAt": "2026-11-27T08:28:35.431Z",
+      "durationMs": 17666,
+      "costUsd": 0,
+      "provider": "elevenlabs",
+      "notes": "583 chars, voice cjVigY5qzO86Huf0OWal, model eleven_multilingual_v2, loudnorm -23.1 -> -14.7 LUFS"
+    },
+    {
+      "step": "render",
+      "status": "ok",
+      "startedAt": "2026-11-27T08:31:34.479Z",
+      "durationMs": 20140,
+      "costUsd": 0,
+      "provider": "hyperframes",
+      "notes": "snapshot at 1.58,5.88,11.63,16.02,18.94,22.05,25.37,28.43,32.68,36.85,39.55; cut drift 0 ms"
+    },
+    {
+      "step": "caption",
+      "status": "ok",
+      "startedAt": "2026-11-27T08:32:43.728Z",
+      "durationMs": 392763,
+      "costUsd": 0,
+      "provider": "hyperframes",
+      "notes": "41.1 s, 11 scenes, cut drift 0 ms, caption drift 0 ms (39 lines), audio -14.0 LUFS"
+    },
+    {
+      "step": "compliance",
+      "status": "ok",
+      "startedAt": "2026-11-27T08:39:25.202Z",
+      "durationMs": 28,
+      "costUsd": 0,
+      "provider": "local-rules",
+      "notes": "final: 0 errors, 0 warnings"
+    }
+  ]
+}

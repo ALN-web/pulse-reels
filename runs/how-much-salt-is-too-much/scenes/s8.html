@@ -1,0 +1,25 @@
+<style>
+  #scene-s8 .panel { position: absolute; left: 35px; top: 100px; width: 800px; height: 540px; border-radius: 44px; background: #fff; }
+  #scene-s8 .gauge { position: absolute; left: 100px; top: 60px; width: 600px; height: 360px; }
+  #scene-s8 .lbl { position: absolute; left: 0; top: 450px; width: 800px; text-align: center; font: 800 46px var(--font-body); color: var(--p-ink); }
+  #scene-s8 .chips { position: absolute; left: 0; top: 690px; width: 870px; display: flex; justify-content: center; gap: 30px; }
+  #scene-s8 .chip.rose { background: var(--p-rose); }
+</style>
+<div class="panel">
+  <svg class="gauge" viewBox="0 0 600 360">
+    <path class="arc" d="M60 320 A240 240 0 0 1 180 112" fill="none" stroke="#0F7C7E" stroke-width="56"/>
+    <path class="arc" d="M188 108 A240 240 0 0 1 412 108" fill="none" stroke="#E8914A" stroke-width="56"/>
+    <path class="arc" d="M420 112 A240 240 0 0 1 540 320" fill="none" stroke="#C8553D" stroke-width="56"/>
+    <g class="needle"><rect x="292" y="120" width="16" height="200" rx="8" fill="#12343B"/></g>
+    <circle cx="300" cy="320" r="30" fill="#12343B"/>
+  </svg>
+  <div class="lbl">blood pressure</div>
+</div>
+<div class="chips"><span class="chip c1">Heart attack risk</span><span class="chip rose c2">Stroke risk</span></div>
+<script>
+  tl.from(qa(".arc"), { opacity: 0, duration: 0.25, stagger: 0.1 }, t);
+  tl.set(q(".needle"), { rotation: -65, svgOrigin: "300 320" }, 0);
+  tl.to(q(".needle"), { rotation: 55, svgOrigin: "300 320", duration: 0.9, ease: "power2.inOut" }, w("raise"));
+  tl.from(q(".c1"), { y: 40, opacity: 0, duration: 0.3, ease: "power2.out" }, w("heart"));
+  tl.from(q(".c2"), { y: 40, opacity: 0, duration: 0.3, ease: "power2.out" }, w("strokes"));
+</script>

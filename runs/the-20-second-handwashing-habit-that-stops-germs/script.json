@@ -1,0 +1,51 @@
+{
+  "slug": "the-20-second-handwashing-habit-that-stops-germs",
+  "topic": "The 20-second handwashing habit that stops germs spreading",
+  "client": "pulse-health",
+  "mode": "character",
+  "hook": {
+    "text": "Five steps. One twenty-second scrub. Here's how.",
+    "estimatedSec": 2.8,
+    "pattern": "small-number promise"
+  },
+  "beats": [
+    {
+      "id": "b1",
+      "text": "Step one: wet your hands with clean, running water, warm or cold, and apply soap."
+    },
+    {
+      "id": "b2",
+      "text": "Step two: lather. Rub the backs of your hands, between your fingers, and under your nails."
+    },
+    {
+      "id": "b3",
+      "text": "Step three: scrub for at least twenty seconds. No timer? Hum Happy Birthday twice."
+    },
+    {
+      "id": "b4",
+      "text": "Step four: rinse well under clean, running water."
+    },
+    {
+      "id": "b5",
+      "text": "Step five: dry with a clean towel or an air dryer."
+    },
+    {
+      "id": "b6",
+      "text": "Clean hands help stop germs spreading. Wash before you eat, after the toilet, and after you cough, sneeze, or blow your nose."
+    }
+  ],
+  "cta": "Save this, and share it with someone you live with.",
+  "sources": [
+    {
+      "publisher": "CDC",
+      "title": "About Handwashing",
+      "url": "https://www.cdc.gov/clean-hands/about/index.html"
+    },
+    {
+      "publisher": "NHS",
+      "title": "How to wash your hands",
+      "url": "https://www.nhs.uk/live-well/healthy-body/best-way-to-wash-your-hands/"
+    }
+  ],
+  "estimatedTotalSec": 41
+}

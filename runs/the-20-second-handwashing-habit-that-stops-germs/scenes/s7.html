@@ -1,0 +1,34 @@
+<style>
+  #scene-s7 .head { position: absolute; left: 40px; top: 40px; display: flex; align-items: center; gap: 24px; }
+  #scene-s7 .num { width: 96px; height: 96px; border-radius: 50%; background: var(--primary); color: #fff; font: 800 56px var(--font-body); display: flex; align-items: center; justify-content: center; }
+  #scene-s7 .lbl { font: 800 52px var(--font-body); color: var(--ink); }
+  #scene-s7 .half { position: absolute; top: 180px; width: 380px; height: 520px; background: #fff; border-radius: 36px; box-shadow: 0 16px 40px rgba(18,52,59,.10); display: flex; flex-direction: column; align-items: center; justify-content: center; gap: 24px; }
+  #scene-s7 .towel { left: 30px; }
+  #scene-s7 .dryer { right: 30px; }
+  #scene-s7 .half svg { width: 240px; height: 240px; }
+  #scene-s7 .half span { font: 700 38px var(--font-body); color: var(--ink); text-align: center; line-height: 1.2; }
+</style>
+<div class="head"><div class="num">5</div><div class="lbl">Dry</div></div>
+<div class="half towel">
+  <svg viewBox="0 0 100 100">
+    <rect x="16" y="20" width="68" height="60" rx="8" fill="var(--soft)" stroke="var(--ink)" stroke-width="5"/>
+    <path d="M16 40 H84 M16 60 H84" stroke="var(--primary)" stroke-width="5"/>
+  </svg>
+  <span>Clean towel</span>
+</div>
+<div class="half dryer">
+  <svg viewBox="0 0 100 100">
+    <rect x="14" y="10" width="72" height="44" rx="12" fill="var(--soft)" stroke="var(--ink)" stroke-width="5"/>
+    <rect x="40" y="54" width="20" height="8" fill="var(--ink)"/>
+    <path class="air" d="M36 70 Q32 80 36 92" fill="none" stroke="var(--primary)" stroke-width="5" stroke-linecap="round"/>
+    <path class="air" d="M50 70 Q46 80 50 92" fill="none" stroke="var(--primary)" stroke-width="5" stroke-linecap="round"/>
+    <path class="air" d="M64 70 Q60 80 64 92" fill="none" stroke="var(--primary)" stroke-width="5" stroke-linecap="round"/>
+  </svg>
+  <span>or air dryer</span>
+</div>
+<script>
+  tl.from(q(".head"), { opacity: 0, x: -30, duration: 0.3, ease: "power2.out" }, w("five"));
+  tl.from(q(".towel"), { x: -120, opacity: 0, duration: 0.3, ease: "power2.out" }, w("towel"));
+  tl.from(q(".dryer"), { x: 120, opacity: 0, duration: 0.3, ease: "power2.out" }, w("air"));
+  tl.to(qa(".air"), { opacity: 0.3, duration: 0.3, yoyo: true, repeat: 3, stagger: 0.1, ease: "sine.inOut" }, w("dryer"));
+</script>

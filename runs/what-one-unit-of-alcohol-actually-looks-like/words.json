@@ -1,0 +1,607 @@
+{
+  "audioFile": "voice.mp3",
+  "durationSec": 42.836,
+  "provider": "elevenlabs:eleven_multilingual_v2",
+  "words": [
+    {
+      "word": "Is",
+      "start": 0,
+      "end": 0.151
+    },
+    {
+      "word": "one",
+      "start": 0.221,
+      "end": 0.348
+    },
+    {
+      "word": "glass",
+      "start": 0.383,
+      "end": 0.639
+    },
+    {
+      "word": "of",
+      "start": 0.673,
+      "end": 0.72
+    },
+    {
+      "word": "wine",
+      "start": 0.789,
+      "end": 1.01
+    },
+    {
+      "word": "one",
+      "start": 1.068,
+      "end": 1.207
+    },
+    {
+      "word": "unit?",
+      "start": 1.277,
+      "end": 1.753
+    },
+    {
+      "word": "Usually",
+      "start": 2.194,
+      "end": 2.543
+    },
+    {
+      "word": "not.",
+      "start": 2.601,
+      "end": 3.053
+    },
+    {
+      "word": "In",
+      "start": 3.564,
+      "end": 3.704
+    },
+    {
+      "word": "the",
+      "start": 3.738,
+      "end": 3.808
+    },
+    {
+      "word": "UK,",
+      "start": 3.855,
+      "end": 4.261
+    },
+    {
+      "word": "one",
+      "start": 4.319,
+      "end": 4.481
+    },
+    {
+      "word": "unit",
+      "start": 4.551,
+      "end": 4.772
+    },
+    {
+      "word": "is",
+      "start": 4.818,
+      "end": 4.899
+    },
+    {
+      "word": "10",
+      "start": 4.969,
+      "end": 5.143
+    },
+    {
+      "word": "millilitres",
+      "start": 5.213,
+      "end": 5.817
+    },
+    {
+      "word": "of",
+      "start": 5.886,
+      "end": 5.956
+    },
+    {
+      "word": "pure",
+      "start": 6.072,
+      "end": 6.432
+    },
+    {
+      "word": "alcohol.",
+      "start": 6.525,
+      "end": 7.349
+    },
+    {
+      "word": "That's",
+      "start": 7.79,
+      "end": 8.104
+    },
+    {
+      "word": "a",
+      "start": 8.15,
+      "end": 8.173
+    },
+    {
+      "word": "single",
+      "start": 8.231,
+      "end": 8.51
+    },
+    {
+      "word": "25",
+      "start": 8.545,
+      "end": 8.963
+    },
+    {
+      "word": "millilitre",
+      "start": 9.033,
+      "end": 9.52
+    },
+    {
+      "word": "shot",
+      "start": 9.543,
+      "end": 9.752
+    },
+    {
+      "word": "of",
+      "start": 9.787,
+      "end": 9.834
+    },
+    {
+      "word": "spirits.",
+      "start": 9.868,
+      "end": 10.507
+    },
+    {
+      "word": "A",
+      "start": 11.459,
+      "end": 11.529
+    },
+    {
+      "word": "standard",
+      "start": 11.61,
+      "end": 11.947
+    },
+    {
+      "word": "175",
+      "start": 11.993,
+      "end": 12.794
+    },
+    {
+      "word": "millilitre",
+      "start": 12.852,
+      "end": 13.305
+    },
+    {
+      "word": "glass",
+      "start": 13.328,
+      "end": 13.584
+    },
+    {
+      "word": "of",
+      "start": 13.618,
+      "end": 13.677
+    },
+    {
+      "word": "wine",
+      "start": 13.746,
+      "end": 14.118
+    },
+    {
+      "word": "is",
+      "start": 14.292,
+      "end": 14.454
+    },
+    {
+      "word": "just",
+      "start": 14.512,
+      "end": 14.675
+    },
+    {
+      "word": "over",
+      "start": 14.721,
+      "end": 14.884
+    },
+    {
+      "word": "2",
+      "start": 14.977,
+      "end": 15.186
+    },
+    {
+      "word": "units.",
+      "start": 15.302,
+      "end": 15.848
+    },
+    {
+      "word": "A",
+      "start": 16.451,
+      "end": 16.521
+    },
+    {
+      "word": "pint",
+      "start": 16.637,
+      "end": 16.893
+    },
+    {
+      "word": "of",
+      "start": 16.951,
+      "end": 16.997
+    },
+    {
+      "word": "strong",
+      "start": 17.043,
+      "end": 17.31
+    },
+    {
+      "word": "lager",
+      "start": 17.38,
+      "end": 17.693
+    },
+    {
+      "word": "is",
+      "start": 17.751,
+      "end": 17.844
+    },
+    {
+      "word": "3.",
+      "start": 17.937,
+      "end": 18.425
+    },
+    {
+      "word": "The",
+      "start": 18.669,
+      "end": 18.785
+    },
+    {
+      "word": "NHS",
+      "start": 18.843,
+      "end": 19.214
+    },
+    {
+      "word": "advises",
+      "start": 19.261,
+      "end": 19.679
+    },
+    {
+      "word": "no",
+      "start": 19.737,
+      "end": 19.83
+    },
+    {
+      "word": "more",
+      "start": 19.888,
+      "end": 19.992
+    },
+    {
+      "word": "than",
+      "start": 20.015,
+      "end": 20.131
+    },
+    {
+      "word": "14",
+      "start": 20.178,
+      "end": 20.549
+    },
+    {
+      "word": "units",
+      "start": 20.619,
+      "end": 20.851
+    },
+    {
+      "word": "a",
+      "start": 20.886,
+      "end": 20.909
+    },
+    {
+      "word": "week,",
+      "start": 20.956,
+      "end": 21.281
+    },
+    {
+      "word": "spread",
+      "start": 21.606,
+      "end": 21.908
+    },
+    {
+      "word": "over",
+      "start": 21.954,
+      "end": 22.117
+    },
+    {
+      "word": "3",
+      "start": 22.233,
+      "end": 22.442
+    },
+    {
+      "word": "or",
+      "start": 22.5,
+      "end": 22.57
+    },
+    {
+      "word": "more",
+      "start": 22.628,
+      "end": 22.802
+    },
+    {
+      "word": "days.",
+      "start": 22.848,
+      "end": 23.359
+    },
+    {
+      "word": "In",
+      "start": 23.8,
+      "end": 23.928
+    },
+    {
+      "word": "the",
+      "start": 23.963,
+      "end": 24.032
+    },
+    {
+      "word": "US,",
+      "start": 24.079,
+      "end": 24.497
+    },
+    {
+      "word": "a",
+      "start": 24.52,
+      "end": 24.555
+    },
+    {
+      "word": "standard",
+      "start": 24.613,
+      "end": 24.973
+    },
+    {
+      "word": "drink",
+      "start": 24.996,
+      "end": 25.193
+    },
+    {
+      "word": "is",
+      "start": 25.24,
+      "end": 25.321
+    },
+    {
+      "word": "bigger:",
+      "start": 25.379,
+      "end": 25.809
+    },
+    {
+      "word": "14",
+      "start": 25.983,
+      "end": 26.424
+    },
+    {
+      "word": "grams",
+      "start": 26.471,
+      "end": 26.738
+    },
+    {
+      "word": "of",
+      "start": 26.772,
+      "end": 26.819
+    },
+    {
+      "word": "alcohol,",
+      "start": 26.888,
+      "end": 27.55
+    },
+    {
+      "word": "compared",
+      "start": 27.794,
+      "end": 28.177
+    },
+    {
+      "word": "with",
+      "start": 28.224,
+      "end": 28.398
+    },
+    {
+      "word": "8",
+      "start": 28.514,
+      "end": 28.688
+    },
+    {
+      "word": "grams",
+      "start": 28.734,
+      "end": 29.094
+    },
+    {
+      "word": "in",
+      "start": 29.141,
+      "end": 29.199
+    },
+    {
+      "word": "a",
+      "start": 29.245,
+      "end": 29.269
+    },
+    {
+      "word": "UK",
+      "start": 29.338,
+      "end": 29.57
+    },
+    {
+      "word": "unit.",
+      "start": 29.779,
+      "end": 30.128
+    },
+    {
+      "word": "Guidelines",
+      "start": 30.94,
+      "end": 31.451
+    },
+    {
+      "word": "differ,",
+      "start": 31.498,
+      "end": 31.997
+    },
+    {
+      "word": "so",
+      "start": 32.171,
+      "end": 32.322
+    },
+    {
+      "word": "ask",
+      "start": 32.415,
+      "end": 32.612
+    },
+    {
+      "word": "your",
+      "start": 32.659,
+      "end": 32.752
+    },
+    {
+      "word": "doctor",
+      "start": 32.798,
+      "end": 33.077
+    },
+    {
+      "word": "what's",
+      "start": 33.123,
+      "end": 33.309
+    },
+    {
+      "word": "right",
+      "start": 33.356,
+      "end": 33.541
+    },
+    {
+      "word": "for",
+      "start": 33.588,
+      "end": 33.704
+    },
+    {
+      "word": "you.",
+      "start": 33.762,
+      "end": 34.064
+    },
+    {
+      "word": "One",
+      "start": 35.178,
+      "end": 35.364
+    },
+    {
+      "word": "easy",
+      "start": 35.387,
+      "end": 35.596
+    },
+    {
+      "word": "step:",
+      "start": 35.654,
+      "end": 36.154
+    },
+    {
+      "word": "check",
+      "start": 36.537,
+      "end": 36.757
+    },
+    {
+      "word": "the",
+      "start": 36.804,
+      "end": 36.873
+    },
+    {
+      "word": "strength",
+      "start": 36.908,
+      "end": 37.257
+    },
+    {
+      "word": "on",
+      "start": 37.303,
+      "end": 37.373
+    },
+    {
+      "word": "the",
+      "start": 37.419,
+      "end": 37.489
+    },
+    {
+      "word": "label",
+      "start": 37.535,
+      "end": 37.802
+    },
+    {
+      "word": "before",
+      "start": 37.86,
+      "end": 38.127
+    },
+    {
+      "word": "you",
+      "start": 38.162,
+      "end": 38.232
+    },
+    {
+      "word": "pour.",
+      "start": 38.302,
+      "end": 38.708
+    },
+    {
+      "word": "Save",
+      "start": 38.952,
+      "end": 39.242
+    },
+    {
+      "word": "this,",
+      "start": 39.277,
+      "end": 39.509
+    },
+    {
+      "word": "and",
+      "start": 39.532,
+      "end": 39.637
+    },
+    {
+      "word": "talk",
+      "start": 39.695,
+      "end": 39.892
+    },
+    {
+      "word": "to",
+      "start": 39.915,
+      "end": 39.962
+    },
+    {
+      "word": "your",
+      "start": 39.985,
+      "end": 40.089
+    },
+    {
+      "word": "doctor",
+      "start": 40.136,
+      "end": 40.554
+    },
+    {
+      "word": "if",
+      "start": 40.763,
+      "end": 40.914
+    },
+    {
+      "word": "you're",
+      "start": 40.949,
+      "end": 41.111
+    },
+    {
+      "word": "worried",
+      "start": 41.134,
+      "end": 41.355
+    },
+    {
+      "word": "about",
+      "start": 41.378,
+      "end": 41.529
+    },
+    {
+      "word": "how",
+      "start": 41.564,
+      "end": 41.634
+    },
+    {
+      "word": "much",
+      "start": 41.68,
+      "end": 41.831
+    },
+    {
+      "word": "you",
+      "start": 41.866,
+      "end": 41.935
+    },
+    {
+      "word": "drink.",
+      "start": 41.982,
+      "end": 42.586
+    }
+  ]
+}

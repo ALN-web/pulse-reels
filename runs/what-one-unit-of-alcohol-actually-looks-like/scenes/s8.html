@@ -1,0 +1,17 @@
+<style>
+  #scene-s8 .b { position: absolute; bottom: 120px; width: 390px; }
+  #scene-s8 .b1 { left: 20px; height: 680px; } #scene-s8 .b2 { left: 460px; height: 389px; }
+  #scene-s8 .b .chip { position: absolute; left: 34px; top: 34px; background: #fff; color: var(--p-ink); }
+  #scene-s8 .num { position: absolute; left: 34px; top: 130px; font-size: 170px; color: #fff; }
+  #scene-s8 .cap { position: absolute; left: 0; top: 770px; width: 870px; text-align: center; font: 800 46px var(--font-body); color: var(--p-ink); }
+</style>
+<div class="block ink b b1"><div class="chip">US drink</div><div class="num big-num n1">14 g</div></div>
+<div class="block teal b b2"><div class="chip">UK unit</div><div class="num big-num n2">8 g</div></div>
+<div class="cap">grams of pure alcohol</div>
+<script>
+  tl.from(q(".b1"), { scaleY: 0, transformOrigin: "50% 100%", duration: 0.45, ease: "power3.out" }, w("us"));
+  tl.from(q(".n1"), { scale: 0.5, opacity: 0, transformOrigin: "0% 50%", duration: 0.3, ease: "back.out(2)" }, w("14"));
+  tl.from(q(".b2"), { scaleY: 0, transformOrigin: "50% 100%", duration: 0.45, ease: "power3.out" }, w("compared"));
+  tl.from(q(".n2"), { scale: 0.5, opacity: 0, transformOrigin: "0% 50%", duration: 0.3, ease: "back.out(2)" }, w("8"));
+  tl.from(q(".cap"), { opacity: 0, y: 20, duration: 0.3 }, w("unit"));
+</script>

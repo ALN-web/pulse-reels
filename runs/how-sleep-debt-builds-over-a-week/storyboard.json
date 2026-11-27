@@ -1,0 +1,108 @@
+{
+  "slug": "how-sleep-debt-builds-over-a-week",
+  "topic": "How sleep debt builds over a week",
+  "client": "pulse-health",
+  "mode": "motion",
+  "styleId": "monitor",
+  "scenes": [
+    {
+      "id": "s1",
+      "line": "Sleeping 6 hours when you need 8? Watch your week.",
+      "visual": "Sleep monitor panel with a moon icon and a big readout '6h' next to a dimmer target '8h'",
+      "animation": "Panel powers on; '6h' flicks in on '6'; target '8h' slides in on '8'; a row of five small day dots pops on 'week'",
+      "onScreenText": "6 hours sleep, 8 needed?",
+      "durationSec": 3,
+      "shot": "motion"
+    },
+    {
+      "id": "s2",
+      "line": "Sleep debt is the gap between the sleep you need and the sleep you get.",
+      "visual": "Two vertical bars: a tall outline bar labelled NEED and a shorter teal bar labelled GOT; the gap at the top of GOT glows apricot labelled DEBT",
+      "animation": "NEED bar grows from 0 on 'need'; GOT bar grows on 'get'; apricot gap fades in with a pulse on 'gap'",
+      "onScreenText": "Sleep debt = the gap",
+      "durationSec": 4.5,
+      "shot": "motion"
+    },
+    {
+      "id": "s3",
+      "line": "Need 8 hours but get 6? That's 2 hours of debt that day.",
+      "visual": "One night bar with a dashed target line at 8h; the teal fill stops at 6h; the apricot gap between them is labelled '2h debt'",
+      "animation": "Target line draws on '8'; fill rises from 0 on '6', power2.out; apricot gap block pops with back.out on '2'",
+      "onScreenText": "2 hours short",
+      "durationSec": 4.5,
+      "shot": "motion"
+    },
+    {
+      "id": "s4",
+      "line": "Do that for 5 days, and the debt grows to 10 hours.",
+      "visual": "Five day columns labelled M T W T F, each with a small apricot debt block; on the right a tall debt meter that fills up to a readout '10h'",
+      "animation": "Day columns stagger in 0.12 s apart on '5'; each apricot block drops into the meter; meter readout counts up and lands on '10h' on '10'",
+      "onScreenText": "5 days = 10 hours",
+      "durationSec": 4,
+      "shot": "motion"
+    },
+    {
+      "id": "s5",
+      "line": "As it builds, your brain and body work less well.",
+      "visual": "Brain icon and body outline side by side, each with a small level bar that drops from teal to apricot",
+      "animation": "Icons fade up on 'brain' and 'body'; level bars shrink on 'less well', power2.inOut",
+      "onScreenText": "Brain and body slow down",
+      "durationSec": 3.5,
+      "shot": "motion"
+    },
+    {
+      "id": "s6",
+      "line": "You may feel tired and sleepy during the day.",
+      "visual": "A sun icon over a calm face with half-closed eyes and three soft 'z' letters drifting up",
+      "animation": "Sun rises on 'day'; eyelids lower on 'tired'; z letters float up and fade, stagger 0.2 s, on 'sleepy'",
+      "onScreenText": "Tired and sleepy by day",
+      "durationSec": 3,
+      "shot": "motion"
+    },
+    {
+      "id": "s7",
+      "line": "Paying it all back later is risky. Even when sleepiness fades, you may not be at your best.",
+      "visual": "Two gauge rows on a panel: SLEEPINESS returns to the teal normal line, while FOCUS stays below its line in apricot; a small 'later' calendar badge with a caution mark",
+      "animation": "Calendar badge pops on 'later', caution mark wiggles on 'risky'; sleepiness bar settles back on 'fades'; focus bar stops short on 'best'",
+      "onScreenText": "Paying back later is risky",
+      "durationSec": 6,
+      "shot": "motion"
+    },
+    {
+      "id": "s8",
+      "line": "Good news: you don't need to repay it hour for hour.",
+      "visual": "A row of hour blocks with the words 'hour for hour' struck through; a soft deep-sleep wave beneath",
+      "animation": "Blocks slide in on 'repay'; strike line draws across on 'hour', power2.out; wave draws on 'news'",
+      "onScreenText": "No hour-for-hour payback",
+      "durationSec": 3.5,
+      "shot": "motion"
+    },
+    {
+      "id": "s9",
+      "line": "If you were short last night, allow extra time and go to bed a little earlier.",
+      "visual": "Clock face with a moon; the bedtime hand rotates back a little; a bed icon glows teal",
+      "animation": "Clock fades up on 'night'; hand rotates back on 'earlier', power2.inOut; bed glows on 'bed'",
+      "onScreenText": "Go to bed a bit earlier",
+      "durationSec": 5,
+      "shot": "motion"
+    },
+    {
+      "id": "s10",
+      "line": "Save this, and talk to a doctor if you feel tired all the time.",
+      "visual": "Bookmark icon card and a speech bubble card reading 'Ask a doctor'",
+      "animation": "Bookmark bounces on 'save'; speech bubble pops on 'doctor', back.out",
+      "onScreenText": "Always tired? Ask a doctor",
+      "durationSec": 4,
+      "shot": "motion"
+    },
+    {
+      "id": "s11",
+      "line": "",
+      "visual": "Pulse Health end card",
+      "animation": "Fade in, hold",
+      "onScreenText": "Not medical advice. Source: CDC",
+      "durationSec": 3,
+      "shot": "disclaimer"
+    }
+  ]
+}

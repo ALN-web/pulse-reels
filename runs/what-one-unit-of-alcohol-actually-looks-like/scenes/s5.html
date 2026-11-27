@@ -1,0 +1,25 @@
+<style>
+  #scene-s5 .slab { position: absolute; left: 0; top: 40px; width: 870px; height: 700px; }
+  #scene-s5 .pint { position: absolute; left: 50px; top: 80px; width: 300px; height: 540px; }
+  #scene-s5 .tile { position: absolute; left: 400px; width: 150px; height: 150px; border-radius: 24px; background: var(--p-apricot); }
+  #scene-s5 .t1 { top: 460px; } #scene-s5 .t2 { top: 295px; } #scene-s5 .t3 { top: 130px; }
+  #scene-s5 .num { position: absolute; left: 600px; top: 190px; font-size: 340px; color: #fff; }
+  #scene-s5 .unit { position: absolute; left: 610px; top: 520px; font: 800 52px var(--font-body); color: var(--paper); }
+</style>
+<div class="block ink slab">
+  <svg class="pint" viewBox="0 0 300 540">
+    <path d="M30 30 H270 L245 520 H55 Z" fill="#F3E3C8"/>
+    <path class="beer" d="M40 120 H260 L245 510 H55 Z" fill="#E8914A"/>
+    <path class="foam" d="M30 30 H270 L264 130 Q230 150 200 128 Q170 150 140 128 Q110 150 80 128 Q55 148 36 130 Z" fill="#fff"/>
+  </svg>
+  <div class="tile t1"></div><div class="tile t2"></div><div class="tile t3"></div>
+  <div class="num big-num">3</div>
+  <div class="unit">units</div>
+</div>
+<script>
+  tl.from(q(".slab"), { xPercent: -30, opacity: 0, duration: 0.35, ease: "power3.out" }, t);
+  tl.from(q(".pint"), { y: 160, opacity: 0, duration: 0.4, ease: "power3.out" }, w("pint"));
+  tl.from(qa(".tile"), { scale: 0, opacity: 0, duration: 0.25, stagger: 0.1, ease: "back.out(2)" }, w("lager"));
+  tl.from(q(".num"), { scale: 0.5, opacity: 0, duration: 0.3, ease: "back.out(2)" }, w("3"));
+  tl.from(q(".unit"), { opacity: 0, y: 20, duration: 0.3 }, w("3") + 0.1);
+</script>

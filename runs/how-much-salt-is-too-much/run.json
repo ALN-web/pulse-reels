@@ -1,0 +1,63 @@
+{
+  "slug": "how-much-salt-is-too-much",
+  "topic": "How much salt is too much",
+  "client": "pulse-health",
+  "mode": "motion",
+  "createdAt": "2026-11-27T08:01:56.504Z",
+  "steps": [
+    {
+      "step": "script",
+      "status": "ok",
+      "startedAt": "2026-11-27T07:54:31.736Z",
+      "durationMs": 540000,
+      "costUsd": 0,
+      "provider": "claude-code",
+      "notes": "sources verified on who.int, nhs.uk, cdc.gov; WHO <5 g vs NHS 6 g stated as 'guidelines differ'"
+    },
+    {
+      "step": "storyboard",
+      "status": "ok",
+      "startedAt": "2026-11-27T07:59:20.099Z",
+      "durationMs": 300000,
+      "costUsd": 0,
+      "provider": "claude-code",
+      "notes": "11 scenes, motion style 'poster' (pair 2, first Reel)"
+    },
+    {
+      "step": "voice",
+      "status": "ok",
+      "startedAt": "2026-11-27T08:04:23.162Z",
+      "durationMs": 7938,
+      "costUsd": 0,
+      "provider": "elevenlabs",
+      "notes": "604 chars, voice cjVigY5qzO86Huf0OWal, model eleven_multilingual_v2, loudnorm -23.7 -> -14.8 LUFS"
+    },
+    {
+      "step": "render",
+      "status": "ok",
+      "startedAt": "2026-11-27T08:07:38.693Z",
+      "durationMs": 23219,
+      "costUsd": 0,
+      "provider": "hyperframes",
+      "notes": "snapshot at 1.75,5.96,9.38,11.75,15.21,19.01,22.36,26.58,31.27,35.54,39.23; cut drift 0 ms"
+    },
+    {
+      "step": "caption",
+      "status": "ok",
+      "startedAt": "2026-11-27T08:08:56.886Z",
+      "durationMs": 329525,
+      "costUsd": 0,
+      "provider": "hyperframes",
+      "notes": "40.7 s, 11 scenes, cut drift 0 ms, caption drift 0 ms (38 lines), audio -14.0 LUFS"
+    },
+    {
+      "step": "compliance",
+      "status": "ok",
+      "startedAt": "2026-11-27T08:14:37.090Z",
+      "durationMs": 31,
+      "costUsd": 0,
+      "provider": "local-rules",
+      "notes": "final: 0 errors, 0 warnings"
+    }
+  ]
+}
