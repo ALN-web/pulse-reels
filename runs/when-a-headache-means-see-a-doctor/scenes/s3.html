@@ -1,0 +1,24 @@
+<style>
+  #scene-s3 .ring { position: absolute; left: 275px; top: 240px; width: 320px; height: 320px; border-radius: 50%; background: var(--primary); display: flex; align-items: center; justify-content: center; }
+  #scene-s3 .ring svg { width: 180px; height: 180px; }
+  #scene-s3 .arc1, #scene-s3 .arc2, #scene-s3 .arc3 { position: absolute; border-radius: 50%; border: 10px solid var(--soft); border-right-color: transparent; border-bottom-color: transparent; }
+  #scene-s3 .arc1 { width: 400px; height: 400px; left: 235px; top: 200px; }
+  #scene-s3 .arc2 { width: 500px; height: 500px; left: 185px; top: 150px; }
+  #scene-s3 .arc3 { width: 600px; height: 600px; left: 135px; top: 100px; }
+  #scene-s3 .cta { position: absolute; left: 170px; top: 600px; width: 530px; border-radius: 999px; background: var(--accent); padding: 22px; font: 800 44px var(--font-body); color: #fff; text-align: center; }
+</style>
+<div class="ring">
+  <svg viewBox="0 0 100 100">
+    <path d="M28 14 L42 14 L48 32 L38 40 C44 54 50 60 62 66 L70 56 L88 62 L88 76 C88 82 82 88 74 88 C42 84 16 58 12 26 C12 18 18 14 28 14 Z" fill="#fff"/>
+  </svg>
+</div>
+<div class="arc1"></div>
+<div class="arc2"></div>
+<div class="arc3"></div>
+<div class="cta">Right away</div>
+<script>
+  tl.from(q(".ring"), { scale: 0, opacity: 0, duration: 0.35, ease: "back.out(2)" }, w("Call"));
+  tl.from([q(".arc1"), q(".arc2"), q(".arc3")], { scale: 0, opacity: 0, duration: 0.4, stagger: 0.1, ease: "power2.out" }, w("Call") + 0.15);
+  tl.from(q(".cta"), { y: 30, opacity: 0, duration: 0.35, ease: "power2.out" }, w("immediately") - 0.1);
+  tl.to(q(".ring"), { scale: 1.06, duration: 0.3, yoyo: true, repeat: 2, ease: "sine.inOut" }, w("immediately") + 0.1);
+</script>

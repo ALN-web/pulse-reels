@@ -10,3 +10,4 @@ runs/**/frames/
 runs/**/composition/.hyperframes/
 *.log
 .DS_Store
+runs/**/agent.log

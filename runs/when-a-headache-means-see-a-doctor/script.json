@@ -1,0 +1,47 @@
+{
+  "slug": "when-a-headache-means-see-a-doctor",
+  "topic": "When a headache means see a doctor",
+  "client": "pulse-health",
+  "mode": "character",
+  "hook": {
+    "text": "Five headache red flags worth taking seriously.",
+    "estimatedSec": 2.8,
+    "pattern": "small-number promise"
+  },
+  "beats": [
+    {
+      "id": "b1",
+      "text": "A sudden, severe headache — the worst you have ever felt — is a medical emergency. Call for help immediately."
+    },
+    {
+      "id": "b2",
+      "text": "A headache with a stiff neck, high fever, or a rash on the skin can be a sign of meningitis. Get medical help fast."
+    },
+    {
+      "id": "b3",
+      "text": "If a headache comes with sudden vision changes, weakness on one side of the body, or trouble speaking, those can be signs of a stroke. Call emergency services."
+    },
+    {
+      "id": "b4",
+      "text": "After a head injury, a headache with confusion or vomiting needs a doctor, not just rest."
+    },
+    {
+      "id": "b5",
+      "text": "A headache that gets steadily worse over days or weeks, with no clear cause, is worth bringing to your doctor."
+    }
+  ],
+  "cta": "Save this. And if any of these match, talk to a doctor right away.",
+  "sources": [
+    {
+      "publisher": "NHS",
+      "title": "Headaches",
+      "url": "https://www.nhs.uk/conditions/headaches/"
+    },
+    {
+      "publisher": "CDC",
+      "title": "Migraine",
+      "url": "https://www.cdc.gov/migraine/"
+    }
+  ],
+  "estimatedTotalSec": 53
+}

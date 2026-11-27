@@ -3,7 +3,7 @@
  *   npm run new-run -- --topic "When a headache means see a doctor" --client pulse-health --mode character
  * Prints the slug. Idempotent: an existing run is reused (resumable), never wiped.
  */
-import { existsSync } from "node:fs";
+import { existsSync, mkdirSync } from "node:fs";
 import { join } from "node:path";
 import { parseArgs } from "node:util";
 import { loadBrand, runDir, writeJson } from "../lib/io.js";
@@ -45,4 +45,6 @@ if (existsSync(file)) {
     RunLogSchema,
   );
 }
+// scenes/ is created here so agents never need mkdir (blocked in headless mode).
+mkdirSync(join(runDir(slug), "scenes"), { recursive: true });
 console.log(slug);

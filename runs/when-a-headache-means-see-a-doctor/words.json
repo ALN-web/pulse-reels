@@ -1,0 +1,652 @@
+{
+  "audioFile": "voice.mp3",
+  "durationSec": 43.299,
+  "provider": "elevenlabs:eleven_multilingual_v2",
+  "words": [
+    {
+      "word": "Five",
+      "start": 0,
+      "end": 0.36
+    },
+    {
+      "word": "headache",
+      "start": 0.395,
+      "end": 0.685
+    },
+    {
+      "word": "red",
+      "start": 0.731,
+      "end": 0.871
+    },
+    {
+      "word": "flags",
+      "start": 0.929,
+      "end": 1.289
+    },
+    {
+      "word": "worth",
+      "start": 1.324,
+      "end": 1.533
+    },
+    {
+      "word": "taking",
+      "start": 1.591,
+      "end": 1.904
+    },
+    {
+      "word": "seriously.",
+      "start": 1.985,
+      "end": 2.682
+    },
+    {
+      "word": "A",
+      "start": 3.007,
+      "end": 3.088
+    },
+    {
+      "word": "sudden,",
+      "start": 3.181,
+      "end": 3.541
+    },
+    {
+      "word": "severe",
+      "start": 3.599,
+      "end": 3.959
+    },
+    {
+      "word": "headache",
+      "start": 4.017,
+      "end": 4.354
+    },
+    {
+      "word": "—",
+      "start": 4.47,
+      "end": 4.516
+    },
+    {
+      "word": "the",
+      "start": 4.598,
+      "end": 4.702
+    },
+    {
+      "word": "worst",
+      "start": 4.748,
+      "end": 4.934
+    },
+    {
+      "word": "you",
+      "start": 4.969,
+      "end": 5.039
+    },
+    {
+      "word": "have",
+      "start": 5.074,
+      "end": 5.178
+    },
+    {
+      "word": "ever",
+      "start": 5.213,
+      "end": 5.375
+    },
+    {
+      "word": "felt",
+      "start": 5.433,
+      "end": 5.689
+    },
+    {
+      "word": "—",
+      "start": 5.898,
+      "end": 5.968
+    },
+    {
+      "word": "is",
+      "start": 6.095,
+      "end": 6.223
+    },
+    {
+      "word": "a",
+      "start": 6.258,
+      "end": 6.293
+    },
+    {
+      "word": "medical",
+      "start": 6.339,
+      "end": 6.606
+    },
+    {
+      "word": "emergency.",
+      "start": 6.653,
+      "end": 7.349
+    },
+    {
+      "word": "Call",
+      "start": 7.79,
+      "end": 7.988
+    },
+    {
+      "word": "for",
+      "start": 8.046,
+      "end": 8.139
+    },
+    {
+      "word": "help",
+      "start": 8.185,
+      "end": 8.324
+    },
+    {
+      "word": "immediately.",
+      "start": 8.382,
+      "end": 9.067
+    },
+    {
+      "word": "A",
+      "start": 9.671,
+      "end": 9.752
+    },
+    {
+      "word": "headache",
+      "start": 9.868,
+      "end": 10.182
+    },
+    {
+      "word": "with",
+      "start": 10.205,
+      "end": 10.321
+    },
+    {
+      "word": "a",
+      "start": 10.356,
+      "end": 10.391
+    },
+    {
+      "word": "stiff",
+      "start": 10.437,
+      "end": 10.681
+    },
+    {
+      "word": "neck,",
+      "start": 10.751,
+      "end": 11.099
+    },
+    {
+      "word": "high",
+      "start": 11.215,
+      "end": 11.424
+    },
+    {
+      "word": "fever,",
+      "start": 11.482,
+      "end": 11.993
+    },
+    {
+      "word": "or",
+      "start": 12.144,
+      "end": 12.307
+    },
+    {
+      "word": "a",
+      "start": 12.365,
+      "end": 12.388
+    },
+    {
+      "word": "rash",
+      "start": 12.457,
+      "end": 12.713
+    },
+    {
+      "word": "on",
+      "start": 12.759,
+      "end": 12.829
+    },
+    {
+      "word": "the",
+      "start": 12.864,
+      "end": 12.934
+    },
+    {
+      "word": "skin",
+      "start": 12.968,
+      "end": 13.27
+    },
+    {
+      "word": "can",
+      "start": 13.34,
+      "end": 13.456
+    },
+    {
+      "word": "be",
+      "start": 13.502,
+      "end": 13.584
+    },
+    {
+      "word": "a",
+      "start": 13.618,
+      "end": 13.642
+    },
+    {
+      "word": "sign",
+      "start": 13.7,
+      "end": 13.943
+    },
+    {
+      "word": "of",
+      "start": 13.978,
+      "end": 14.025
+    },
+    {
+      "word": "meningitis.",
+      "start": 14.094,
+      "end": 14.954
+    },
+    {
+      "word": "Get",
+      "start": 15.395,
+      "end": 15.58
+    },
+    {
+      "word": "medical",
+      "start": 15.639,
+      "end": 15.929
+    },
+    {
+      "word": "help",
+      "start": 15.987,
+      "end": 16.161
+    },
+    {
+      "word": "fast.",
+      "start": 16.254,
+      "end": 16.869
+    },
+    {
+      "word": "If",
+      "start": 17.194,
+      "end": 17.334
+    },
+    {
+      "word": "a",
+      "start": 17.392,
+      "end": 17.415
+    },
+    {
+      "word": "headache",
+      "start": 17.461,
+      "end": 17.74
+    },
+    {
+      "word": "comes",
+      "start": 17.763,
+      "end": 18.019
+    },
+    {
+      "word": "with",
+      "start": 18.065,
+      "end": 18.204
+    },
+    {
+      "word": "sudden",
+      "start": 18.239,
+      "end": 18.495
+    },
+    {
+      "word": "vision",
+      "start": 18.553,
+      "end": 18.854
+    },
+    {
+      "word": "changes,",
+      "start": 18.924,
+      "end": 19.598
+    },
+    {
+      "word": "weakness",
+      "start": 19.876,
+      "end": 20.329
+    },
+    {
+      "word": "on",
+      "start": 20.375,
+      "end": 20.48
+    },
+    {
+      "word": "one",
+      "start": 20.561,
+      "end": 20.735
+    },
+    {
+      "word": "side",
+      "start": 20.77,
+      "end": 20.979
+    },
+    {
+      "word": "of",
+      "start": 21.002,
+      "end": 21.049
+    },
+    {
+      "word": "the",
+      "start": 21.084,
+      "end": 21.153
+    },
+    {
+      "word": "body,",
+      "start": 21.2,
+      "end": 21.641
+    },
+    {
+      "word": "or",
+      "start": 21.885,
+      "end": 22.059
+    },
+    {
+      "word": "trouble",
+      "start": 22.128,
+      "end": 22.454
+    },
+    {
+      "word": "speaking,",
+      "start": 22.477,
+      "end": 23.127
+    },
+    {
+      "word": "those",
+      "start": 23.452,
+      "end": 23.684
+    },
+    {
+      "word": "can",
+      "start": 23.719,
+      "end": 23.824
+    },
+    {
+      "word": "be",
+      "start": 23.87,
+      "end": 23.951
+    },
+    {
+      "word": "signs",
+      "start": 23.998,
+      "end": 24.276
+    },
+    {
+      "word": "of",
+      "start": 24.311,
+      "end": 24.369
+    },
+    {
+      "word": "a",
+      "start": 24.416,
+      "end": 24.439
+    },
+    {
+      "word": "stroke.",
+      "start": 24.485,
+      "end": 25.043
+    },
+    {
+      "word": "Call",
+      "start": 25.646,
+      "end": 25.855
+    },
+    {
+      "word": "emergency",
+      "start": 25.913,
+      "end": 26.424
+    },
+    {
+      "word": "services.",
+      "start": 26.482,
+      "end": 27.19
+    },
+    {
+      "word": "After",
+      "start": 27.701,
+      "end": 27.992
+    },
+    {
+      "word": "a",
+      "start": 28.05,
+      "end": 28.073
+    },
+    {
+      "word": "head",
+      "start": 28.131,
+      "end": 28.282
+    },
+    {
+      "word": "injury,",
+      "start": 28.328,
+      "end": 28.827
+    },
+    {
+      "word": "a",
+      "start": 29.001,
+      "end": 29.071
+    },
+    {
+      "word": "headache",
+      "start": 29.152,
+      "end": 29.442
+    },
+    {
+      "word": "with",
+      "start": 29.465,
+      "end": 29.593
+    },
+    {
+      "word": "confusion",
+      "start": 29.64,
+      "end": 30.15
+    },
+    {
+      "word": "or",
+      "start": 30.197,
+      "end": 30.267
+    },
+    {
+      "word": "vomiting",
+      "start": 30.313,
+      "end": 30.743
+    },
+    {
+      "word": "needs",
+      "start": 30.835,
+      "end": 31.126
+    },
+    {
+      "word": "a",
+      "start": 31.172,
+      "end": 31.195
+    },
+    {
+      "word": "doctor,",
+      "start": 31.253,
+      "end": 31.648
+    },
+    {
+      "word": "not",
+      "start": 31.683,
+      "end": 31.846
+    },
+    {
+      "word": "just",
+      "start": 31.892,
+      "end": 32.066
+    },
+    {
+      "word": "rest.",
+      "start": 32.136,
+      "end": 32.577
+    },
+    {
+      "word": "A",
+      "start": 32.902,
+      "end": 32.972
+    },
+    {
+      "word": "headache",
+      "start": 33.053,
+      "end": 33.332
+    },
+    {
+      "word": "that",
+      "start": 33.355,
+      "end": 33.459
+    },
+    {
+      "word": "gets",
+      "start": 33.506,
+      "end": 33.68
+    },
+    {
+      "word": "steadily",
+      "start": 33.715,
+      "end": 34.121
+    },
+    {
+      "word": "worse",
+      "start": 34.179,
+      "end": 34.446
+    },
+    {
+      "word": "over",
+      "start": 34.481,
+      "end": 34.644
+    },
+    {
+      "word": "days",
+      "start": 34.713,
+      "end": 34.992
+    },
+    {
+      "word": "or",
+      "start": 35.038,
+      "end": 35.12
+    },
+    {
+      "word": "weeks,",
+      "start": 35.178,
+      "end": 35.677
+    },
+    {
+      "word": "with",
+      "start": 35.886,
+      "end": 36.06
+    },
+    {
+      "word": "no",
+      "start": 36.118,
+      "end": 36.222
+    },
+    {
+      "word": "clear",
+      "start": 36.292,
+      "end": 36.49
+    },
+    {
+      "word": "cause,",
+      "start": 36.548,
+      "end": 37.058
+    },
+    {
+      "word": "is",
+      "start": 37.209,
+      "end": 37.372
+    },
+    {
+      "word": "worth",
+      "start": 37.43,
+      "end": 37.639
+    },
+    {
+      "word": "bringing",
+      "start": 37.685,
+      "end": 37.987
+    },
+    {
+      "word": "to",
+      "start": 38.034,
+      "end": 38.092
+    },
+    {
+      "word": "your",
+      "start": 38.15,
+      "end": 38.243
+    },
+    {
+      "word": "doctor.",
+      "start": 38.289,
+      "end": 38.742
+    },
+    {
+      "word": "Save",
+      "start": 39.253,
+      "end": 39.555
+    },
+    {
+      "word": "this.",
+      "start": 39.589,
+      "end": 39.984
+    },
+    {
+      "word": "And",
+      "start": 40.367,
+      "end": 40.507
+    },
+    {
+      "word": "if",
+      "start": 40.553,
+      "end": 40.611
+    },
+    {
+      "word": "any",
+      "start": 40.669,
+      "end": 40.797
+    },
+    {
+      "word": "of",
+      "start": 40.843,
+      "end": 40.89
+    },
+    {
+      "word": "these",
+      "start": 40.925,
+      "end": 41.087
+    },
+    {
+      "word": "match,",
+      "start": 41.133,
+      "end": 41.447
+    },
+    {
+      "word": "talk",
+      "start": 41.482,
+      "end": 41.714
+    },
+    {
+      "word": "to",
+      "start": 41.76,
+      "end": 41.807
+    },
+    {
+      "word": "a",
+      "start": 41.877,
+      "end": 41.9
+    },
+    {
+      "word": "doctor",
+      "start": 41.946,
+      "end": 42.236
+    },
+    {
+      "word": "right",
+      "start": 42.306,
+      "end": 42.48
+    },
+    {
+      "word": "away.",
+      "start": 42.515,
+      "end": 43.049
+    }
+  ]
+}

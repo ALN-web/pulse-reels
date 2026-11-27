@@ -1,0 +1,18 @@
+<style>
+  #scene-s2 .bolt-card { position: absolute; right: 20px; top: 60px; width: 220px; height: 220px; border-radius: 36px; background: #fff; box-shadow: 0 20px 50px rgba(18,52,59,.15); display: flex; align-items: center; justify-content: center; }
+  #scene-s2 .bolt-card svg { width: 140px; height: 140px; }
+  #scene-s2 .label { position: absolute; right: 20px; top: 300px; width: 220px; border-radius: 20px; background: var(--alert); padding: 14px 20px; font: 800 34px var(--font-body); color: #fff; text-align: center; line-height: 1.2; }
+</style>
+<div class="bolt-card">
+  <svg viewBox="0 0 100 100">
+    <polygon points="62,8 36,52 55,52 38,92 72,44 52,44" fill="#E8914A"/>
+  </svg>
+</div>
+<div class="label">Medical<br>emergency</div>
+<script>
+  tl.from(q(".bolt-card"), { scale: 0.5, opacity: 0, duration: 0.4, ease: "back.out(2)" }, w("sudden"));
+  tl.to(q(".bolt-card"), { scale: 1.08, duration: 0.18, yoyo: true, repeat: 1, ease: "power1.inOut" }, w("worst"));
+  tl.from(q(".label"), { y: 20, opacity: 0, duration: 0.35, ease: "power2.out" }, w("emergency") - 0.15);
+  ira.hand(w("sudden") - 0.05, "five");
+  ira.handDown(w("emergency") + 0.5);
+</script>

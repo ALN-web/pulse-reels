@@ -1,0 +1,21 @@
+<style>
+  #scene-s9 .chart { position: absolute; left: 35px; top: 80px; width: 800px; height: 640px; background: #fff; border-radius: 36px; box-shadow: 0 16px 40px rgba(18,52,59,.10); }
+  #scene-s9 .chart svg { position: absolute; left: 0; top: 0; width: 800px; height: 640px; }
+  #scene-s9 .ylab { position: absolute; left: 40px; top: 30px; font: 700 34px var(--font-body); color: var(--ink); }
+</style>
+<div class="chart">
+  <svg viewBox="0 0 800 640">
+    <path class="axes" d="M90 100 V540 H740" fill="none" stroke="var(--ink)" stroke-width="6" stroke-linecap="round"/>
+    <path class="line" d="M110 500 L210 470 L310 430 L410 380 L510 320 L610 250 L710 170" fill="none" stroke="var(--primary)" stroke-width="12" stroke-linecap="round" stroke-linejoin="round"/>
+    <rect class="cover" x="98" y="140" width="640" height="390" fill="#fff"/>
+    <g font-family="Inter" font-weight="700" font-size="28" fill="var(--ink)" text-anchor="middle">
+      <text x="110" y="590">1</text><text x="210" y="590">2</text><text x="310" y="590">3</text><text x="410" y="590">4</text><text x="510" y="590">5</text><text x="610" y="590">6</text><text x="710" y="590">7</text>
+    </g>
+  </svg>
+  <div class="ylab">Pain level · Day 1 to 7</div>
+</div>
+<script>
+  tl.from(q(".chart"), { opacity: 0, y: 30, duration: 0.3, ease: "power2.out" }, t);
+  tl.from(q(".axes"), { opacity: 0, duration: 0.3 }, w("steadily"));
+  tl.to(q(".cover"), { scaleX: 0, transformOrigin: "100% 50%", duration: Math.max(1, d - 1.2), ease: "power1.inOut" }, w("gets"));
+</script>

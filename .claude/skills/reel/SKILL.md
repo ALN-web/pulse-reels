@@ -23,7 +23,11 @@ description: Main pipeline. One prompt to a finished Instagram Reel. Chains scri
 - **Resumable:** before each step, if its output exists and validates (`npm run validate -- <file>`), skip it
   and log `status: "skipped"`. `--force <step>` redoes that step and everything after it.
 - **Typed handoffs:** never pass data between steps in chat, only through the validated files in `runs/<slug>/`.
-- **Every step** records its duration and API cost in `run.json`.
+- **Every step** records its duration and API cost in `run.json`. The npm step commands (`voice`, `render`, `caption`,
+  `compliance`) log themselves. For agent-written steps (script, storyboard) log with exactly:
+  `npm run log-step -- <slug> <script|storyboard> --ms <duration ms> --cost <usd> --provider claude-code --notes "..."`
+- **Shell:** run commands from the project root without `cd ... &&` (headless mode blocks it), and never `mkdir`:
+  `runs/<slug>/scenes/` already exists. Write files with the Write tool.
 - **No manual fixes** inside the chain. If a human edits a generated file afterwards, log it in `EDITS.md`.
 - Stop and report at the first step that fails twice in a row.
 - **Visual style:** motion Reels use a style theme `clients/<client>/styles/<styleId>.css` (e.g. `monitor`). Each pair of

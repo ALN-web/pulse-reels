@@ -81,3 +81,4 @@ Filled from each `run.json` once Reels are produced.
 |------|------|------|------------|--------------|
 | heart-5-minute-habit | character | ~10 min agent work + ~3 min voice/render each pass | $0 (free tiers) | 0 |
 | what-your-blood-pressure-numbers-mean | motion (style: monitor) | ~11 min wall clock, ~5 min of it rendering | $0 (free tiers) | 1 (agent re-render, see EDITS.md) |
+| when-a-headache-means-see-a-doctor | character, **headless via generate.sh** | 8m 54s for the resumed run (+7m 52s first attempt) | $0 API; ~$3.92 model usage on the Claude plan | 1 (hook count, see EDITS.md) |

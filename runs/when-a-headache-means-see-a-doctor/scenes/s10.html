@@ -1,0 +1,17 @@
+<style>
+  #scene-s10 .cal { position: absolute; right: 20px; top: 60px; width: 240px; height: 250px; background: #fff; border-radius: 28px; box-shadow: 0 16px 40px rgba(18,52,59,.14); overflow: hidden; }
+  #scene-s10 .cal .top { height: 70px; background: var(--primary); }
+  #scene-s10 .cal svg { width: 130px; height: 130px; margin: 25px auto 0; display: block; }
+  #scene-s10 .note { position: absolute; left: 20px; top: 100px; width: 250px; font: 700 36px var(--font-body); color: var(--ink); line-height: 1.2; }
+</style>
+<div class="note">No clear cause?</div>
+<div class="cal">
+  <div class="top"></div>
+  <svg viewBox="0 0 100 100">
+    <path d="M50 14 V86 M14 50 H86" stroke="var(--primary)" stroke-width="18" stroke-linecap="round"/>
+  </svg>
+</div>
+<script>
+  tl.from(q(".note"), { opacity: 0, x: -30, duration: 0.3, ease: "power2.out" }, w("clear"));
+  tl.from(q(".cal"), { scale: 0, opacity: 0, duration: 0.3, ease: "back.out(2)" }, w("doctor"));
+</script>

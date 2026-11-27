@@ -1,0 +1,27 @@
+<style>
+  #scene-s8 .card { position: absolute; top: 40px; width: 250px; background: #fff; border-radius: 32px; box-shadow: 0 16px 40px rgba(18,52,59,.12); padding: 24px 10px 20px; display: flex; flex-direction: column; align-items: center; gap: 12px; }
+  #scene-s8 .card svg { width: 120px; height: 120px; }
+  #scene-s8 .card .lbl { font: 700 34px var(--font-body); color: var(--ink); text-align: center; line-height: 1.15; }
+  #scene-s8 .bump { left: 20px; }
+  #scene-s8 .doc { right: 20px; }
+</style>
+<div class="card bump">
+  <svg viewBox="0 0 100 100">
+    <path d="M30 88 L30 70 C18 62 16 44 22 32 C30 14 58 10 72 24 C80 32 80 42 78 50 L86 62 L78 64 L78 76 C78 82 72 84 66 82 L56 80 L56 88" fill="var(--soft)" stroke="var(--ink)" stroke-width="5" stroke-linejoin="round" stroke-linecap="round"/>
+    <circle cx="44" cy="22" r="10" fill="var(--alert)"/>
+    <path d="M30 8 L36 14 M44 4 L44 10 M58 8 L52 14" stroke="var(--alert)" stroke-width="4" stroke-linecap="round"/>
+  </svg>
+  <span class="lbl">Head<br>injury</span>
+</div>
+<div class="card doc">
+  <svg viewBox="0 0 100 100">
+    <path d="M24 10 V40 C24 56 36 64 46 64 C56 64 68 56 68 40 V10" fill="none" stroke="var(--ink)" stroke-width="6" stroke-linecap="round"/>
+    <path d="M46 64 V76 C46 86 56 92 66 88 C74 84 76 76 76 70" fill="none" stroke="var(--ink)" stroke-width="6" stroke-linecap="round"/>
+    <circle cx="76" cy="62" r="10" fill="var(--primary)"/>
+  </svg>
+  <span class="lbl">See a<br>doctor</span>
+</div>
+<script>
+  tl.from(q(".bump"), { opacity: 0, y: 20, duration: 0.3, ease: "power2.out" }, w("head"));
+  tl.from(q(".doc"),  { opacity: 0, x: 60, duration: 0.3, ease: "power2.out" }, w("doctor"));
+</script>

@@ -1,0 +1,44 @@
+<style>
+  #scene-s4 .cards { position: absolute; left: 0; top: 200px; width: 870px; display: flex; justify-content: space-between; padding: 0 20px; gap: 20px; }
+  #scene-s4 .card { flex: 1; background: #fff; border-radius: 32px; box-shadow: 0 16px 40px rgba(18,52,59,.10); padding: 36px 20px 28px; display: flex; flex-direction: column; align-items: center; gap: 20px; }
+  #scene-s4 .card svg { width: 110px; height: 110px; }
+  #scene-s4 .card .lbl { font: 700 36px var(--font-body); color: var(--ink); text-align: center; line-height: 1.2; }
+  #scene-s4 .header { position: absolute; left: 20px; top: 60px; font: 800 46px var(--font-body); color: var(--ink); }
+</style>
+<div class="header">Watch for all three:</div>
+<div class="cards">
+  <div class="card neck">
+    <svg viewBox="0 0 100 100">
+      <circle cx="50" cy="30" r="18" fill="none" stroke="var(--ink)" stroke-width="6"/>
+      <path d="M38 48 L32 80 M62 48 L68 80 M38 48 C38 60 62 60 62 48" fill="none" stroke="var(--ink)" stroke-width="6" stroke-linecap="round"/>
+      <path class="tension" d="M20 42 Q35 32 50 46 Q65 60 80 42" fill="none" stroke="var(--alert)" stroke-width="5" stroke-linecap="round"/>
+    </svg>
+    <span class="lbl">Stiff neck</span>
+  </div>
+  <div class="card fever">
+    <svg viewBox="0 0 100 100">
+      <rect x="40" y="10" width="20" height="60" rx="10" fill="var(--soft)" stroke="var(--ink)" stroke-width="4"/>
+      <rect x="40" y="30" width="20" height="40" rx="8" fill="var(--alert)"/>
+      <circle cx="50" cy="80" r="14" fill="var(--alert)"/>
+      <path d="M68 24 L76 24 M68 36 L74 36 M68 48 L76 48" stroke="var(--alert)" stroke-width="4" stroke-linecap="round"/>
+    </svg>
+    <span class="lbl">High fever</span>
+  </div>
+  <div class="card rash">
+    <svg viewBox="0 0 100 100">
+      <circle cx="50" cy="50" r="32" fill="var(--soft)" stroke="var(--ink)" stroke-width="4"/>
+      <circle cx="38" cy="40" r="6" fill="var(--alert)"/>
+      <circle cx="58" cy="36" r="5" fill="var(--alert)"/>
+      <circle cx="45" cy="58" r="5" fill="var(--alert)"/>
+      <circle cx="62" cy="54" r="6" fill="var(--alert)"/>
+      <circle cx="30" cy="56" r="4" fill="var(--alert)"/>
+    </svg>
+    <span class="lbl">Rash on skin</span>
+  </div>
+</div>
+<script>
+  tl.from(q(".neck"),  { y: 60, opacity: 0, duration: 0.35, ease: "power2.out" }, w("neck"));
+  tl.from(q(".fever"), { y: 60, opacity: 0, duration: 0.35, ease: "power2.out" }, w("fever"));
+  tl.from(q(".rash"),  { y: 60, opacity: 0, duration: 0.35, ease: "power2.out" }, w("rash"));
+  tl.from(q(".header"), { opacity: 0, duration: 0.3 }, w("headache"));
+</script>

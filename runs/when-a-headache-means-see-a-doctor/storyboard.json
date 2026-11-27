@@ -1,0 +1,118 @@
+{
+  "slug": "when-a-headache-means-see-a-doctor",
+  "topic": "When a headache means see a doctor",
+  "client": "pulse-health",
+  "mode": "character",
+  "styleId": "clean-clinic",
+  "characterId": "dr-ira-v1",
+  "scenes": [
+    {
+      "id": "s1",
+      "line": "Five headache red flags worth taking seriously.",
+      "visual": "Dr. Ira faces camera, serious but warm, holds up five fingers; five teal flag icons stack in beside her",
+      "animation": "Hard cut in. Flag icons fly in one by one on 'Three', 'headache', 'flags', scale 0.5 to 1.0, back.out 0.3 s each",
+      "onScreenText": "5 red flags",
+      "durationSec": 3.0,
+      "shot": "character"
+    },
+    {
+      "id": "s2",
+      "line": "A sudden, severe headache — the worst you have ever felt — is a medical emergency.",
+      "visual": "Dr. Ira, wide eyes, one palm raised in a stop gesture; a bold lightning bolt on a soft-cream card at upper right",
+      "animation": "Lightning bolt flicks in on 'sudden', scale 0.6 to 1.0, elastic.out 0.4 s; card pulses once on 'emergency'",
+      "onScreenText": "Thunderclap headache",
+      "durationSec": 6.0,
+      "shot": "character"
+    },
+    {
+      "id": "s3",
+      "line": "Call for help immediately.",
+      "visual": "Bold teal circle with a phone handset icon and three radiating arc lines on a cream background",
+      "animation": "Circle scales up from 0 on 'Call', power2.out 0.3 s; arcs draw outward on 'immediately'",
+      "onScreenText": "Call for help",
+      "durationSec": 2.0,
+      "shot": "motion"
+    },
+    {
+      "id": "s4",
+      "line": "A headache with a stiff neck, high fever, or a rash on the skin",
+      "visual": "Three rounded cards side by side: neck with a tension-arc indicator, thermometer in alert-red, skin patch with a dot pattern",
+      "animation": "Cards slide up one by one on 'neck', 'fever', 'rash', stagger 0.15 s, power2.out",
+      "onScreenText": "Stiff neck · Fever · Rash",
+      "durationSec": 5.5,
+      "shot": "motion"
+    },
+    {
+      "id": "s5",
+      "line": "can be a sign of meningitis. Get medical help fast.",
+      "visual": "Teal medical-cross badge expands over the three cards; label 'See a doctor' slides in; arrow pointing to a clinic-building outline",
+      "animation": "Badge scales 0 to 1 on 'meningitis', power2.out 0.35 s; arrow draws on 'fast'",
+      "onScreenText": "Meningitis warning signs",
+      "durationSec": 4.0,
+      "shot": "motion"
+    },
+    {
+      "id": "s6",
+      "line": "If a headache comes with sudden vision changes, weakness on one side of the body, or trouble speaking,",
+      "visual": "Dr. Ira, earnest look, counts on three fingers; eye icon, body-half outline, and speech-bubble icon float at the sides",
+      "animation": "Each icon pops in on its matching word: eye on 'vision', half-body on 'weakness', speech bubble on 'speaking', scale 0 to 1, back.out 0.3 s",
+      "onScreenText": "Vision · Weakness · Speech",
+      "durationSec": 7.0,
+      "shot": "character"
+    },
+    {
+      "id": "s7",
+      "line": "those can be signs of a stroke. Call emergency services.",
+      "visual": "Warning triangle with a brain outline inside; phone-handset icon appears below it",
+      "animation": "Triangle scales up on 'stroke', power2.out 0.35 s; phone icon fades in on 'emergency'",
+      "onScreenText": "Stroke warning signs",
+      "durationSec": 4.0,
+      "shot": "motion"
+    },
+    {
+      "id": "s8",
+      "line": "After a head injury, a headache with confusion or vomiting needs a doctor, not just rest.",
+      "visual": "Dr. Ira, calm but concerned, gentle raised-hand gesture; head-outline with a bump icon and a stethoscope icon beside her",
+      "animation": "Head-bump icon fades in on 'head injury', stethoscope slides in on 'doctor', power2.out 0.3 s each",
+      "onScreenText": "Head injury + headache",
+      "durationSec": 6.5,
+      "shot": "character"
+    },
+    {
+      "id": "s9",
+      "line": "A headache that gets steadily worse over days or weeks,",
+      "visual": "Line chart labeled 'Pain level' on the y-axis, days 1-7 on the x-axis; a teal line climbs steadily from left to right",
+      "animation": "Chart axes draw on 'steadily'; teal line traces from day 1 to day 7 as the words are spoken, power1.inOut",
+      "onScreenText": "Getting worse daily?",
+      "durationSec": 4.0,
+      "shot": "motion"
+    },
+    {
+      "id": "s10",
+      "line": "with no clear cause, is worth bringing to your doctor.",
+      "visual": "Dr. Ira, warm smile, open-palm gesture; a small calendar card with a stethoscope cross appears beside her",
+      "animation": "Calendar card pops in on 'doctor', scale 0 to 1, back.out 0.3 s",
+      "onScreenText": "Talk to your doctor",
+      "durationSec": 4.0,
+      "shot": "character"
+    },
+    {
+      "id": "s11",
+      "line": "Save this. And if any of these match, talk to a doctor right away.",
+      "visual": "Dr. Ira, direct gaze, points upward toward a bookmark icon, then gives a friendly nod",
+      "animation": "Bookmark icon bounces twice on 'Save', scale 0.8 to 1.1 to 1.0, back.out; gentle fade toward end card on 'right away'",
+      "onScreenText": "Save this",
+      "durationSec": 5.5,
+      "shot": "character"
+    },
+    {
+      "id": "s12",
+      "line": "",
+      "visual": "Cream end card with Pulse Health wordmark centred",
+      "animation": "Fade in 0.3 s, hold",
+      "onScreenText": "Not medical advice. Sources: NHS, CDC",
+      "durationSec": 3.0,
+      "shot": "disclaimer"
+    }
+  ]
+}
