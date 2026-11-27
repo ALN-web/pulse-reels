@@ -80,3 +80,4 @@ Filled from each `run.json` once Reels are produced.
 | Reel | Mode | Time | Cost (USD) | Manual edits |
 |------|------|------|------------|--------------|
 | heart-5-minute-habit | character | ~10 min agent work + ~3 min voice/render each pass | $0 (free tiers) | 0 |
+| what-your-blood-pressure-numbers-mean | motion (style: monitor) | ~11 min wall clock, ~5 min of it rendering | $0 (free tiers) | 1 (agent re-render, see EDITS.md) |

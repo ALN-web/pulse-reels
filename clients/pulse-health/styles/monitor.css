@@ -1,0 +1,33 @@
+/* Pulse Health motion style "monitor": a calm, dark blood-pressure-monitor screen.
+   Used by: what-your-blood-pressure-numbers-mean (+ its pair). Scenes read these variables in their fragments. */
+:root {
+  --screen: #0E2A30;      /* background */
+  --screen-2: #163A41;    /* panels */
+  --line: #24525A;        /* grid + borders */
+  --glow: #5FD4C4;        /* readout digits, "normal" */
+  --mid: #F2A65A;         /* "in between" */
+  --warn: #FF8A7A;        /* "high" (light enough for dark backgrounds) */
+  --text: #F7F4EE;
+  --muted: #9FC3C0;
+}
+#root { background: var(--screen); }
+.shot-motion.style-monitor {
+  background-color: var(--screen);
+  background-image:
+    linear-gradient(var(--line) 1px, transparent 1px),
+    linear-gradient(90deg, var(--line) 1px, transparent 1px);
+  background-size: 90px 90px;
+  background-position: -1px -1px;
+}
+.shot-motion.style-monitor::before { /* soften the grid towards the edges */
+  content: ""; position: absolute; inset: 0;
+  background: radial-gradient(ellipse at 50% 45%, rgba(14,42,48,0.35) 0%, rgba(14,42,48,0.92) 75%);
+}
+.style-monitor .headline {
+  font-family: var(--font-body); font-weight: 800; font-size: 80px; letter-spacing: -0.02em; color: var(--text);
+}
+.style-monitor .visual { color: var(--text); }
+.style-monitor .panel { background: var(--screen-2); border: 3px solid var(--line); border-radius: 36px; }
+.style-monitor .lcd { font-family: var(--font-body); font-weight: 800; font-variant-numeric: tabular-nums; color: var(--glow); letter-spacing: -0.03em; }
+/* captions: separate the box from the dark screen */
+#captions .cl > span.box { border: 3px solid var(--line); }

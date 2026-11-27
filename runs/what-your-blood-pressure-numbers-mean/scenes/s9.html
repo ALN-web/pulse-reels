@@ -1,0 +1,17 @@
+<style>
+  #scene-s9 .card { position: absolute; top: 60px; width: 400px; height: 400px; display: flex; flex-direction: column; align-items: center; justify-content: center; gap: 26px; }
+  #scene-s9 .c1 { left: 0; } #scene-s9 .c2 { right: 0; }
+  #scene-s9 .card svg { width: 170px; height: 170px; }
+  #scene-s9 .card .t { font: 800 46px var(--font-body); color: var(--text); }
+  #scene-s9 .save { position: absolute; left: 335px; top: 540px; width: 200px; height: 200px; border-radius: 48px; background: var(--text); display: flex; align-items: center; justify-content: center; }
+  #scene-s9 .save svg { width: 104px; height: 104px; }
+</style>
+<div class="card c1 panel"><svg viewBox="0 0 40 40"><path d="M15 4 H25 V15 H36 V25 H25 V36 H15 V25 H4 V15 H15 Z" fill="#5FD4C4"/></svg><div class="t">Pharmacy</div></div>
+<div class="card c2 panel"><svg viewBox="0 0 40 40"><path d="M6 36 V14 L20 5 L34 14 V36 Z" fill="none" stroke="#F2A65A" stroke-width="3" stroke-linejoin="round"/><path d="M17 36 V27 H23 V36" fill="none" stroke="#F2A65A" stroke-width="3"/><path d="M20 13 V21 M16 17 H24" stroke="#F2A65A" stroke-width="3" stroke-linecap="round"/></svg><div class="t">Doctor's office</div></div>
+<div class="save"><svg viewBox="0 0 24 24"><path d="M6 3 H18 V21 L12 16.5 L6 21 Z" fill="#E8914A" stroke="#0E2A30" stroke-width="1.6" stroke-linejoin="round"/></svg></div>
+<script>
+  tl.from(q(".c1"), { scale: 0.7, opacity: 0, duration: 0.3, ease: "back.out(1.8)" }, w("pharmacy") - 0.1);
+  tl.from(q(".c2"), { scale: 0.7, opacity: 0, duration: 0.3, ease: "back.out(1.8)" }, w("office") - 0.1);
+  tl.from(q(".save"), { scale: 0, opacity: 0, duration: 0.3, ease: "back.out(2)" }, w("save") - 0.1);
+  tl.to(q(".save"), { y: -30, duration: 0.16, yoyo: true, repeat: 3, ease: "power1.out" }, w("save") + 0.2);
+</script>

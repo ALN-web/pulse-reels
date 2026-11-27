@@ -1,0 +1,63 @@
+{
+  "slug": "what-your-blood-pressure-numbers-mean",
+  "topic": "What your blood pressure numbers mean",
+  "client": "pulse-health",
+  "mode": "motion",
+  "createdAt": "2026-11-27T06:04:27.825Z",
+  "steps": [
+    {
+      "step": "script",
+      "status": "ok",
+      "startedAt": "2026-11-27T06:06:36.390Z",
+      "durationMs": 0,
+      "costUsd": 0,
+      "provider": "claude-code",
+      "notes": "sources verified on nhs.uk + cdc.gov; numbers taken where both agree"
+    },
+    {
+      "step": "storyboard",
+      "status": "ok",
+      "startedAt": "2026-11-27T06:06:40.288Z",
+      "durationMs": 0,
+      "costUsd": 0,
+      "provider": "claude-code",
+      "notes": "10 scenes, motion style 'monitor'"
+    },
+    {
+      "step": "voice",
+      "status": "ok",
+      "startedAt": "2026-11-27T06:06:43.268Z",
+      "durationMs": 7178,
+      "costUsd": 0,
+      "provider": "elevenlabs",
+      "notes": "536 chars, voice cjVigY5qzO86Huf0OWal, model eleven_multilingual_v2, loudnorm -23.6 -> -14.8 LUFS"
+    },
+    {
+      "step": "caption",
+      "status": "ok",
+      "startedAt": "2026-11-27T06:16:59.318Z",
+      "durationMs": 314246,
+      "costUsd": 0,
+      "provider": "hyperframes",
+      "notes": "38.5 s, 10 scenes, cut drift 0 ms, caption drift 0 ms (33 lines), audio -14.0 LUFS"
+    },
+    {
+      "step": "compliance",
+      "status": "ok",
+      "startedAt": "2026-11-27T06:22:21.306Z",
+      "durationMs": 29,
+      "costUsd": 0,
+      "provider": "local-rules",
+      "notes": "final: 0 errors, 0 warnings"
+    },
+    {
+      "step": "render",
+      "status": "ok",
+      "startedAt": "2026-11-27T06:22:51.664Z",
+      "durationMs": 0,
+      "costUsd": 0,
+      "provider": "hyperframes",
+      "notes": "snapshot review only (no separate render.mp4); final encode happens in the caption step"
+    }
+  ]
+}

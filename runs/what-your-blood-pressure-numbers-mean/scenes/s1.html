@@ -1,0 +1,24 @@
+<style>
+  #scene-s1 .mon { position: absolute; left: 75px; top: 60px; width: 720px; height: 640px; }
+  #scene-s1 .num { position: absolute; left: 0; width: 720px; text-align: center; font-size: 230px; line-height: 1; }
+  #scene-s1 .n1 { top: 70px; } #scene-s1 .n2 { top: 360px; }
+  #scene-s1 .bar { position: absolute; left: 160px; width: 400px; top: 316px; height: 8px; border-radius: 4px; background: var(--line); }
+  #scene-s1 .unit { position: absolute; right: 40px; bottom: 28px; font: 700 34px var(--font-body); color: var(--muted); }
+  #scene-s1 .heart { position: absolute; left: 40px; top: 36px; width: 64px; height: 64px; }
+  #scene-s1 .q { position: absolute; left: 700px; top: -10px; width: 150px; height: 150px; border-radius: 50%; background: var(--mid); color: var(--screen); font: 800 110px/150px var(--font-body); text-align: center; }
+</style>
+<div class="mon panel">
+  <svg class="heart" viewBox="0 0 100 100"><path d="M50 86 C20 64 6 48 6 30 C6 16 17 6 30 6 C39 6 46 11 50 18 C54 11 61 6 70 6 C83 6 94 16 94 30 C94 48 80 64 50 86 Z" fill="#FF8A7A"/></svg>
+  <div class="num n1 lcd">120</div>
+  <div class="bar"></div>
+  <div class="num n2 lcd">80</div>
+  <div class="unit">mmHg</div>
+</div>
+<div class="q">?</div>
+<script>
+  tl.from(q(".mon"), { opacity: 0, scale: 0.96, duration: 0.25, ease: "power2.out" }, t);
+  tl.from(q(".n1"), { opacity: 0, y: 20, duration: 0.18 }, w("120"));
+  tl.from(q(".n2"), { opacity: 0, y: 20, duration: 0.18 }, w("80"));
+  tl.to(q(".heart"), { scale: 1.2, transformOrigin: "50% 50%", duration: 0.15, yoyo: true, repeat: 7, ease: "power1.inOut" }, t + 0.2);
+  tl.from(q(".q"), { scale: 0, rotation: -30, duration: 0.3, ease: "back.out(2.2)" }, w("mean"));
+</script>

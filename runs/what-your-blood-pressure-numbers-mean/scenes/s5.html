@@ -1,0 +1,25 @@
+<style>
+  #scene-s5 .scale { position: absolute; left: 0; top: 260px; width: 870px; height: 110px; display: flex; gap: 10px; }
+  #scene-s5 .z { height: 110px; border-radius: 26px; opacity: 0.25; }
+  #scene-s5 .z1 { flex: 3; background: var(--glow); } #scene-s5 .z2 { flex: 2; background: var(--mid); } #scene-s5 .z3 { flex: 3; background: var(--warn); }
+  #scene-s5 .marker { position: absolute; left: 0; top: 200px; width: 0; height: 0; border-left: 28px solid transparent; border-right: 28px solid transparent; border-top: 44px solid var(--text); transform: translateX(140px); }
+  #scene-s5 .card { position: absolute; right: 0; top: 440px; width: 480px; padding: 34px 36px; text-align: right; }
+  #scene-s5 .card .big { font-size: 110px; line-height: 1; color: var(--warn); }
+  #scene-s5 .card .or { font: 700 40px var(--font-body); color: var(--muted); }
+  #scene-s5 .card .small { margin-top: 12px; font: 800 44px var(--font-body); color: var(--warn); letter-spacing: 0.04em; }
+  #scene-s5 .pro { position: absolute; left: 0; top: 470px; width: 370px; padding: 24px 24px; display: flex; align-items: center; gap: 16px; font: 700 30px/1.25 var(--font-body); color: var(--text); }
+  #scene-s5 .pro span { white-space: nowrap; }
+  #scene-s5 .pro svg { width: 80px; height: 80px; flex: none; }
+</style>
+<div class="scale"><div class="z z1"></div><div class="z z2"></div><div class="z z3"></div></div>
+<div class="marker"></div>
+<div class="card panel"><div class="big lcd">140/90</div><div class="or">or higher</div><div class="small">USUALLY HIGH</div></div>
+<div class="pro panel"><svg viewBox="0 0 40 40"><path d="M10 4 V16 C10 22 18 22 18 16 V4 M14 22 V28 C14 34 26 34 26 28 V24" fill="none" stroke="#5FD4C4" stroke-width="3" stroke-linecap="round"/><circle cx="26" cy="21" r="4" fill="none" stroke="#5FD4C4" stroke-width="3"/></svg><span>checked by a<br>professional</span></div>
+<script>
+  tl.to(q(".z1"), { opacity: 0.25, duration: 0.01 }, t);
+  tl.from(q(".card"), { y: 40, opacity: 0, duration: 0.3, ease: "power2.out" }, w("140"));
+  tl.from(q(".pro"), { x: -40, opacity: 0, duration: 0.3, ease: "power2.out" }, w("professional"));
+  tl.to(q(".z3"), { opacity: 1, duration: 0.25 }, w("high"));
+  tl.to(q(".marker"), { x: 690, duration: 0.5, ease: "power2.inOut" }, w("high") - 0.2);
+  tl.from(q(".small"), { opacity: 0, scale: 0.8, transformOrigin: "100% 50%", duration: 0.25, ease: "back.out(2)" }, w("high"));
+</script>

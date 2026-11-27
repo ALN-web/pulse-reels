@@ -14,7 +14,8 @@ description: Main pipeline. One prompt to a finished Instagram Reel. Chains scri
 4. **reel-storyboard** → `storyboard.json`
 5. **reel-compliance** draft check; fix and repeat until PASS
 6. **reel-voice** → `voice.mp3`, `words.json`
-7. **reel-render** → `render.mp4`
+7. **reel-render**: write `scenes/*.html`, then `npm run render -- <slug> --snapshot` and review the contact sheets.
+   Skip the separate `render.mp4` (it costs ~4 min): the caption step does the one final encode.
 8. **reel-caption** → `reel.mp4`, `post.json`, `post.txt`
 9. **reel-compliance --final**, which must PASS
 
@@ -25,6 +26,10 @@ description: Main pipeline. One prompt to a finished Instagram Reel. Chains scri
 - **Every step** records its duration and API cost in `run.json`.
 - **No manual fixes** inside the chain. If a human edits a generated file afterwards, log it in `EDITS.md`.
 - Stop and report at the first step that fails twice in a row.
+- **Visual style:** motion Reels use a style theme `clients/<client>/styles/<styleId>.css` (e.g. `monitor`). Each pair of
+  motion Reels gets its own style; reuse the theme for the pair's second Reel, make a new one for the next pair.
+- **Conflicting sources:** if WHO/CDC/NHS disagree on a number, say so on screen ("guidelines differ, ask your doctor")
+  instead of picking one silently.
 
 ## Done means
 `runs/<slug>/` holds `reel.mp4` (1080×1920, 30-60 s), `post.txt`, `compliance.json` with `passed: true, final: true`,

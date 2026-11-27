@@ -19,6 +19,8 @@ export interface BuildInput {
   fragments: Record<string, string>;
   /** Burn word-synced captions into the composition (caption step). */
   captions?: boolean;
+  /** Visual style theme for this Reel (clients/<client>/styles/<styleId>.css), applied after the base CSS. */
+  styleCss?: string;
 }
 
 export interface BuildResult {
@@ -94,7 +96,7 @@ export function buildComposition(input: BuildInput): BuildResult {
         sceneJs.push(`(function (tl, t, d, w, q, qa, ira) {\n${frag.script}\n})(tl, ${t.start}, ${dur}, wordAt(${JSON.stringify(sceneWords)}, ${t.start}), (s) => document.querySelector(${JSON.stringify(`#scene-${t.id} `)} + s), (s) => document.querySelectorAll(${JSON.stringify(`#scene-${t.id} `)} + s), ira);`);
       }
     }
-    sceneHtml.push(`    <section id="scene-${t.id}" class="clip scene shot-${s.shot}" data-start="${t.start}" data-duration="${dur}" data-track-index="1">${body}\n    </section>`);
+    sceneHtml.push(`    <section id="scene-${t.id}" class="clip scene shot-${s.shot} style-${storyboard.styleId}" data-start="${t.start}" data-duration="${dur}" data-track-index="1">${body}\n    </section>`);
   }
 
   // Character visibility: shown only during character scenes; hand reset at each of them.
@@ -160,6 +162,8 @@ ${Object.entries(p).map(([k, v]) => `        --${k}: ${v};`).join("\n")}
       .wordmark .pulse { width: 220px; height: 74px; }
       .disclaimer { margin-top: 56px; font-size: 46px; font-weight: 700; line-height: 1.25; color: var(--ink); text-wrap: balance; }
       .sources { margin-top: 28px; font-size: 38px; font-weight: 500; color: var(--ink); }${captions ? captionCss(brand) : ""}
+      /* ---- style: ${esc(storyboard.styleId)} ---- */
+${input.styleCss ?? ""}
     </style>
   </head>
   <body>

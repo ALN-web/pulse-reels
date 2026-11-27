@@ -1,0 +1,99 @@
+{
+  "slug": "what-your-blood-pressure-numbers-mean",
+  "topic": "What your blood pressure numbers mean",
+  "client": "pulse-health",
+  "mode": "motion",
+  "styleId": "monitor",
+  "scenes": [
+    {
+      "id": "s1",
+      "line": "120 over 80. What does that even mean?",
+      "visual": "Blood pressure monitor screen with a big digital readout 120 over 80 and a small pulsing heart icon",
+      "animation": "Screen powers on; '120' then '80' flick in digit by digit on '120' and '80'; question mark pops on 'mean'",
+      "onScreenText": "120/80 = ?",
+      "durationSec": 3,
+      "shot": "motion"
+    },
+    {
+      "id": "s2",
+      "line": "The top number is the pressure when your heart pumps.",
+      "visual": "Same readout; top number glows teal with label SYSTOLIC; heart icon squeezes",
+      "animation": "Bottom number dims on 'top'; label slides in; heart squeezes on 'pumps'",
+      "onScreenText": "Top = heart pumps",
+      "durationSec": 3.5,
+      "shot": "motion"
+    },
+    {
+      "id": "s3",
+      "line": "The bottom number is the pressure when it rests between beats.",
+      "visual": "Readout; bottom number glows with label DIASTOLIC; ECG line flattens between two beats",
+      "animation": "Top number dims on 'bottom'; ECG line draws, pauses on 'rests', beats again on 'beats'",
+      "onScreenText": "Bottom = heart rests",
+      "durationSec": 4,
+      "shot": "motion"
+    },
+    {
+      "id": "s4",
+      "line": "Under 120 over 80 is considered normal.",
+      "visual": "Horizontal scale bar with three zones; the left zone lights up teal labelled NORMAL with 'under 120/80'",
+      "animation": "Scale bar grows from the left; marker slides into the normal zone on 'normal'",
+      "onScreenText": "Under 120/80: normal",
+      "durationSec": 3.5,
+      "shot": "motion"
+    },
+    {
+      "id": "s5",
+      "line": "140 over 90 or higher, checked by a professional, is usually considered high.",
+      "visual": "Same scale bar; right zone lights up in alert red labelled HIGH with '140/90 or higher'",
+      "animation": "Marker slides to the right zone on 'high'; small stethoscope badge appears on 'professional'",
+      "onScreenText": "140/90+: usually high",
+      "durationSec": 5,
+      "shot": "motion"
+    },
+    {
+      "id": "s6",
+      "line": "In between? Guidelines differ by country, so ask your doctor what your target is.",
+      "visual": "Middle zone of the scale lights apricot with a question mark; two small flag-free globe badges with different lines; speech bubble 'Ask your doctor'",
+      "animation": "Marker settles in the middle on 'between'; globe badges pop on 'country'; bubble pops on 'doctor'",
+      "onScreenText": "In between? Ask your doctor",
+      "durationSec": 5,
+      "shot": "motion"
+    },
+    {
+      "id": "s7",
+      "line": "High blood pressure usually has no symptoms.",
+      "visual": "A calm person outline with no warning signs around it; label 'Feels fine'",
+      "animation": "Outline fades up; three faint warning icons appear and get crossed out on 'no symptoms'",
+      "onScreenText": "Usually no symptoms",
+      "durationSec": 3,
+      "shot": "motion"
+    },
+    {
+      "id": "s8",
+      "line": "The only way to know your numbers is to measure them.",
+      "visual": "Blood pressure cuff icon connected to the monitor; readout shows dashes then fills in",
+      "animation": "Cuff inflates (scale pulse) on 'measure'; readout dashes turn into a tick",
+      "onScreenText": "Measure to know",
+      "durationSec": 3.5,
+      "shot": "motion"
+    },
+    {
+      "id": "s9",
+      "line": "Get yours checked at a pharmacy or your doctor's office, and save this for later.",
+      "visual": "Two cards: pharmacy cross and clinic building; bookmark icon below",
+      "animation": "Cards pop on 'pharmacy' and 'office'; bookmark bounces on 'save'",
+      "onScreenText": "Get yours checked",
+      "durationSec": 5,
+      "shot": "motion"
+    },
+    {
+      "id": "s10",
+      "line": "",
+      "visual": "Pulse Health end card",
+      "animation": "Fade in, hold",
+      "onScreenText": "Not medical advice. Sources: NHS, CDC",
+      "durationSec": 3,
+      "shot": "disclaimer"
+    }
+  ]
+}

@@ -48,7 +48,11 @@ export function renderRun(slug: string, o: RenderOptions): string {
   }
   const characterSvg = storyboard.mode === "character" ? readFileSync(join(ROOT, brand.character.rig), "utf8") : undefined;
 
-  const built = buildComposition({ brand, script, storyboard, words, characterSvg, fragments, captions: o.captions });
+  const stylePath = join(ROOT, "clients", run.client, "styles", `${storyboard.styleId}.css`);
+  const styleCss = existsSync(stylePath) ? readFileSync(stylePath, "utf8") : undefined;
+  if (!styleCss) console.log(`style "${storyboard.styleId}": no clients/${run.client}/styles/${storyboard.styleId}.css, using base look`);
+
+  const built = buildComposition({ brand, script, storyboard, words, characterSvg, fragments, captions: o.captions, styleCss });
   const cutDrift = maxCutDriftMs(built.timings);
   if (cutDrift > SYNC_TOLERANCE_MS) throw new Error(`scene cut drifts ${cutDrift.toFixed(0)} ms from its word (max ${SYNC_TOLERANCE_MS})`);
   const capDrift = o.captions ? captionDriftMs(built.captionLines, words.words) : 0;

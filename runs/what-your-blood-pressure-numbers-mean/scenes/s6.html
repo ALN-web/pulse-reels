@@ -1,0 +1,25 @@
+<style>
+  #scene-s6 .scale { position: absolute; left: 0; top: 260px; width: 870px; height: 110px; display: flex; gap: 10px; }
+  #scene-s6 .z { height: 110px; border-radius: 26px; opacity: 0.25; }
+  #scene-s6 .z1 { flex: 3; background: var(--glow); } #scene-s6 .z2 { flex: 2; background: var(--mid); display: flex; align-items: center; justify-content: center; font: 800 80px var(--font-body); color: var(--screen); }
+  #scene-s6 .z3 { flex: 3; background: var(--warn); }
+  #scene-s6 .marker { position: absolute; left: 0; top: 200px; width: 0; height: 0; border-left: 28px solid transparent; border-right: 28px solid transparent; border-top: 44px solid var(--text); transform: translateX(690px); }
+  #scene-s6 .g { position: absolute; top: 440px; width: 420px; padding: 26px 30px; display: flex; align-items: center; gap: 20px; }
+  #scene-s6 .g1 { left: 0; } #scene-s6 .g2 { right: 0; }
+  #scene-s6 .g svg { width: 74px; height: 74px; flex: none; }
+  #scene-s6 .g .who { font: 700 32px var(--font-body); color: var(--muted); }
+  #scene-s6 .g .val { font-size: 60px; line-height: 1.05; white-space: nowrap; }
+  #scene-s6 .ask { position: absolute; left: 135px; top: 640px; width: 600px; padding: 30px 0; border-radius: 40px; background: var(--text); color: var(--screen); text-align: center; font: 800 54px var(--font-body); }
+</style>
+<div class="scale"><div class="z z1"></div><div class="z z2">?</div><div class="z z3"></div></div>
+<div class="marker"></div>
+<div class="g g1 panel"><svg viewBox="0 0 40 40"><circle cx="20" cy="20" r="16" fill="none" stroke="#5FD4C4" stroke-width="3"/><path d="M4 20 H36 M20 4 C12 12 12 28 20 36 M20 4 C28 12 28 28 20 36" fill="none" stroke="#5FD4C4" stroke-width="2.5"/></svg><div><div class="who">UK (NHS) high</div><div class="val lcd">140/90+</div></div></div>
+<div class="g g2 panel"><svg viewBox="0 0 40 40"><circle cx="20" cy="20" r="16" fill="none" stroke="#F2A65A" stroke-width="3"/><path d="M4 20 H36 M20 4 C12 12 12 28 20 36 M20 4 C28 12 28 28 20 36" fill="none" stroke="#F2A65A" stroke-width="2.5"/></svg><div><div class="who">US (CDC) high</div><div class="val lcd" style="color: var(--mid)">130/80+</div></div></div>
+<div class="ask">Ask your doctor</div>
+<script>
+  tl.to(q(".marker"), { x: 415, duration: 0.5, ease: "power2.inOut" }, w("between") - 0.2);
+  tl.to(q(".z2"), { opacity: 1, duration: 0.25 }, w("between"));
+  tl.from(q(".g1"), { y: 40, opacity: 0, duration: 0.3, ease: "power2.out" }, w("differ"));
+  tl.from(q(".g2"), { y: 40, opacity: 0, duration: 0.3, ease: "power2.out" }, w("country"));
+  tl.from(q(".ask"), { scale: 0.6, opacity: 0, duration: 0.3, ease: "back.out(2)" }, w("doctor"));
+</script>

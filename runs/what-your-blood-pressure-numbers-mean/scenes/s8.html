@@ -1,0 +1,20 @@
+<style>
+  #scene-s8 .cuff { position: absolute; left: 20px; top: 120px; width: 300px; height: 380px; }
+  #scene-s8 .mon { position: absolute; left: 420px; top: 140px; width: 430px; height: 340px; }
+  #scene-s8 .read { position: absolute; left: 0; width: 430px; top: 70px; text-align: center; font-size: 130px; line-height: 1; }
+  #scene-s8 .tick { position: absolute; left: 155px; top: 50px; width: 120px; height: 120px; }
+  #scene-s8 .label { position: absolute; left: 0; width: 430px; bottom: 34px; text-align: center; font: 700 34px var(--font-body); color: var(--muted); }
+  #scene-s8 .tube { position: absolute; left: 0; top: 0; width: 870px; height: 600px; }
+</style>
+<svg class="tube" viewBox="0 0 870 600"><path d="M 250 300 C 330 300 340 330 420 320" fill="none" stroke="#9FC3C0" stroke-width="10" stroke-linecap="round"/></svg>
+<svg class="cuff" viewBox="0 0 60 76"><rect x="6" y="10" width="40" height="56" rx="10" fill="#163A41" stroke="#5FD4C4" stroke-width="3"/><path d="M14 22 H38 M14 32 H38 M14 42 H38 M14 52 H38" stroke="#24525A" stroke-width="3" stroke-linecap="round"/></svg>
+<div class="mon panel"><div class="read lcd">– – –</div><svg class="tick" viewBox="0 0 24 24"><path d="M4 12.5 L10 18 L20 6" fill="none" stroke="#5FD4C4" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/></svg><div class="label">your numbers</div></div>
+<script>
+  tl.from(q(".cuff"), { x: -40, opacity: 0, duration: 0.3, ease: "power2.out" }, t);
+  tl.from(q(".mon"), { x: 40, opacity: 0, duration: 0.3, ease: "power2.out" }, t + 0.1);
+  tl.to(q(".cuff"), { scale: 1.12, transformOrigin: "50% 50%", duration: 0.22, yoyo: true, repeat: 3, ease: "sine.inOut" }, w("measure"));
+  tl.set(q(".tick"), { opacity: 0 }, t);
+  tl.to(q(".read"), { opacity: 0, duration: 0.15 }, w("them"));
+  tl.to(q(".tick"), { opacity: 1, duration: 0.15 }, w("them"));
+  tl.from(q(".tick"), { scale: 0.4, transformOrigin: "50% 50%", duration: 0.3, ease: "back.out(2.2)" }, w("them"));
+</script>

@@ -19,6 +19,12 @@ if (!slug) {
   process.exit(2);
 }
 
+// --build-only is a dev helper: no run.json entry, so the real render's time is kept.
+if (values["build-only"]) {
+  renderRun(slug, { captions: false, output: "render.mp4", buildOnly: true });
+  process.exit(0);
+}
+
 await timedStep(slug, "render", async () => {
   const notes = renderRun(slug, {
     captions: false,

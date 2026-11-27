@@ -1,0 +1,32 @@
+{
+  "slug": "what-your-blood-pressure-numbers-mean",
+  "topic": "What your blood pressure numbers mean",
+  "client": "pulse-health",
+  "mode": "motion",
+  "hook": {
+    "text": "120 over 80. What does that even mean?",
+    "estimatedSec": 2.8,
+    "pattern": "direct question"
+  },
+  "beats": [
+    { "id": "b1", "text": "The top number is the pressure when your heart pumps. The bottom number is the pressure when it rests between beats." },
+    { "id": "b2", "text": "Under 120 over 80 is considered normal." },
+    { "id": "b3", "text": "140 over 90 or higher, checked by a professional, is usually considered high." },
+    { "id": "b4", "text": "In between? Guidelines differ by country, so ask your doctor what your target is." },
+    { "id": "b5", "text": "High blood pressure usually has no symptoms. The only way to know your numbers is to measure them." }
+  ],
+  "cta": "Get yours checked at a pharmacy or your doctor's office, and save this for later.",
+  "sources": [
+    {
+      "publisher": "NHS",
+      "title": "Blood pressure test",
+      "url": "https://www.nhs.uk/conditions/blood-pressure-test/"
+    },
+    {
+      "publisher": "CDC",
+      "title": "About High Blood Pressure",
+      "url": "https://www.cdc.gov/high-blood-pressure/about/index.html"
+    }
+  ],
+  "estimatedTotalSec": 40
+}
