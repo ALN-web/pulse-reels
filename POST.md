@@ -1,7 +1,7 @@
 # LinkedIn / X post (draft)
 
 Attach: the headache Reel (`runs/when-a-headache-means-see-a-doctor/reel.mp4`) and a screenshot of the showcase page.
-Fill in the repo link once it's on GitHub.
+Repo: https://github.com/ALN-web/pulse-reels
 
 ---
 
@@ -27,6 +27,6 @@ word timings, HyperFrames for rendering, 0 ms drift between spoken words and cap
 What surprised us: the AI agent wrote "Three headache red flags" and then listed five. The gate can't catch that
 kind of mistake. A human review step and an edit log (EDITS.md) did. Automation plus review beats either alone.
 
-Built by Team Delta in one week. Repo: <link>
+Built by Team Delta in one week. Repo: https://github.com/ALN-web/pulse-reels
 
 #AI #ClaudeCode #HealthTech #ContentAutomation #BuildInPublic
