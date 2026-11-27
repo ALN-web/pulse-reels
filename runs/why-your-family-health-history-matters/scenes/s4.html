@@ -1,0 +1,14 @@
+<style>
+  #scene-s4 .chip { position: absolute; background: var(--primary); color: #fff; font: 800 40px var(--font-body); border-radius: 999px; padding: 18px 34px; box-shadow: 0 12px 30px rgba(18,52,59,.18); }
+  #scene-s4 .p1 { left: 10px; top: 120px; }
+  #scene-s4 .p2 { right: 10px; top: 120px; }
+  #scene-s4 .p3 { left: 50%; top: 260px; transform: translateX(-50%); background: var(--accent); color: var(--ink); }
+</style>
+<div class="chip p1">Parents</div>
+<div class="chip p2">Siblings</div>
+<div class="chip p3">Grandparents</div>
+<script>
+  tl.from(q(".p1"), { scale: 0, opacity: 0, duration: 0.3, ease: "back.out(2)" }, w("parents"));
+  tl.from(q(".p2"), { scale: 0, opacity: 0, duration: 0.3, ease: "back.out(2)" }, w("siblings"));
+  tl.from(q(".p3"), { scale: 0, opacity: 0, duration: 0.3, ease: "back.out(2)", xPercent: -50, x: 0 }, w("grandparents"));
+</script>

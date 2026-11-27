@@ -1,0 +1,24 @@
+<style>
+  #scene-s7 .cal { position: absolute; right: 10px; top: 60px; width: 250px; background: #fff; border-radius: 28px; box-shadow: 0 16px 40px rgba(18,52,59,.14); overflow: hidden; }
+  #scene-s7 .cal .top { height: 54px; background: var(--primary); }
+  #scene-s7 .cal .grid { display: grid; grid-template-columns: repeat(4, 1fr); gap: 10px; padding: 18px; }
+  #scene-s7 .cal .d { height: 36px; border-radius: 8px; background: var(--soft); }
+  #scene-s7 .cal .d.on { background: var(--accent); }
+  #scene-s7 .arrow { position: absolute; left: 20px; top: 150px; width: 260px; height: 120px; }
+</style>
+<div class="cal">
+  <div class="top"></div>
+  <div class="grid">
+    <div class="d"></div><div class="d on"></div><div class="d"></div><div class="d"></div>
+    <div class="d"></div><div class="d"></div><div class="d"></div><div class="d"></div>
+    <div class="d"></div><div class="d"></div><div class="d"></div><div class="d"></div>
+  </div>
+</div>
+<svg class="arrow" viewBox="0 0 260 120">
+  <path d="M240 60 H40 M80 20 L36 60 L80 100" fill="none" stroke="var(--accent)" stroke-width="16" stroke-linecap="round" stroke-linejoin="round"/>
+</svg>
+<script>
+  tl.from(q(".cal"), { opacity: 0, y: 30, duration: 0.3, ease: "power2.out" }, w("asking"));
+  tl.from(q(".arrow"), { x: 120, opacity: 0, duration: 0.4, ease: "power2.inOut" }, w("earlier"));
+  tl.from(q(".d.on"), { scale: 0, duration: 0.25, ease: "back.out(2)" }, w("earlier") + 0.3);
+</script>

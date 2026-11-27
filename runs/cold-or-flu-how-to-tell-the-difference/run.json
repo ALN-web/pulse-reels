@@ -1,0 +1,63 @@
+{
+  "slug": "cold-or-flu-how-to-tell-the-difference",
+  "topic": "Cold or flu? How to tell the difference",
+  "client": "pulse-health",
+  "mode": "character",
+  "createdAt": "2026-11-27T12:08:49.251Z",
+  "steps": [
+    {
+      "step": "script",
+      "status": "ok",
+      "startedAt": "2026-11-27T12:04:52.728Z",
+      "durationMs": 420000,
+      "costUsd": 0,
+      "provider": "claude-code",
+      "notes": "Script written by Claude, 3 differences from NHS cold-vs-flu table, sources NHS flu + common cold, compliance PASS"
+    },
+    {
+      "step": "storyboard",
+      "status": "ok",
+      "startedAt": "2026-11-27T12:07:47.941Z",
+      "durationMs": 300000,
+      "costUsd": 0,
+      "provider": "claude-code",
+      "notes": "Storyboard written by Claude, 12 scenes, 6/11 character shots, 49.5s planned, compliance PASS"
+    },
+    {
+      "step": "voice",
+      "status": "ok",
+      "startedAt": "2026-11-27T12:12:51.134Z",
+      "durationMs": 7860,
+      "costUsd": 0,
+      "provider": "elevenlabs",
+      "notes": "619 chars, voice cjVigY5qzO86Huf0OWal, model eleven_multilingual_v2, loudnorm -23.4 -> -14.6 LUFS"
+    },
+    {
+      "step": "render",
+      "status": "ok",
+      "startedAt": "2026-11-27T12:14:47.373Z",
+      "durationMs": 16283,
+      "costUsd": 0,
+      "provider": "hyperframes",
+      "notes": "snapshot at 1.56,5.51,8.86,12.07,16.68,21.62,25.56,29.04,32.65,35.81,38.72,41.46; cut drift 0 ms"
+    },
+    {
+      "step": "caption",
+      "status": "ok",
+      "startedAt": "2026-11-27T12:15:59.895Z",
+      "durationMs": 198056,
+      "costUsd": 0,
+      "provider": "hyperframes",
+      "notes": "43.0 s, 12 scenes, cut drift 0 ms, caption drift 0 ms (42 lines), audio -14.0 LUFS"
+    },
+    {
+      "step": "compliance",
+      "status": "ok",
+      "startedAt": "2026-11-27T12:19:22.864Z",
+      "durationMs": 25,
+      "costUsd": 0,
+      "provider": "local-rules",
+      "notes": "final: 0 errors, 0 warnings"
+    }
+  ]
+}

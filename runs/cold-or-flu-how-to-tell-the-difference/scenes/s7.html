@@ -1,0 +1,23 @@
+<style>
+  #scene-s7 .bedcard { position: absolute; left: 95px; top: 230px; width: 680px; height: 440px; background: #fff; border-radius: 40px; box-shadow: 0 16px 40px rgba(18,52,59,.10); }
+  #scene-s7 .bedcard svg { width: 100%; height: 100%; }
+  #scene-s7 .batt { position: absolute; left: 285px; top: 40px; width: 300px; height: 150px; }
+</style>
+<svg class="batt" viewBox="0 0 200 100">
+  <rect x="10" y="15" width="160" height="70" rx="12" fill="none" stroke="var(--ink)" stroke-width="8"/>
+  <rect x="170" y="35" width="16" height="30" rx="4" fill="var(--ink)"/>
+  <rect class="level" x="22" y="27" width="136" height="46" rx="6" fill="var(--primary)"/>
+</svg>
+<div class="bedcard">
+  <svg viewBox="0 0 680 440">
+    <path d="M90 330 V150 M590 330 V230 M90 290 H590" stroke="var(--ink)" stroke-width="14" stroke-linecap="round" fill="none"/>
+    <rect x="120" y="200" width="130" height="70" rx="30" fill="var(--soft)" stroke="var(--ink)" stroke-width="8"/>
+    <path d="M250 290 V230 C250 215 260 205 280 205 H560 C575 205 590 215 590 230 V290 Z" fill="var(--accent)" stroke="var(--ink)" stroke-width="8" stroke-linejoin="round"/>
+    <text x="440" y="130" text-anchor="middle" fill="var(--primary)" style="font: 800 64px Fraunces, serif;">z z z</text>
+  </svg>
+</div>
+<script>
+  tl.from(q(".bedcard"), { y: 60, opacity: 0, duration: 0.35, ease: "power2.out" }, w("Flu"));
+  tl.from(q(".batt"), { opacity: 0, duration: 0.3 }, w("leave"));
+  tl.to(q(".level"), { attr: { width: 30 }, fill: "#E8914A", duration: 0.8, ease: "power1.inOut" }, w("exhausted"));
+</script>

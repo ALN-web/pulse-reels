@@ -1,0 +1,63 @@
+{
+  "slug": "why-your-family-health-history-matters",
+  "topic": "Why your family health history matters",
+  "client": "pulse-health",
+  "mode": "character",
+  "createdAt": "2026-11-27T11:58:46.071Z",
+  "steps": [
+    {
+      "step": "script",
+      "status": "ok",
+      "startedAt": "2026-11-27T11:57:28.693Z",
+      "durationMs": 210000,
+      "costUsd": 0,
+      "provider": "claude-code",
+      "notes": "Direct-question hook, 5 beats, 2 CDC sources; only number (age 50) is on both CDC pages; compliance PASS"
+    },
+    {
+      "step": "storyboard",
+      "status": "ok",
+      "startedAt": "2026-11-27T11:59:14.802Z",
+      "durationMs": 150000,
+      "costUsd": 0,
+      "provider": "claude-code",
+      "notes": "13 scenes (7 character, 5 motion, 1 disclaimer), 47.7s planned; compliance PASS"
+    },
+    {
+      "step": "voice",
+      "status": "ok",
+      "startedAt": "2026-11-27T12:01:47.690Z",
+      "durationMs": 9199,
+      "costUsd": 0,
+      "provider": "elevenlabs",
+      "notes": "701 chars, voice cjVigY5qzO86Huf0OWal, model eleven_multilingual_v2, loudnorm -23.6 -> -14.7 LUFS"
+    },
+    {
+      "step": "render",
+      "status": "ok",
+      "startedAt": "2026-11-27T12:03:38.673Z",
+      "durationMs": 20615,
+      "costUsd": 0,
+      "provider": "hyperframes",
+      "notes": "snapshot at 1.18,4.90,9.13,12.02,15.55,20.53,24.54,27.49,31.53,35.34,38.51,42.00,45.17; cut drift 0 ms"
+    },
+    {
+      "step": "caption",
+      "status": "ok",
+      "startedAt": "2026-11-27T12:04:51.463Z",
+      "durationMs": 209223,
+      "costUsd": 0,
+      "provider": "hyperframes",
+      "notes": "46.7 s, 13 scenes, cut drift 0 ms, caption drift 0 ms (44 lines), audio -14.0 LUFS"
+    },
+    {
+      "step": "compliance",
+      "status": "ok",
+      "startedAt": "2026-11-27T12:08:31.316Z",
+      "durationMs": 26,
+      "costUsd": 0,
+      "provider": "local-rules",
+      "notes": "final: 0 errors, 0 warnings"
+    }
+  ]
+}

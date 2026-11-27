@@ -1,0 +1,18 @@
+<style>
+  #scene-s11 .list { position: absolute; right: 10px; top: 50px; width: 270px; background: #fff; border-radius: 28px; box-shadow: 0 16px 40px rgba(18,52,59,.14); padding: 22px 22px 14px; }
+  #scene-s11 .row { display: flex; align-items: center; gap: 16px; margin-bottom: 16px; }
+  #scene-s11 .row svg { width: 50px; height: 50px; flex-shrink: 0; }
+  #scene-s11 .row .bar { height: 14px; border-radius: 7px; background: var(--soft); flex: 1; }
+</style>
+<div class="list">
+  <div class="row"><svg viewBox="0 0 50 50"><rect x="3" y="3" width="44" height="44" rx="10" fill="var(--soft)" stroke="var(--primary)" stroke-width="4"/><path class="tk" d="M12 26 L22 35 L39 14" fill="none" stroke="var(--primary)" stroke-width="6" stroke-linecap="round" stroke-linejoin="round"/></svg><div class="bar"></div></div>
+  <div class="row"><svg viewBox="0 0 50 50"><rect x="3" y="3" width="44" height="44" rx="10" fill="var(--soft)" stroke="var(--primary)" stroke-width="4"/><path class="tk" d="M12 26 L22 35 L39 14" fill="none" stroke="var(--primary)" stroke-width="6" stroke-linecap="round" stroke-linejoin="round"/></svg><div class="bar"></div></div>
+  <div class="row"><svg viewBox="0 0 50 50"><rect x="3" y="3" width="44" height="44" rx="10" fill="var(--soft)" stroke="var(--primary)" stroke-width="4"/></svg><div class="bar"></div></div>
+  <div class="row"><svg viewBox="0 0 50 50"><rect x="3" y="3" width="44" height="44" rx="10" fill="var(--soft)" stroke="var(--primary)" stroke-width="4"/></svg><div class="bar"></div></div>
+</div>
+<script>
+  tl.from(q(".list"), { x: 80, opacity: 0, duration: 0.35, ease: "power2.out" }, w("partial"));
+  tl.from(qa(".tk"), { opacity: 0, scale: 0.3, duration: 0.25, stagger: 0.2, ease: "back.out(2)", transformOrigin: "50% 50%", transformBox: "fill-box" }, w("helps"));
+  ira.hand(w("Even") - 0.05, "five");
+  ira.handDown(w("doctor") + 0.2);
+</script>

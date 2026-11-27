@@ -1,0 +1,602 @@
+{
+  "audioFile": "voice.mp3",
+  "durationSec": 43.671,
+  "provider": "elevenlabs:eleven_multilingual_v2",
+  "words": [
+    {
+      "word": "Do",
+      "start": 0,
+      "end": 0.139
+    },
+    {
+      "word": "you",
+      "start": 0.186,
+      "end": 0.255
+    },
+    {
+      "word": "know",
+      "start": 0.302,
+      "end": 0.418
+    },
+    {
+      "word": "what",
+      "start": 0.464,
+      "end": 0.58
+    },
+    {
+      "word": "runs",
+      "start": 0.639,
+      "end": 0.859
+    },
+    {
+      "word": "in",
+      "start": 0.894,
+      "end": 0.952
+    },
+    {
+      "word": "your",
+      "start": 0.987,
+      "end": 1.091
+    },
+    {
+      "word": "family?",
+      "start": 1.138,
+      "end": 1.672
+    },
+    {
+      "word": "Most",
+      "start": 2.368,
+      "end": 2.647
+    },
+    {
+      "word": "people",
+      "start": 2.694,
+      "end": 3.216
+    },
+    {
+      "word": "have",
+      "start": 3.495,
+      "end": 3.715
+    },
+    {
+      "word": "at",
+      "start": 3.75,
+      "end": 3.808
+    },
+    {
+      "word": "least",
+      "start": 3.866,
+      "end": 4.098
+    },
+    {
+      "word": "one",
+      "start": 4.18,
+      "end": 4.389
+    },
+    {
+      "word": "chronic,",
+      "start": 4.435,
+      "end": 4.934
+    },
+    {
+      "word": "or",
+      "start": 4.969,
+      "end": 5.132
+    },
+    {
+      "word": "long-lasting,",
+      "start": 5.213,
+      "end": 5.979
+    },
+    {
+      "word": "disease",
+      "start": 6.002,
+      "end": 6.397
+    },
+    {
+      "word": "in",
+      "start": 6.432,
+      "end": 6.49
+    },
+    {
+      "word": "the",
+      "start": 6.513,
+      "end": 6.583
+    },
+    {
+      "word": "family,",
+      "start": 6.629,
+      "end": 7.187
+    },
+    {
+      "word": "like",
+      "start": 7.43,
+      "end": 7.616
+    },
+    {
+      "word": "cancer,",
+      "start": 7.651,
+      "end": 8.348
+    },
+    {
+      "word": "heart",
+      "start": 8.499,
+      "end": 8.696
+    },
+    {
+      "word": "disease",
+      "start": 8.742,
+      "end": 9.149
+    },
+    {
+      "word": "or",
+      "start": 9.183,
+      "end": 9.253
+    },
+    {
+      "word": "diabetes.",
+      "start": 9.311,
+      "end": 10.124
+    },
+    {
+      "word": "Ask",
+      "start": 10.82,
+      "end": 11.076
+    },
+    {
+      "word": "your",
+      "start": 11.111,
+      "end": 11.215
+    },
+    {
+      "word": "parents,",
+      "start": 11.262,
+      "end": 11.761
+    },
+    {
+      "word": "siblings",
+      "start": 11.854,
+      "end": 12.365
+    },
+    {
+      "word": "and",
+      "start": 12.399,
+      "end": 12.492
+    },
+    {
+      "word": "grandparents",
+      "start": 12.55,
+      "end": 13.166
+    },
+    {
+      "word": "which",
+      "start": 13.212,
+      "end": 13.41
+    },
+    {
+      "word": "conditions",
+      "start": 13.456,
+      "end": 13.978
+    },
+    {
+      "word": "they",
+      "start": 14.048,
+      "end": 14.199
+    },
+    {
+      "word": "have",
+      "start": 14.269,
+      "end": 14.559
+    },
+    {
+      "word": "or",
+      "start": 14.594,
+      "end": 14.687
+    },
+    {
+      "word": "had,",
+      "start": 14.756,
+      "end": 15.186
+    },
+    {
+      "word": "and",
+      "start": 15.395,
+      "end": 15.569
+    },
+    {
+      "word": "how",
+      "start": 15.639,
+      "end": 15.766
+    },
+    {
+      "word": "old",
+      "start": 15.859,
+      "end": 16.057
+    },
+    {
+      "word": "they",
+      "start": 16.103,
+      "end": 16.231
+    },
+    {
+      "word": "were",
+      "start": 16.289,
+      "end": 16.463
+    },
+    {
+      "word": "when",
+      "start": 16.498,
+      "end": 16.625
+    },
+    {
+      "word": "it",
+      "start": 16.672,
+      "end": 16.73
+    },
+    {
+      "word": "started.",
+      "start": 16.776,
+      "end": 17.287
+    },
+    {
+      "word": "Age",
+      "start": 17.891,
+      "end": 18.181
+    },
+    {
+      "word": "matters.",
+      "start": 18.228,
+      "end": 18.738
+    },
+    {
+      "word": "A",
+      "start": 18.913,
+      "end": 18.994
+    },
+    {
+      "word": "parent",
+      "start": 19.087,
+      "end": 19.389
+    },
+    {
+      "word": "or",
+      "start": 19.447,
+      "end": 19.54
+    },
+    {
+      "word": "sibling",
+      "start": 19.621,
+      "end": 20.004
+    },
+    {
+      "word": "with",
+      "start": 20.039,
+      "end": 20.166
+    },
+    {
+      "word": "colorectal",
+      "start": 20.213,
+      "end": 20.805
+    },
+    {
+      "word": "cancer",
+      "start": 20.886,
+      "end": 21.444
+    },
+    {
+      "word": "before",
+      "start": 21.954,
+      "end": 22.396
+    },
+    {
+      "word": "age",
+      "start": 22.465,
+      "end": 22.732
+    },
+    {
+      "word": "50",
+      "start": 22.779,
+      "end": 23.081
+    },
+    {
+      "word": "may",
+      "start": 23.162,
+      "end": 23.29
+    },
+    {
+      "word": "mean",
+      "start": 23.348,
+      "end": 23.51
+    },
+    {
+      "word": "asking",
+      "start": 23.58,
+      "end": 23.928
+    },
+    {
+      "word": "your",
+      "start": 23.975,
+      "end": 24.079
+    },
+    {
+      "word": "doctor",
+      "start": 24.137,
+      "end": 24.474
+    },
+    {
+      "word": "about",
+      "start": 24.52,
+      "end": 24.741
+    },
+    {
+      "word": "earlier",
+      "start": 24.799,
+      "end": 25.136
+    },
+    {
+      "word": "screening.",
+      "start": 25.194,
+      "end": 25.704
+    },
+    {
+      "word": "A",
+      "start": 25.913,
+      "end": 25.995
+    },
+    {
+      "word": "family",
+      "start": 26.088,
+      "end": 26.389
+    },
+    {
+      "word": "history",
+      "start": 26.436,
+      "end": 26.738
+    },
+    {
+      "word": "doesn't",
+      "start": 26.807,
+      "end": 27.098
+    },
+    {
+      "word": "mean",
+      "start": 27.144,
+      "end": 27.307
+    },
+    {
+      "word": "you",
+      "start": 27.353,
+      "end": 27.434
+    },
+    {
+      "word": "will",
+      "start": 27.469,
+      "end": 27.608
+    },
+    {
+      "word": "get",
+      "start": 27.655,
+      "end": 27.783
+    },
+    {
+      "word": "a",
+      "start": 27.829,
+      "end": 27.852
+    },
+    {
+      "word": "disease.",
+      "start": 27.91,
+      "end": 28.548
+    },
+    {
+      "word": "Healthy",
+      "start": 29.059,
+      "end": 29.384
+    },
+    {
+      "word": "habits,",
+      "start": 29.454,
+      "end": 29.895
+    },
+    {
+      "word": "like",
+      "start": 29.953,
+      "end": 30.162
+    },
+    {
+      "word": "not",
+      "start": 30.22,
+      "end": 30.406
+    },
+    {
+      "word": "smoking",
+      "start": 30.487,
+      "end": 30.963
+    },
+    {
+      "word": "and",
+      "start": 31.056,
+      "end": 31.184
+    },
+    {
+      "word": "staying",
+      "start": 31.242,
+      "end": 31.521
+    },
+    {
+      "word": "active,",
+      "start": 31.59,
+      "end": 32.124
+    },
+    {
+      "word": "can",
+      "start": 32.275,
+      "end": 32.426
+    },
+    {
+      "word": "often",
+      "start": 32.473,
+      "end": 32.705
+    },
+    {
+      "word": "lower",
+      "start": 32.763,
+      "end": 32.972
+    },
+    {
+      "word": "your",
+      "start": 33.042,
+      "end": 33.169
+    },
+    {
+      "word": "risk.",
+      "start": 33.216,
+      "end": 33.668
+    },
+    {
+      "word": "Write",
+      "start": 33.994,
+      "end": 34.237
+    },
+    {
+      "word": "it",
+      "start": 34.272,
+      "end": 34.33
+    },
+    {
+      "word": "down",
+      "start": 34.365,
+      "end": 34.574
+    },
+    {
+      "word": "and",
+      "start": 34.609,
+      "end": 34.679
+    },
+    {
+      "word": "bring",
+      "start": 34.713,
+      "end": 34.864
+    },
+    {
+      "word": "it",
+      "start": 34.911,
+      "end": 34.969
+    },
+    {
+      "word": "to",
+      "start": 35.004,
+      "end": 35.05
+    },
+    {
+      "word": "your",
+      "start": 35.096,
+      "end": 35.201
+    },
+    {
+      "word": "next",
+      "start": 35.282,
+      "end": 35.538
+    },
+    {
+      "word": "check-up.",
+      "start": 35.572,
+      "end": 36.176
+    },
+    {
+      "word": "Even",
+      "start": 36.687,
+      "end": 36.931
+    },
+    {
+      "word": "a",
+      "start": 36.954,
+      "end": 36.977
+    },
+    {
+      "word": "partial",
+      "start": 37.047,
+      "end": 37.395
+    },
+    {
+      "word": "history",
+      "start": 37.465,
+      "end": 37.836
+    },
+    {
+      "word": "helps",
+      "start": 37.894,
+      "end": 38.069
+    },
+    {
+      "word": "your",
+      "start": 38.103,
+      "end": 38.208
+    },
+    {
+      "word": "doctor",
+      "start": 38.254,
+      "end": 38.568
+    },
+    {
+      "word": "plan",
+      "start": 38.649,
+      "end": 38.87
+    },
+    {
+      "word": "your",
+      "start": 38.928,
+      "end": 39.032
+    },
+    {
+      "word": "screening.",
+      "start": 39.079,
+      "end": 39.636
+    },
+    {
+      "word": "Share",
+      "start": 40.333,
+      "end": 40.588
+    },
+    {
+      "word": "this",
+      "start": 40.623,
+      "end": 40.751
+    },
+    {
+      "word": "with",
+      "start": 40.785,
+      "end": 40.901
+    },
+    {
+      "word": "your",
+      "start": 40.936,
+      "end": 41.041
+    },
+    {
+      "word": "family,",
+      "start": 41.087,
+      "end": 41.633
+    },
+    {
+      "word": "and",
+      "start": 41.703,
+      "end": 41.865
+    },
+    {
+      "word": "start",
+      "start": 41.923,
+      "end": 42.167
+    },
+    {
+      "word": "that",
+      "start": 42.202,
+      "end": 42.318
+    },
+    {
+      "word": "conversation.",
+      "start": 42.376,
+      "end": 43.421
+    }
+  ]
+}

@@ -1,0 +1,12 @@
+{
+  "slug": "why-your-family-health-history-matters",
+  "hook": "Do you know what runs in your family? It's one of the most useful things you can bring to a check-up.",
+  "body": "Most people have at least one chronic (long-lasting) disease in the family, like cancer, heart disease or diabetes.\n\nAsk your parents, siblings and grandparents which conditions they have or had, and how old they were when it started. An approximate age is still useful.\n\nAge matters: a parent or sibling with colorectal cancer before age 50 may mean asking your doctor about earlier screening.\n\nA family history doesn't mean you will get a disease. Healthy habits, like not smoking and staying active, can often lower your risk.\n\nWrite it down and bring it to your next check-up. Even a partial history helps your doctor plan your screening.",
+  "cta": "Share this with your family, and start that conversation.",
+  "hashtags": ["#PulseHealth", "#PreventiveCare", "#HealthTips", "#Telehealth", "#FamilyHealthHistory", "#HealthScreening"],
+  "sources": [
+    { "publisher": "CDC", "title": "About Family Health History", "url": "https://www.cdc.gov/family-health-history/about/index.html" },
+    { "publisher": "CDC", "title": "Family Health History and Adults", "url": "https://www.cdc.gov/family-health-history/family-health-history-and-you/family-health-history-and-adults.html" }
+  ],
+  "disclaimer": "Not medical advice. Talk to a doctor about your health."
+}

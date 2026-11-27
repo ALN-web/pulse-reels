@@ -115,6 +115,8 @@ Generated from each `run.json` and agent log by `npm run showcase`. "Logged step
 | How much salt is too much | motion (poster) | 40.7 s | 20m 01s | $2.06 (headless, 67 turns) | $0.00 | WHO, NHS, CDC |
 | What one unit of alcohol actually looks like | motion (poster) | 45.8 s | 13m 59s | $1.88 (headless, 52 turns) | $0.00 | NHS, CDC |
 | The 20-second handwashing habit that stops germs spreading | character | 41.1 s | 13m 41s | $1.89 (headless, 67 turns) | $0.00 | CDC, NHS |
+| Why your family health history matters | character | 46.7 s | 9m 59s | $1.88 (headless, 49 turns) | $0.00 | CDC |
+| Cold or flu? How to tell the difference | character | 43 s | 15m 42s | $1.85 (headless, 56 turns) | $0.00 | NHS |
 <!-- reels:end -->
 
 ## Manual edits

@@ -1,0 +1,47 @@
+{
+  "slug": "cold-or-flu-how-to-tell-the-difference",
+  "topic": "Cold or flu? How to tell the difference",
+  "client": "pulse-health",
+  "mode": "character",
+  "hook": {
+    "text": "Cold or flu? Here are three ways to tell.",
+    "estimatedSec": 2.8,
+    "pattern": "small-number promise"
+  },
+  "beats": [
+    {
+      "id": "b1",
+      "text": "One: speed. Flu comes on quickly, often within a few hours. A cold creeps in gradually."
+    },
+    {
+      "id": "b2",
+      "text": "Two: where you feel it. A cold mainly affects your nose and throat. Flu hits more than that, with body aches, a high temperature and exhaustion."
+    },
+    {
+      "id": "b3",
+      "text": "Three: how you cope. With a cold, you can usually carry on as normal. Flu can leave you too exhausted to carry on."
+    },
+    {
+      "id": "b4",
+      "text": "Either way, rest and drink plenty of water, and stay home if you have a high temperature."
+    },
+    {
+      "id": "b5",
+      "text": "If flu symptoms do not improve after seven days, or you feel short of breath, talk to a doctor."
+    }
+  ],
+  "cta": "Save this for the next time you feel rough.",
+  "sources": [
+    {
+      "publisher": "NHS",
+      "title": "Flu",
+      "url": "https://www.nhs.uk/conditions/flu/"
+    },
+    {
+      "publisher": "NHS",
+      "title": "Common cold",
+      "url": "https://www.nhs.uk/conditions/common-cold/"
+    }
+  ],
+  "estimatedTotalSec": 47
+}

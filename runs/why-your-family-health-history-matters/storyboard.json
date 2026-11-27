@@ -1,0 +1,127 @@
+{
+  "slug": "why-your-family-health-history-matters",
+  "topic": "Why your family health history matters",
+  "client": "pulse-health",
+  "mode": "character",
+  "styleId": "clean-clinic",
+  "characterId": "dr-ira-v1",
+  "scenes": [
+    {
+      "id": "s1",
+      "line": "Do you know what runs in your family?",
+      "visual": "Dr. Ira faces camera with a curious, friendly look, head tilted slightly, open-palm gesture; a small teal question-mark bubble appears beside him",
+      "animation": "Question bubble pops in on 'know', scale 0.4 to 1.0, back.out 0.3 s; gentle wobble on 'family'",
+      "onScreenText": "What runs in your family?",
+      "durationSec": 2.6,
+      "shot": "character"
+    },
+    {
+      "id": "s2",
+      "line": "Most people have at least one chronic, or long-lasting, disease in the family,",
+      "visual": "Simple three-generation family tree of round avatar nodes joined by teal lines; one node gets a soft orange ring",
+      "animation": "Tree lines draw top to bottom on 'people', nodes scale in stagger 0.08 s, power2.out; orange ring pulses on 'chronic'; label 'long-lasting' fades in on 'long-lasting'",
+      "onScreenText": "Chronic = long-lasting",
+      "durationSec": 4.5,
+      "shot": "motion"
+    },
+    {
+      "id": "s3",
+      "line": "like cancer, heart disease or diabetes.",
+      "visual": "Dr. Ira, calm and explaining, counts on his fingers; three rounded label cards line up above him: ribbon, heart, blood-drop",
+      "animation": "Each card drops in on its word: ribbon on 'cancer', heart on 'heart', drop on 'diabetes', y 40 to 0, back.out 0.3 s",
+      "onScreenText": "Common conditions",
+      "durationSec": 3.0,
+      "shot": "character"
+    },
+    {
+      "id": "s4",
+      "line": "Ask your parents, siblings and grandparents",
+      "visual": "Dr. Ira, warm smile, gestures outward as if inviting a chat; three relative chips appear at the sides",
+      "animation": "Chips pop in on 'parents', 'siblings', 'grandparents', scale 0 to 1, back.out 0.3 s",
+      "onScreenText": "Ask your relatives",
+      "durationSec": 3.0,
+      "shot": "character"
+    },
+    {
+      "id": "s5",
+      "line": "which conditions they have or had, and how old they were when it started.",
+      "visual": "Notebook page with two handwritten-style prompts: 'Which condition?' and 'Age it started?', each with a teal tick box",
+      "animation": "Notebook slides up on 'which'; first prompt writes in on 'conditions', second on 'old'; ticks draw on 'had' and 'started', power2.out",
+      "onScreenText": "What, and at what age?",
+      "durationSec": 4.5,
+      "shot": "motion"
+    },
+    {
+      "id": "s6",
+      "line": "Age matters. A parent or sibling with colorectal cancer before age 50",
+      "visual": "Large rounded badge reading 'before 50' beside a parent-and-sibling icon pair and a small colon-ribbon icon",
+      "animation": "Badge scales 0.5 to 1.0 on 'Age', back.out 0.35 s; icon pair slides in on 'parent'; '50' counts up from 0 on '50', power1.out 0.5 s",
+      "onScreenText": "Before age 50",
+      "durationSec": 5.0,
+      "shot": "motion"
+    },
+    {
+      "id": "s7",
+      "line": "may mean asking your doctor about earlier screening.",
+      "visual": "Dr. Ira, reassuring nod, palm up; a calendar card with an arrow moving to an earlier date appears beside him",
+      "animation": "Calendar card fades in on 'asking'; arrow slides left to an earlier date on 'earlier', power2.inOut 0.4 s",
+      "onScreenText": "Ask about earlier screening",
+      "durationSec": 3.2,
+      "shot": "character"
+    },
+    {
+      "id": "s8",
+      "line": "A family history doesn't mean you will get a disease.",
+      "visual": "A dial labelled 'risk' with the needle settling in the middle, next to the words 'not certainty'",
+      "animation": "Dial draws in on 'family'; needle swings and settles mid-way on 'doesn't', elastic.out 0.6 s; 'not certainty' fades in on 'disease'",
+      "onScreenText": "Risk, not certainty",
+      "durationSec": 3.2,
+      "shot": "motion"
+    },
+    {
+      "id": "s9",
+      "line": "Healthy habits, like not smoking and staying active, can often lower your risk.",
+      "visual": "Dr. Ira, upbeat, gives a small wave; a no-smoking icon and a walking-shoe icon float at the sides, a downward arrow labelled 'risk' between",
+      "animation": "No-smoking icon pops on 'smoking', shoe on 'active', back.out 0.3 s; arrow slides down on 'lower', power2.out",
+      "onScreenText": "Habits can lower risk",
+      "durationSec": 4.5,
+      "shot": "character"
+    },
+    {
+      "id": "s10",
+      "line": "Write it down and bring it to your next check-up.",
+      "visual": "Notepad with a pencil writing three short lines, then the notepad slides into a clinic-building outline",
+      "animation": "Pencil lines draw left to right on 'Write', stagger 0.15 s; notepad slides right into the clinic on 'bring', power2.inOut 0.5 s",
+      "onScreenText": "Bring it to your check-up",
+      "durationSec": 3.2,
+      "shot": "motion"
+    },
+    {
+      "id": "s11",
+      "line": "Even a partial history helps your doctor plan your screening.",
+      "visual": "Dr. Ira, encouraging smile, holds up an open hand; a half-filled checklist card appears beside him",
+      "animation": "Checklist card slides in on 'partial'; first two ticks draw on 'helps', power2.out",
+      "onScreenText": "Partial history still helps",
+      "durationSec": 3.5,
+      "shot": "character"
+    },
+    {
+      "id": "s12",
+      "line": "Share this with your family, and start that conversation.",
+      "visual": "Dr. Ira, direct friendly gaze, waves; a share-arrow icon and a speech-bubble icon appear above",
+      "animation": "Share icon bounces in on 'Share', scale 0.8 to 1.1 to 1.0, back.out; speech bubble pops on 'conversation'",
+      "onScreenText": "Share with your family",
+      "durationSec": 3.5,
+      "shot": "character"
+    },
+    {
+      "id": "s13",
+      "line": "",
+      "visual": "Cream end card with Pulse Health wordmark centred",
+      "animation": "Fade in 0.3 s, hold",
+      "onScreenText": "Not medical advice. Source: CDC",
+      "durationSec": 3.0,
+      "shot": "disclaimer"
+    }
+  ]
+}

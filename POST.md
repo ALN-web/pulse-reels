@@ -5,7 +5,7 @@ Repo: https://github.com/ALN-web/pulse-reels
 
 ---
 
-We built a pipeline that turns one sentence into a finished, fact-checked health Reel, and used it to make 8 of them. 🎬
+We built a pipeline that turns one sentence into a finished, fact-checked health Reel, and used it to make 10 of them. 🎬
 
 `./generate.sh --topic "When a headache means see a doctor"`
 

@@ -1,0 +1,13 @@
+<style>
+  #scene-s11 .bm { position: absolute; right: 30px; top: 40px; width: 200px; height: 240px; background: #fff; border-radius: 30px; box-shadow: 0 16px 40px rgba(18,52,59,.14); display: flex; align-items: center; justify-content: center; }
+  #scene-s11 .bm svg { width: 120px; height: 160px; }
+</style>
+<div class="bm">
+  <svg viewBox="0 0 60 80"><path d="M8 4 H52 V76 L30 58 L8 76 Z" fill="var(--primary)" stroke="var(--ink)" stroke-width="3" stroke-linejoin="round"/></svg>
+</div>
+<script>
+  tl.from(q(".bm"), { scale: 0.8, opacity: 0, duration: 0.2, ease: "power2.out" }, w("Save"));
+  tl.to(q(".bm"), { scale: 1.1, duration: 0.15, yoyo: true, repeat: 1, ease: "back.out(2)" }, w("Save") + 0.2);
+  ira.hand(w("next"), "wave");
+  ira.handDown(w("rough") + 0.4);
+</script>

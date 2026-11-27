@@ -1,0 +1,38 @@
+<style>
+  #scene-s8 .row { position: absolute; left: 20px; top: 40px; width: 830px; display: flex; justify-content: space-between; }
+  #scene-s8 .c { width: 250px; background: #fff; border-radius: 30px; box-shadow: 0 16px 40px rgba(18,52,59,.12); padding: 22px 10px 18px; display: flex; flex-direction: column; align-items: center; gap: 10px; }
+  #scene-s8 .c svg { width: 120px; height: 120px; }
+  #scene-s8 .c .lbl { font: 700 36px var(--font-body); color: var(--ink); text-align: center; }
+</style>
+<div class="row">
+  <div class="c rest">
+    <svg viewBox="0 0 100 100">
+      <path d="M12 76 V34 M88 76 V56 M12 68 H88" stroke="var(--ink)" stroke-width="6" stroke-linecap="round" fill="none"/>
+      <rect x="18" y="44" width="24" height="16" rx="7" fill="var(--soft)" stroke="var(--ink)" stroke-width="4"/>
+      <path d="M42 68 V54 H86 V68 Z" fill="var(--primary)" stroke="var(--ink)" stroke-width="4" stroke-linejoin="round"/>
+    </svg>
+    <span class="lbl">Rest</span>
+  </div>
+  <div class="c water">
+    <svg viewBox="0 0 100 100">
+      <path d="M26 14 H74 L66 88 H34 Z" fill="none" stroke="var(--ink)" stroke-width="5" stroke-linejoin="round"/>
+      <path d="M31 40 H69 L65 84 H35 Z" fill="var(--primary)" opacity="0.8"/>
+    </svg>
+    <span class="lbl">Water</span>
+  </div>
+  <div class="c home">
+    <svg viewBox="0 0 100 100">
+      <path d="M12 48 L50 16 L88 48" fill="none" stroke="var(--ink)" stroke-width="6" stroke-linecap="round" stroke-linejoin="round"/>
+      <path d="M22 42 V86 H78 V42" fill="var(--soft)" stroke="var(--ink)" stroke-width="5" stroke-linejoin="round"/>
+      <rect x="42" y="60" width="16" height="26" rx="2" fill="var(--primary)"/>
+    </svg>
+    <span class="lbl">Stay home</span>
+  </div>
+</div>
+<script>
+  tl.from(q(".rest"),  { scale: 0, opacity: 0, duration: 0.3, ease: "back.out(2)" }, w("rest"));
+  tl.from(q(".water"), { scale: 0, opacity: 0, duration: 0.3, ease: "back.out(2)" }, w("water"));
+  tl.from(q(".home"),  { scale: 0, opacity: 0, duration: 0.3, ease: "back.out(2)" }, w("home"));
+  ira.hand(w("Either"), "wave");
+  ira.handDown(w("rest") + 0.2);
+</script>

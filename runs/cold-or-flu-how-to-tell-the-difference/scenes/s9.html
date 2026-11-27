@@ -1,0 +1,28 @@
+<style>
+  #scene-s9 .cal { position: absolute; left: 35px; top: 180px; width: 800px; background: #fff; border-radius: 36px; box-shadow: 0 16px 40px rgba(18,52,59,.10); overflow: hidden; }
+  #scene-s9 .cal .top { height: 80px; background: var(--primary); }
+  #scene-s9 .days { display: flex; justify-content: space-between; padding: 40px 30px; }
+  #scene-s9 .day { width: 90px; height: 90px; border-radius: 18px; background: var(--soft); display: flex; align-items: center; justify-content: center; font: 800 40px var(--font-body); color: var(--ink); position: relative; }
+  #scene-s9 .fill { position: absolute; inset: 0; border-radius: 18px; background: var(--primary); opacity: 0; }
+  #scene-s9 .day span { position: relative; }
+  #scene-s9 .tag { position: absolute; left: 0; top: 520px; width: 870px; text-align: center; font: 800 64px var(--font-display); color: var(--ink); }
+</style>
+<div class="cal">
+  <div class="top"></div>
+  <div class="days">
+    <div class="day"><div class="fill"></div><span>1</span></div>
+    <div class="day"><div class="fill"></div><span>2</span></div>
+    <div class="day"><div class="fill"></div><span>3</span></div>
+    <div class="day"><div class="fill"></div><span>4</span></div>
+    <div class="day"><div class="fill"></div><span>5</span></div>
+    <div class="day"><div class="fill"></div><span>6</span></div>
+    <div class="day"><div class="fill"></div><span>7</span></div>
+  </div>
+</div>
+<div class="tag">7 days</div>
+<script>
+  tl.from(q(".cal"), { y: 40, opacity: 0, duration: 0.3, ease: "power2.out" }, w("flu"));
+  tl.to(qa(".fill"), { opacity: 1, duration: 0.15, stagger: 0.15 }, w("symptoms"));
+  tl.to(qa(".day span"), { color: "#FFFFFF", duration: 0.15, stagger: 0.15 }, w("symptoms"));
+  tl.from(q(".tag"), { scale: 0.5, opacity: 0, duration: 0.3, ease: "back.out(2)" }, w("days"));
+</script>

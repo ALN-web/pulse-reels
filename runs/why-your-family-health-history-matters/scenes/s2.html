@@ -1,0 +1,28 @@
+<style>
+  #scene-s2 .tree { position: absolute; left: 85px; top: 60px; width: 700px; height: 560px; }
+  #scene-s2 .lbl { position: absolute; left: 0; top: 660px; width: 870px; text-align: center; font: 800 52px var(--font-body); color: var(--ink); }
+  #scene-s2 .lbl span { color: var(--primary); }
+</style>
+<svg class="tree" viewBox="0 0 700 560">
+  <g class="lines" fill="none" stroke="var(--primary)" stroke-width="8" stroke-linecap="round">
+    <path d="M200 90 H500 M350 90 V250 M150 250 H550 M150 250 V300 M350 250 V300 M550 250 V300 M350 380 V430 M250 430 H450 M250 430 V470 M450 430 V470"/>
+  </g>
+  <g class="nodes">
+    <circle class="n" cx="200" cy="90" r="52" fill="var(--soft)" stroke="var(--ink)" stroke-width="6"/>
+    <circle class="n" cx="500" cy="90" r="52" fill="var(--soft)" stroke="var(--ink)" stroke-width="6"/>
+    <circle class="n" cx="150" cy="330" r="46" fill="var(--soft)" stroke="var(--ink)" stroke-width="6"/>
+    <circle class="n" cx="350" cy="330" r="46" fill="var(--soft)" stroke="var(--ink)" stroke-width="6"/>
+    <circle class="n" cx="550" cy="330" r="46" fill="var(--soft)" stroke="var(--ink)" stroke-width="6"/>
+    <circle class="n" cx="250" cy="505" r="38" fill="var(--soft)" stroke="var(--ink)" stroke-width="6"/>
+    <circle class="n" cx="450" cy="505" r="38" fill="var(--soft)" stroke="var(--ink)" stroke-width="6"/>
+  </g>
+  <circle class="ring" cx="500" cy="90" r="68" fill="none" stroke="var(--accent)" stroke-width="10"/>
+</svg>
+<div class="lbl">Chronic = <span>long-lasting</span></div>
+<script>
+  tl.from(q(".lines path"), { opacity: 0, duration: 0.4, ease: "power2.out" }, w("people"));
+  tl.from(qa(".n"), { scale: 0, opacity: 0, duration: 0.3, stagger: 0.08, ease: "back.out(2)", transformOrigin: "50% 50%", transformBox: "fill-box" }, w("people"));
+  tl.from(q(".ring"), { scale: 0.5, opacity: 0, duration: 0.35, ease: "back.out(2)", transformOrigin: "50% 50%", transformBox: "fill-box" }, w("chronic"));
+  tl.to(q(".ring"), { scale: 1.12, duration: 0.25, yoyo: true, repeat: 1, ease: "power1.inOut", transformOrigin: "50% 50%", transformBox: "fill-box" }, w("chronic") + 0.4);
+  tl.from(q(".lbl"), { opacity: 0, y: 30, duration: 0.3, ease: "power2.out" }, w("longlasting"));
+</script>

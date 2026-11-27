@@ -1,0 +1,27 @@
+<style>
+  #scene-s10 .side { position: absolute; top: 60px; width: 230px; background: #fff; border-radius: 30px; box-shadow: 0 16px 40px rgba(18,52,59,.12); padding: 22px 10px 18px; display: flex; flex-direction: column; align-items: center; gap: 10px; }
+  #scene-s10 .lungs { left: 20px; }
+  #scene-s10 .steth { right: 20px; }
+  #scene-s10 .side svg { width: 130px; height: 130px; }
+  #scene-s10 .side .lbl { font: 700 32px var(--font-body); color: var(--ink); text-align: center; line-height: 1.15; }
+</style>
+<div class="side lungs">
+  <svg viewBox="0 0 100 100">
+    <path d="M50 10 V44 M50 44 L40 52 M50 44 L60 52" fill="none" stroke="var(--ink)" stroke-width="5" stroke-linecap="round"/>
+    <path d="M38 30 C22 30 12 50 12 72 C12 86 22 90 32 86 C40 82 42 74 42 60 V36 C42 32 40 30 38 30 Z" fill="var(--soft)" stroke="var(--ink)" stroke-width="4"/>
+    <path d="M62 30 C78 30 88 50 88 72 C88 86 78 90 68 86 C60 82 58 74 58 60 V36 C58 32 60 30 62 30 Z" fill="var(--soft)" stroke="var(--ink)" stroke-width="4"/>
+  </svg>
+  <span class="lbl">Short of<br>breath</span>
+</div>
+<div class="side steth">
+  <svg viewBox="0 0 100 100">
+    <path d="M26 12 V40 C26 56 50 56 50 40 V12" fill="none" stroke="var(--ink)" stroke-width="5" stroke-linecap="round"/>
+    <path d="M38 54 V68 C38 84 72 84 72 66 V58" fill="none" stroke="var(--ink)" stroke-width="5" stroke-linecap="round"/>
+    <circle cx="72" cy="50" r="10" fill="var(--primary)" stroke="var(--ink)" stroke-width="4"/>
+  </svg>
+  <span class="lbl">Talk to<br>a doctor</span>
+</div>
+<script>
+  tl.from(q(".lungs"), { opacity: 0, x: -30, duration: 0.3, ease: "power2.out" }, w("breath"));
+  tl.from(q(".steth"), { opacity: 0, x: 30, duration: 0.3, ease: "power2.out" }, w("doctor"));
+</script>

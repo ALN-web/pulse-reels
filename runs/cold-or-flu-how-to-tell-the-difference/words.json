@@ -1,0 +1,602 @@
+{
+  "audioFile": "voice.mp3",
+  "durationSec": 39.956,
+  "provider": "elevenlabs:eleven_multilingual_v2",
+  "words": [
+    {
+      "word": "Cold",
+      "start": 0,
+      "end": 0.29
+    },
+    {
+      "word": "or",
+      "start": 0.325,
+      "end": 0.395
+    },
+    {
+      "word": "flu?",
+      "start": 0.464,
+      "end": 0.964
+    },
+    {
+      "word": "Here",
+      "start": 1.347,
+      "end": 1.533
+    },
+    {
+      "word": "are",
+      "start": 1.556,
+      "end": 1.66
+    },
+    {
+      "word": "three",
+      "start": 1.718,
+      "end": 1.962
+    },
+    {
+      "word": "ways",
+      "start": 2.009,
+      "end": 2.206
+    },
+    {
+      "word": "to",
+      "start": 2.264,
+      "end": 2.322
+    },
+    {
+      "word": "tell.",
+      "start": 2.392,
+      "end": 2.798
+    },
+    {
+      "word": "One:",
+      "start": 3.123,
+      "end": 3.529
+    },
+    {
+      "word": "speed.",
+      "start": 3.704,
+      "end": 4.354
+    },
+    {
+      "word": "Flu",
+      "start": 4.865,
+      "end": 5.074
+    },
+    {
+      "word": "comes",
+      "start": 5.132,
+      "end": 5.341
+    },
+    {
+      "word": "on",
+      "start": 5.399,
+      "end": 5.503
+    },
+    {
+      "word": "quickly,",
+      "start": 5.584,
+      "end": 6.072
+    },
+    {
+      "word": "often",
+      "start": 6.188,
+      "end": 6.536
+    },
+    {
+      "word": "within",
+      "start": 6.571,
+      "end": 6.803
+    },
+    {
+      "word": "a",
+      "start": 6.838,
+      "end": 6.861
+    },
+    {
+      "word": "few",
+      "start": 6.908,
+      "end": 7.059
+    },
+    {
+      "word": "hours.",
+      "start": 7.094,
+      "end": 7.581
+    },
+    {
+      "word": "A",
+      "start": 7.906,
+      "end": 7.988
+    },
+    {
+      "word": "cold",
+      "start": 8.081,
+      "end": 8.301
+    },
+    {
+      "word": "creeps",
+      "start": 8.348,
+      "end": 8.626
+    },
+    {
+      "word": "in",
+      "start": 8.673,
+      "end": 8.777
+    },
+    {
+      "word": "gradually.",
+      "start": 8.847,
+      "end": 9.497
+    },
+    {
+      "word": "Two:",
+      "start": 9.822,
+      "end": 10.344
+    },
+    {
+      "word": "where",
+      "start": 10.495,
+      "end": 10.704
+    },
+    {
+      "word": "you",
+      "start": 10.751,
+      "end": 10.832
+    },
+    {
+      "word": "feel",
+      "start": 10.89,
+      "end": 11.076
+    },
+    {
+      "word": "it.",
+      "start": 11.134,
+      "end": 11.389
+    },
+    {
+      "word": "A",
+      "start": 11.773,
+      "end": 11.854
+    },
+    {
+      "word": "cold",
+      "start": 11.935,
+      "end": 12.121
+    },
+    {
+      "word": "mainly",
+      "start": 12.167,
+      "end": 12.399
+    },
+    {
+      "word": "affects",
+      "start": 12.434,
+      "end": 12.69
+    },
+    {
+      "word": "your",
+      "start": 12.725,
+      "end": 12.829
+    },
+    {
+      "word": "nose",
+      "start": 12.899,
+      "end": 13.224
+    },
+    {
+      "word": "and",
+      "start": 13.259,
+      "end": 13.351
+    },
+    {
+      "word": "throat.",
+      "start": 13.41,
+      "end": 13.944
+    },
+    {
+      "word": "Flu",
+      "start": 14.327,
+      "end": 14.536
+    },
+    {
+      "word": "hits",
+      "start": 14.594,
+      "end": 14.768
+    },
+    {
+      "word": "more",
+      "start": 14.826,
+      "end": 14.977
+    },
+    {
+      "word": "than",
+      "start": 15.012,
+      "end": 15.139
+    },
+    {
+      "word": "that,",
+      "start": 15.186,
+      "end": 15.604
+    },
+    {
+      "word": "with",
+      "start": 15.65,
+      "end": 15.836
+    },
+    {
+      "word": "body",
+      "start": 15.894,
+      "end": 16.173
+    },
+    {
+      "word": "aches,",
+      "start": 16.231,
+      "end": 16.707
+    },
+    {
+      "word": "a",
+      "start": 16.881,
+      "end": 16.951
+    },
+    {
+      "word": "high",
+      "start": 17.032,
+      "end": 17.206
+    },
+    {
+      "word": "temperature",
+      "start": 17.252,
+      "end": 17.74
+    },
+    {
+      "word": "and",
+      "start": 17.786,
+      "end": 17.868
+    },
+    {
+      "word": "exhaustion.",
+      "start": 17.926,
+      "end": 18.657
+    },
+    {
+      "word": "Three:",
+      "start": 19.04,
+      "end": 19.598
+    },
+    {
+      "word": "how",
+      "start": 19.981,
+      "end": 20.12
+    },
+    {
+      "word": "you",
+      "start": 20.19,
+      "end": 20.271
+    },
+    {
+      "word": "cope.",
+      "start": 20.329,
+      "end": 20.747
+    },
+    {
+      "word": "With",
+      "start": 21.351,
+      "end": 21.536
+    },
+    {
+      "word": "a",
+      "start": 21.571,
+      "end": 21.606
+    },
+    {
+      "word": "cold,",
+      "start": 21.664,
+      "end": 21.931
+    },
+    {
+      "word": "you",
+      "start": 21.954,
+      "end": 22.024
+    },
+    {
+      "word": "can",
+      "start": 22.071,
+      "end": 22.175
+    },
+    {
+      "word": "usually",
+      "start": 22.245,
+      "end": 22.523
+    },
+    {
+      "word": "carry",
+      "start": 22.57,
+      "end": 22.848
+    },
+    {
+      "word": "on",
+      "start": 22.918,
+      "end": 23.046
+    },
+    {
+      "word": "as",
+      "start": 23.092,
+      "end": 23.174
+    },
+    {
+      "word": "normal.",
+      "start": 23.255,
+      "end": 23.766
+    },
+    {
+      "word": "Flu",
+      "start": 24.207,
+      "end": 24.427
+    },
+    {
+      "word": "can",
+      "start": 24.474,
+      "end": 24.59
+    },
+    {
+      "word": "leave",
+      "start": 24.66,
+      "end": 24.869
+    },
+    {
+      "word": "you",
+      "start": 24.915,
+      "end": 25.008
+    },
+    {
+      "word": "too",
+      "start": 25.101,
+      "end": 25.252
+    },
+    {
+      "word": "exhausted",
+      "start": 25.321,
+      "end": 25.809
+    },
+    {
+      "word": "to",
+      "start": 25.832,
+      "end": 25.879
+    },
+    {
+      "word": "carry",
+      "start": 25.925,
+      "end": 26.192
+    },
+    {
+      "word": "on.",
+      "start": 26.262,
+      "end": 26.529
+    },
+    {
+      "word": "Either",
+      "start": 26.912,
+      "end": 27.156
+    },
+    {
+      "word": "way,",
+      "start": 27.202,
+      "end": 27.376
+    },
+    {
+      "word": "rest",
+      "start": 27.423,
+      "end": 27.643
+    },
+    {
+      "word": "and",
+      "start": 27.69,
+      "end": 27.759
+    },
+    {
+      "word": "drink",
+      "start": 27.794,
+      "end": 27.992
+    },
+    {
+      "word": "plenty",
+      "start": 28.038,
+      "end": 28.293
+    },
+    {
+      "word": "of",
+      "start": 28.34,
+      "end": 28.386
+    },
+    {
+      "word": "water,",
+      "start": 28.456,
+      "end": 28.781
+    },
+    {
+      "word": "and",
+      "start": 28.804,
+      "end": 28.897
+    },
+    {
+      "word": "stay",
+      "start": 28.955,
+      "end": 29.153
+    },
+    {
+      "word": "home",
+      "start": 29.211,
+      "end": 29.362
+    },
+    {
+      "word": "if",
+      "start": 29.396,
+      "end": 29.454
+    },
+    {
+      "word": "you",
+      "start": 29.489,
+      "end": 29.559
+    },
+    {
+      "word": "have",
+      "start": 29.594,
+      "end": 29.687
+    },
+    {
+      "word": "a",
+      "start": 29.71,
+      "end": 29.733
+    },
+    {
+      "word": "high",
+      "start": 29.78,
+      "end": 29.931
+    },
+    {
+      "word": "temperature.",
+      "start": 29.977,
+      "end": 30.558
+    },
+    {
+      "word": "If",
+      "start": 31.161,
+      "end": 31.324
+    },
+    {
+      "word": "flu",
+      "start": 31.37,
+      "end": 31.591
+    },
+    {
+      "word": "symptoms",
+      "start": 31.649,
+      "end": 32.044
+    },
+    {
+      "word": "do",
+      "start": 32.09,
+      "end": 32.16
+    },
+    {
+      "word": "not",
+      "start": 32.23,
+      "end": 32.357
+    },
+    {
+      "word": "improve",
+      "start": 32.392,
+      "end": 32.74
+    },
+    {
+      "word": "after",
+      "start": 32.787,
+      "end": 33.007
+    },
+    {
+      "word": "seven",
+      "start": 33.077,
+      "end": 33.356
+    },
+    {
+      "word": "days,",
+      "start": 33.414,
+      "end": 33.936
+    },
+    {
+      "word": "or",
+      "start": 34.145,
+      "end": 34.296
+    },
+    {
+      "word": "you",
+      "start": 34.366,
+      "end": 34.447
+    },
+    {
+      "word": "feel",
+      "start": 34.505,
+      "end": 34.668
+    },
+    {
+      "word": "short",
+      "start": 34.714,
+      "end": 34.911
+    },
+    {
+      "word": "of",
+      "start": 34.935,
+      "end": 34.993
+    },
+    {
+      "word": "breath,",
+      "start": 35.039,
+      "end": 35.538
+    },
+    {
+      "word": "talk",
+      "start": 35.782,
+      "end": 36.038
+    },
+    {
+      "word": "to",
+      "start": 36.084,
+      "end": 36.142
+    },
+    {
+      "word": "a",
+      "start": 36.2,
+      "end": 36.223
+    },
+    {
+      "word": "doctor.",
+      "start": 36.281,
+      "end": 36.781
+    },
+    {
+      "word": "Save",
+      "start": 37.477,
+      "end": 37.767
+    },
+    {
+      "word": "this",
+      "start": 37.791,
+      "end": 37.93
+    },
+    {
+      "word": "for",
+      "start": 37.988,
+      "end": 38.081
+    },
+    {
+      "word": "the",
+      "start": 38.116,
+      "end": 38.185
+    },
+    {
+      "word": "next",
+      "start": 38.232,
+      "end": 38.429
+    },
+    {
+      "word": "time",
+      "start": 38.464,
+      "end": 38.661
+    },
+    {
+      "word": "you",
+      "start": 38.685,
+      "end": 38.766
+    },
+    {
+      "word": "feel",
+      "start": 38.824,
+      "end": 38.998
+    },
+    {
+      "word": "rough.",
+      "start": 39.056,
+      "end": 39.706
+    }
+  ]
+}

@@ -1,0 +1,32 @@
+<style>
+  #scene-s2 .badge { position: absolute; left: 20px; top: 20px; display: flex; align-items: center; gap: 22px; }
+  #scene-s2 .num { width: 120px; height: 120px; border-radius: 50%; background: var(--primary); color: #fff; font: 800 72px var(--font-body); display: flex; align-items: center; justify-content: center; }
+  #scene-s2 .word { font: 800 64px var(--font-display); color: var(--ink); }
+  #scene-s2 .watch { position: absolute; right: 30px; top: 0; width: 200px; height: 220px; }
+  #scene-s2 .chart { position: absolute; left: 20px; top: 260px; width: 830px; height: 520px; background: #fff; border-radius: 36px; box-shadow: 0 16px 40px rgba(18,52,59,.10); }
+  #scene-s2 .chart svg { width: 100%; height: 100%; }
+  #scene-s2 .lbl { font: 800 34px Inter, sans-serif; }
+</style>
+<div class="badge"><div class="num">1</div><div class="word">Speed</div></div>
+<svg class="watch" viewBox="0 0 100 110">
+  <rect x="42" y="2" width="16" height="10" rx="3" fill="var(--ink)"/>
+  <circle cx="50" cy="62" r="40" fill="var(--soft)" stroke="var(--ink)" stroke-width="6"/>
+  <g class="hand" style="transform-origin: 50px 62px;"><path d="M50 62 V32" stroke="var(--primary)" stroke-width="7" stroke-linecap="round"/></g>
+  <circle cx="50" cy="62" r="6" fill="var(--ink)"/>
+</svg>
+<div class="chart">
+  <svg viewBox="0 0 830 520">
+    <path d="M90 440 H780 M90 440 V60" stroke="var(--ink)" stroke-width="6" stroke-linecap="round" fill="none"/>
+    <text x="440" y="495" text-anchor="middle" class="lbl" fill="var(--ink)">Time</text>
+    <path class="flu" d="M100 430 C180 425 200 120 290 90 L760 80" fill="none" stroke="var(--primary)" stroke-width="12" stroke-linecap="round" pathLength="1" stroke-dasharray="1" stroke-dashoffset="1"/>
+    <text class="flu-lbl" x="320" y="70" fill="var(--primary)" style="font: 800 40px Inter, sans-serif;">Flu</text>
+  </svg>
+</div>
+<script>
+  tl.from(q(".badge"), { scale: 0.5, opacity: 0, duration: 0.3, ease: "back.out(2)" }, w("One"));
+  tl.from(q(".watch"), { opacity: 0, y: -20, duration: 0.3 }, w("speed"));
+  tl.to(q(".hand"), { rotation: 360, duration: 0.8, ease: "power2.out" }, w("quickly"));
+  tl.from(q(".chart"), { opacity: 0, y: 40, duration: 0.3, ease: "power2.out" }, w("Flu"));
+  tl.to(q(".flu"), { strokeDashoffset: 0, duration: 0.5, ease: "power2.out" }, w("few"));
+  tl.from(q(".flu-lbl"), { opacity: 0, duration: 0.3 }, w("hours"));
+</script>

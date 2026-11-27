@@ -1,0 +1,118 @@
+{
+  "slug": "cold-or-flu-how-to-tell-the-difference",
+  "topic": "Cold or flu? How to tell the difference",
+  "client": "pulse-health",
+  "mode": "character",
+  "styleId": "clean-clinic",
+  "characterId": "dr-ira-v1",
+  "scenes": [
+    {
+      "id": "s1",
+      "line": "Cold or flu? Here are three ways to tell.",
+      "visual": "Dr. Ira faces camera with a curious, friendly look and gives a small wave; three numbered teal cards (1, 2, 3) stack in at the right side",
+      "animation": "Hard cut in. Wave on 'Cold'. Cards pop in on 'three', 'ways', 'tell', scale 0.4 to 1.0, back.out 0.3 s each",
+      "onScreenText": "3 ways to tell",
+      "durationSec": 3.5,
+      "shot": "character"
+    },
+    {
+      "id": "s2",
+      "line": "One: speed. Flu comes on quickly, often within a few hours.",
+      "visual": "Large '1' badge with the word 'Speed'; a teal stopwatch icon whose hand sweeps fast; a steep line labelled 'Flu' shoots upward",
+      "animation": "Badge scales in on 'One', back.out 0.3 s; stopwatch hand spins one turn on 'quickly', power2.out; steep line draws on 'hours', power2.out 0.4 s",
+      "onScreenText": "Flu: within a few hours",
+      "durationSec": 4.5,
+      "shot": "motion"
+    },
+    {
+      "id": "s3",
+      "line": "A cold creeps in gradually.",
+      "visual": "Same chart: a second, gentle orange line labelled 'Cold' rises slowly next to the steep teal flu line",
+      "animation": "Gentle line draws left to right from 'creeps' to 'gradually', power1.inOut 1.4 s",
+      "onScreenText": "Cold: gradual",
+      "durationSec": 2.5,
+      "shot": "motion"
+    },
+    {
+      "id": "s4",
+      "line": "Two: where you feel it. A cold mainly affects your nose and throat.",
+      "visual": "Dr. Ira, relaxed and explaining, open-palm gesture; a '2' badge at upper left and a simple head-profile icon with the nose and throat highlighted in soft teal at the side",
+      "animation": "Badge pops in on 'Two', back.out 0.3 s; nose highlight fades in on 'nose', throat highlight on 'throat', 0.3 s each",
+      "onScreenText": "Cold: nose and throat",
+      "durationSec": 5.0,
+      "shot": "character"
+    },
+    {
+      "id": "s5",
+      "line": "Flu hits more than that, with body aches, a high temperature and exhaustion.",
+      "visual": "Three rounded white cards side by side: an aching body outline, a thermometer, a low battery; header 'Flu goes further:'",
+      "animation": "Header fades in on 'Flu'; cards slide up one by one on 'aches', 'temperature', 'exhaustion', power2.out 0.35 s",
+      "onScreenText": "Flu: whole body",
+      "durationSec": 5.0,
+      "shot": "motion"
+    },
+    {
+      "id": "s6",
+      "line": "Three: how you cope. With a cold, you can usually carry on as normal.",
+      "visual": "Dr. Ira, easy smile, nods; a '3' badge at upper left and a small briefcase card with a teal tick at the side",
+      "animation": "Badge pops in on 'Three', back.out 0.3 s; briefcase card slides in on 'carry', tick draws on 'normal'",
+      "onScreenText": "Cold: carry on as normal",
+      "durationSec": 5.0,
+      "shot": "character"
+    },
+    {
+      "id": "s7",
+      "line": "Flu can leave you too exhausted to carry on.",
+      "visual": "Simple bed outline with a pillow and blanket on a cream card, a low battery icon above it",
+      "animation": "Bed card rises in on 'Flu', power2.out 0.35 s; battery bar drains from full to one bar on 'exhausted', power1.inOut 0.8 s",
+      "onScreenText": "Flu: too exhausted",
+      "durationSec": 3.5,
+      "shot": "motion"
+    },
+    {
+      "id": "s8",
+      "line": "Either way, rest and drink plenty of water, and stay home if you have a high temperature.",
+      "visual": "Dr. Ira, warm and reassuring, gives a gentle wave toward the cards; three small cards appear at the side: bed, water glass, house",
+      "animation": "Cards pop in on 'rest', 'water', 'home', scale 0 to 1, back.out 0.3 s each",
+      "onScreenText": "Rest · Water · Stay home",
+      "durationSec": 6.5,
+      "shot": "character"
+    },
+    {
+      "id": "s9",
+      "line": "If flu symptoms do not improve after seven days,",
+      "visual": "A week calendar with seven day squares filling in teal one by one, a '7 days' label beneath",
+      "animation": "Day squares fill left to right from 'symptoms' to 'seven', stagger 0.15 s; label pops on 'days'",
+      "onScreenText": "No better after 7 days?",
+      "durationSec": 3.5,
+      "shot": "motion"
+    },
+    {
+      "id": "s10",
+      "line": "or you feel short of breath, talk to a doctor.",
+      "visual": "Dr. Ira, calm and direct, open-palm gesture; a lungs outline card and a stethoscope card appear at the sides",
+      "animation": "Lungs card fades in on 'breath', stethoscope card slides in on 'doctor', power2.out 0.3 s",
+      "onScreenText": "Talk to a doctor",
+      "durationSec": 4.0,
+      "shot": "character"
+    },
+    {
+      "id": "s11",
+      "line": "Save this for the next time you feel rough.",
+      "visual": "Dr. Ira, friendly smile, waves; a bookmark icon at upper right",
+      "animation": "Bookmark bounces on 'Save', scale 0.8 to 1.1 to 1.0, back.out; wave on 'next'",
+      "onScreenText": "Save this",
+      "durationSec": 3.5,
+      "shot": "character"
+    },
+    {
+      "id": "s12",
+      "line": "",
+      "visual": "Cream end card with Pulse Health wordmark centred",
+      "animation": "Fade in 0.3 s, hold",
+      "onScreenText": "Not medical advice. Source: NHS",
+      "durationSec": 3.0,
+      "shot": "disclaimer"
+    }
+  ]
+}

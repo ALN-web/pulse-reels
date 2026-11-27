@@ -1,0 +1,23 @@
+<style>
+  #scene-s6 .badge { position: absolute; left: 20px; top: 40px; display: flex; flex-direction: column; align-items: flex-start; gap: 14px; }
+  #scene-s6 .num { width: 120px; height: 120px; border-radius: 50%; background: var(--primary); color: #fff; font: 800 72px var(--font-body); display: flex; align-items: center; justify-content: center; }
+  #scene-s6 .word { font: 800 44px var(--font-display); color: var(--ink); line-height: 1.1; width: 260px; }
+  #scene-s6 .brief { position: absolute; right: 10px; top: 40px; width: 220px; background: #fff; border-radius: 30px; box-shadow: 0 16px 40px rgba(18,52,59,.12); padding: 24px 10px 18px; display: flex; flex-direction: column; align-items: center; gap: 10px; }
+  #scene-s6 .brief svg { width: 150px; height: 150px; }
+  #scene-s6 .brief .lbl { font: 700 32px var(--font-body); color: var(--ink); text-align: center; line-height: 1.15; }
+</style>
+<div class="badge"><div class="num">3</div><div class="word">How you cope</div></div>
+<div class="brief">
+  <svg viewBox="0 0 100 100">
+    <rect x="12" y="32" width="76" height="52" rx="8" fill="var(--soft)" stroke="var(--ink)" stroke-width="5"/>
+    <path d="M38 32 V22 H62 V32" fill="none" stroke="var(--ink)" stroke-width="5" stroke-linejoin="round"/>
+    <circle cx="74" cy="76" r="18" fill="var(--primary)"/>
+    <path class="tick" d="M65 76 L72 83 L84 69" fill="none" stroke="#fff" stroke-width="5" stroke-linecap="round" stroke-linejoin="round" pathLength="1" stroke-dasharray="1" stroke-dashoffset="1"/>
+  </svg>
+  <span class="lbl">Cold: usual<br>day is OK</span>
+</div>
+<script>
+  tl.from(q(".badge"), { scale: 0.5, opacity: 0, duration: 0.3, ease: "back.out(2)" }, w("Three"));
+  tl.from(q(".brief"), { x: 40, opacity: 0, duration: 0.3, ease: "power2.out" }, w("carry"));
+  tl.to(q(".tick"), { strokeDashoffset: 0, duration: 0.3, ease: "power2.out" }, w("normal"));
+</script>

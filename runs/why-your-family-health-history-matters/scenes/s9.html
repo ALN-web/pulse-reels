@@ -1,0 +1,29 @@
+<style>
+  #scene-s9 .ic { position: absolute; top: 80px; width: 210px; background: #fff; border-radius: 30px; box-shadow: 0 16px 40px rgba(18,52,59,.12); padding: 20px 8px 16px; display: flex; flex-direction: column; align-items: center; gap: 8px; }
+  #scene-s9 .ic svg { width: 100px; height: 100px; }
+  #scene-s9 .ic .lbl { font: 700 32px var(--font-body); color: var(--ink); text-align: center; line-height: 1.1; }
+  #scene-s9 .smoke { left: 10px; }
+  #scene-s9 .shoe { right: 10px; }
+  #scene-s9 .down { position: absolute; left: 335px; top: 60px; width: 200px; display: flex; flex-direction: column; align-items: center; }
+  #scene-s9 .down svg { width: 120px; height: 200px; }
+  #scene-s9 .down .lbl { font: 800 40px var(--font-body); color: var(--primary); }
+</style>
+<div class="ic smoke">
+  <svg viewBox="0 0 100 100"><rect x="18" y="44" width="56" height="14" rx="3" fill="var(--soft)" stroke="var(--ink)" stroke-width="4"/><circle cx="50" cy="50" r="42" fill="none" stroke="var(--alert)" stroke-width="8"/><path d="M20 20 L80 80" stroke="var(--alert)" stroke-width="8" stroke-linecap="round"/></svg>
+  <span class="lbl">Not smoking</span>
+</div>
+<div class="ic shoe">
+  <svg viewBox="0 0 100 100"><path d="M12 70 L16 38 L36 40 C40 52 52 56 62 56 L86 60 C92 62 92 74 86 76 L14 76 Z" fill="var(--primary)" stroke="var(--ink)" stroke-width="4" stroke-linejoin="round"/><path d="M8 88 H34 M44 88 H64" stroke="var(--accent)" stroke-width="5" stroke-linecap="round"/></svg>
+  <span class="lbl">Staying active</span>
+</div>
+<div class="down">
+  <span class="lbl">risk</span>
+  <svg viewBox="0 0 60 100"><path d="M30 6 V86 M8 64 L30 90 L52 64" fill="none" stroke="var(--primary)" stroke-width="10" stroke-linecap="round" stroke-linejoin="round"/></svg>
+</div>
+<script>
+  tl.from(q(".smoke"), { scale: 0, opacity: 0, duration: 0.3, ease: "back.out(2)" }, w("smoking"));
+  tl.from(q(".shoe"), { scale: 0, opacity: 0, duration: 0.3, ease: "back.out(2)" }, w("active"));
+  tl.from(q(".down"), { y: -60, opacity: 0, duration: 0.4, ease: "power2.out" }, w("lower"));
+  ira.hand(w("Healthy") - 0.05, "wave");
+  ira.handDown(w("smoking") + 0.2);
+</script>

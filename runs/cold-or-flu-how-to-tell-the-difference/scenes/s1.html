@@ -1,0 +1,28 @@
+<style>
+  #scene-s1 .cards { position: absolute; right: 10px; top: 30px; display: flex; flex-direction: column; gap: 18px; }
+  #scene-s1 .card { width: 190px; height: 110px; border-radius: 26px; background: var(--primary); display: flex; align-items: center; justify-content: center; font: 800 64px var(--font-body); color: #fff; box-shadow: 0 14px 34px rgba(18,52,59,.16); }
+  #scene-s1 .vs { position: absolute; left: 20px; top: 60px; display: flex; flex-direction: column; gap: 14px; }
+  #scene-s1 .pill { width: 220px; padding: 16px 0; border-radius: 999px; text-align: center; font: 800 44px var(--font-body); }
+  #scene-s1 .cold { background: var(--soft); color: var(--ink); }
+  #scene-s1 .flu { background: var(--accent); color: var(--ink); }
+  #scene-s1 .or { font: 700 italic 36px var(--font-display); color: var(--ink); text-align: center; width: 220px; }
+</style>
+<div class="vs">
+  <div class="pill cold">Cold</div>
+  <div class="or">or</div>
+  <div class="pill flu">Flu</div>
+</div>
+<div class="cards">
+  <div class="card">1</div>
+  <div class="card">2</div>
+  <div class="card">3</div>
+</div>
+<script>
+  tl.from(q(".cold"), { x: -40, opacity: 0, duration: 0.3, ease: "power2.out" }, w("Cold"));
+  tl.from(q(".or"), { opacity: 0, duration: 0.2 }, w("or"));
+  tl.from(q(".flu"), { x: -40, opacity: 0, duration: 0.3, ease: "power2.out" }, w("flu"));
+  const cards = qa(".card");
+  ["three", "ways", "tell"].forEach((word, i) => tl.from(cards[i], { scale: 0.4, opacity: 0, duration: 0.3, ease: "back.out(2)" }, w(word)));
+  ira.hand(w("Cold") + 0.05, "wave");
+  ira.handDown(w("Here"));
+</script>

@@ -1,0 +1,22 @@
+<style>
+  #scene-s10 .pad { position: absolute; left: 60px; top: 140px; width: 320px; height: 400px; background: #fff; border-radius: 24px; box-shadow: 0 16px 40px rgba(18,52,59,.14); border-top: 22px solid var(--accent); }
+  #scene-s10 .pad .ln { position: absolute; left: 36px; height: 14px; border-radius: 7px; background: var(--ink); transform-origin: left center; }
+  #scene-s10 .clinic { position: absolute; right: 40px; top: 120px; width: 360px; height: 440px; }
+</style>
+<svg class="clinic" viewBox="0 0 180 220">
+  <path d="M14 70 L90 20 L166 70 V210 H14 Z" fill="var(--soft)" stroke="var(--ink)" stroke-width="6" stroke-linejoin="round"/>
+  <rect x="66" y="80" width="48" height="48" rx="8" fill="var(--primary)"/>
+  <path d="M90 88 V120 M74 104 H106" stroke="#fff" stroke-width="10" stroke-linecap="round"/>
+  <rect x="70" y="150" width="40" height="60" rx="4" fill="#fff" stroke="var(--ink)" stroke-width="5"/>
+</svg>
+<div class="pad">
+  <div class="ln l1" style="top: 70px; width: 240px;"></div>
+  <div class="ln l2" style="top: 140px; width: 200px;"></div>
+  <div class="ln l3" style="top: 210px; width: 220px;"></div>
+</div>
+<script>
+  tl.from(q(".pad"), { opacity: 0, y: 40, duration: 0.3, ease: "power2.out" }, t);
+  tl.from(qa(".ln"), { scaleX: 0, duration: 0.25, stagger: 0.15, ease: "power1.out" }, w("write"));
+  tl.from(q(".clinic"), { opacity: 0, duration: 0.3 }, w("bring") - 0.2);
+  tl.to(q(".pad"), { x: 380, y: 60, scale: 0.45, opacity: 0, duration: 0.6, ease: "power2.inOut" }, w("bring"));
+</script>

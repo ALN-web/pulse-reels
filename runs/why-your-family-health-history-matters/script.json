@@ -1,0 +1,47 @@
+{
+  "slug": "why-your-family-health-history-matters",
+  "topic": "Why your family health history matters",
+  "client": "pulse-health",
+  "mode": "character",
+  "hook": {
+    "text": "Do you know what runs in your family?",
+    "estimatedSec": 2.6,
+    "pattern": "direct question"
+  },
+  "beats": [
+    {
+      "id": "b1",
+      "text": "Most people have at least one chronic, or long-lasting, disease in the family, like cancer, heart disease or diabetes."
+    },
+    {
+      "id": "b2",
+      "text": "Ask your parents, siblings and grandparents which conditions they have or had, and how old they were when it started."
+    },
+    {
+      "id": "b3",
+      "text": "Age matters. A parent or sibling with colorectal cancer before age 50 may mean asking your doctor about earlier screening."
+    },
+    {
+      "id": "b4",
+      "text": "A family history doesn't mean you will get a disease. Healthy habits, like not smoking and staying active, can often lower your risk."
+    },
+    {
+      "id": "b5",
+      "text": "Write it down and bring it to your next check-up. Even a partial history helps your doctor plan your screening."
+    }
+  ],
+  "cta": "Share this with your family, and start that conversation.",
+  "sources": [
+    {
+      "publisher": "CDC",
+      "title": "About Family Health History",
+      "url": "https://www.cdc.gov/family-health-history/about/index.html"
+    },
+    {
+      "publisher": "CDC",
+      "title": "Family Health History and Adults",
+      "url": "https://www.cdc.gov/family-health-history/family-health-history-and-you/family-health-history-and-adults.html"
+    }
+  ],
+  "estimatedTotalSec": 48
+}

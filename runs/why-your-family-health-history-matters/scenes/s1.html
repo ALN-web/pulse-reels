@@ -1,0 +1,11 @@
+<style>
+  #scene-s1 .bubble { position: absolute; right: 40px; top: 80px; width: 220px; height: 200px; }
+</style>
+<svg class="bubble" viewBox="0 0 110 100">
+  <path d="M10 10 H100 V70 H48 L28 92 L32 70 H10 Z" fill="var(--primary)" stroke="var(--ink)" stroke-width="4" stroke-linejoin="round"/>
+  <text x="55" y="58" text-anchor="middle" font-family="Fraunces, serif" font-weight="800" font-size="50" fill="#fff">?</text>
+</svg>
+<script>
+  tl.from(q(".bubble"), { scale: 0.4, opacity: 0, duration: 0.3, ease: "back.out(2)", transformOrigin: "20% 90%" }, w("know"));
+  tl.to(q(".bubble"), { rotation: 6, duration: 0.12, yoyo: true, repeat: 3, ease: "power1.inOut", transformOrigin: "20% 90%" }, w("family"));
+</script>

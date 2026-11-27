@@ -1,0 +1,23 @@
+<style>
+  #scene-s4 .badge { position: absolute; left: 20px; top: 40px; display: flex; flex-direction: column; align-items: flex-start; gap: 14px; }
+  #scene-s4 .num { width: 120px; height: 120px; border-radius: 50%; background: var(--primary); color: #fff; font: 800 72px var(--font-body); display: flex; align-items: center; justify-content: center; }
+  #scene-s4 .word { font: 800 44px var(--font-display); color: var(--ink); line-height: 1.1; width: 260px; }
+  #scene-s4 .head { position: absolute; right: 10px; top: 30px; width: 220px; background: #fff; border-radius: 30px; box-shadow: 0 16px 40px rgba(18,52,59,.12); padding: 20px 10px 16px; display: flex; flex-direction: column; align-items: center; gap: 8px; }
+  #scene-s4 .head svg { width: 170px; height: 200px; }
+  #scene-s4 .head .lbl { font: 700 32px var(--font-body); color: var(--ink); text-align: center; line-height: 1.15; }
+</style>
+<div class="badge"><div class="num">2</div><div class="word">Where you feel it</div></div>
+<div class="head">
+  <svg viewBox="0 0 100 120">
+    <path d="M60 10 C30 8 18 30 20 52 C21 62 14 66 12 72 C11 76 16 77 20 78 L20 92 C20 100 28 102 40 100 L42 116 H74 L72 90 C86 80 90 60 86 40 C82 20 74 12 60 10 Z" fill="var(--soft)" stroke="var(--ink)" stroke-width="4" stroke-linejoin="round"/>
+    <circle class="nose" cx="16" cy="68" r="12" fill="var(--accent)" opacity="0.85"/>
+    <rect class="throat" x="44" y="94" width="26" height="20" rx="8" fill="var(--accent)" opacity="0.85"/>
+  </svg>
+  <span class="lbl">Nose &amp;<br>throat</span>
+</div>
+<script>
+  tl.from(q(".badge"), { scale: 0.5, opacity: 0, duration: 0.3, ease: "back.out(2)" }, w("Two"));
+  tl.from(q(".head"), { x: 40, opacity: 0, duration: 0.3, ease: "power2.out" }, w("cold"));
+  tl.from(q(".nose"), { scale: 0, opacity: 0, transformOrigin: "50% 50%", duration: 0.3 }, w("nose"));
+  tl.from(q(".throat"), { scale: 0, opacity: 0, transformOrigin: "50% 50%", duration: 0.3 }, w("throat"));
+</script>

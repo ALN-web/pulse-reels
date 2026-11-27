@@ -79,6 +79,30 @@ for (const slug of readdirSync(join(ROOT, "runs"))) {
 reels.sort((a, b) => a.createdAt.localeCompare(b.createdAt));
 
 const edits = readFileSync(join(ROOT, "EDITS.md"), "utf8").split("\n").filter((l) => /^\| 20\d\d-/.test(l)).length;
+// Gallery/link-preview thumbnail (1200x630): five poster frames, alternating modes, on the brand ink.
+try {
+  type R = { slug: string; mode: string };
+  const rs = reels as R[];
+  const ch = rs.filter((r) => r.mode === "character"), mo = rs.filter((r) => r.mode === "motion");
+  const order = [ch[0], mo[0], ch[1], mo[2], ch[2]].filter((r, i, a): r is R => !!r && a.indexOf(r) === i).slice(0, 5);
+  const font = process.platform === "win32" ? "C\\:/Windows/Fonts/arialbd.ttf" : "/usr/share/fonts/truetype/dejavu/DejaVuSans-Bold.ttf";
+  const inputs = order.flatMap((r) => ["-i", join(out, "media", `${r.slug}.jpg`)]);
+  const tiles = order.map((_, i) => `[${i + 1}:v]scale=200:356[t${i}]`).join(";");
+  let chain = `[0:v]drawtext=fontfile='${font}':text='Pulse Reels':fontcolor=0xF7F4EE:fontsize=64:x=60:y=60,` +
+    `drawtext=fontfile='${font}':text='One topic in. A checked, captioned Reel out.':fontcolor=0x9FC3C0:fontsize=28:x=60:y=140[bg]`;
+  let prev = "bg";
+  order.forEach((_, i) => {
+    chain += `;[${prev}][t${i}]overlay=x=${60 + i * 220}:y=220[o${i}]`;
+    prev = `o${i}`;
+  });
+  execFileSync("ffmpeg", [
+    "-v", "error", "-y", "-f", "lavfi", "-i", "color=c=0x12343B:s=1200x630", ...inputs,
+    "-filter_complex", `${tiles};${chain}`, "-map", `[${prev}]`, "-frames:v", "1", "-q:v", "3", join(out, "media", "thumb.jpg"),
+  ]);
+} catch (e) {
+  console.warn(`no thumbnail: ${e instanceof Error ? e.message.slice(0, 200) : e}`);
+}
+
 const data = { generatedAt: new Date().toISOString(), edits, reels };
 writeFileSync(join(out, "data.json"), JSON.stringify(data, null, 2) + "\n");
 // Inline the data into the page so it is complete at rest (no fetch on load).

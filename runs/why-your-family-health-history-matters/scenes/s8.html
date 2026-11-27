@@ -1,0 +1,15 @@
+<style>
+  #scene-s8 .dial { position: absolute; left: 135px; top: 80px; width: 600px; height: 360px; }
+  #scene-s8 .lbl { position: absolute; left: 0; top: 470px; width: 870px; text-align: center; font: 800 64px var(--font-display); color: var(--ink); }
+  #scene-s8 .lbl span { color: var(--primary); }
+</style>
+<svg class="dial" viewBox="0 0 600 360">
+  <path d="M60 320 A240 240 0 0 1 540 320" fill="none" stroke="var(--soft)" stroke-width="56" stroke-linecap="round"/>
+  <path d="M60 320 A240 240 0 0 1 300 80" fill="none" stroke="var(--primary)" stroke-width="56" stroke-linecap="round"/>
+  <g class="needle"><path d="M300 320 L300 110" stroke="var(--ink)" stroke-width="16" stroke-linecap="round"/><circle cx="300" cy="320" r="26" fill="var(--ink)"/></g></svg>
+<div class="lbl">Risk, <span>not certainty</span></div>
+<script>
+  tl.from(q(".dial"), { opacity: 0, scale: 0.85, duration: 0.35, ease: "power2.out" }, w("family"));
+  tl.from(q(".needle"), { rotation: -80, duration: 0.6, ease: "elastic.out(1, 0.5)", svgOrigin: "300 320" }, w("doesnt"));
+  tl.from(q(".lbl"), { opacity: 0, y: 30, duration: 0.3, ease: "power2.out" }, w("disease"));
+</script>

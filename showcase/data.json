@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-11-27T08:41:30.740Z",
+  "generatedAt": "2026-11-27T12:21:16.456Z",
   "edits": 5,
   "reels": [
     {
@@ -402,6 +402,104 @@
         "info": 0
       },
       "mb": 5.1
+    },
+    {
+      "slug": "why-your-family-health-history-matters",
+      "topic": "Why your family health history matters",
+      "mode": "character",
+      "style": "clean-clinic",
+      "createdAt": "2026-11-27T11:58:46.071Z",
+      "hook": "Do you know what runs in your family?",
+      "hookPattern": "direct question",
+      "seconds": 46.7,
+      "words": 119,
+      "scenes": 13,
+      "characterShots": 7,
+      "sources": [
+        {
+          "publisher": "CDC",
+          "title": "About Family Health History",
+          "url": "https://www.cdc.gov/family-health-history/about/index.html"
+        },
+        {
+          "publisher": "CDC",
+          "title": "Family Health History and Adults",
+          "url": "https://www.cdc.gov/family-health-history/family-health-history-and-you/family-health-history-and-adults.html"
+        }
+      ],
+      "post": {
+        "hook": "Do you know what runs in your family? It's one of the most useful things you can bring to a check-up.",
+        "hashtags": [
+          "#PulseHealth",
+          "#PreventiveCare",
+          "#HealthTips",
+          "#Telehealth",
+          "#FamilyHealthHistory",
+          "#HealthScreening"
+        ]
+      },
+      "machineSec": 599,
+      "renderSec": 230,
+      "apiUsd": 0,
+      "headless": {
+        "usd": 1.88,
+        "turns": 49
+      },
+      "checks": {
+        "error": 0,
+        "warning": 0,
+        "info": 0
+      },
+      "mb": 6.1
+    },
+    {
+      "slug": "cold-or-flu-how-to-tell-the-difference",
+      "topic": "Cold or flu? How to tell the difference",
+      "mode": "character",
+      "style": "clean-clinic",
+      "createdAt": "2026-11-27T12:08:49.251Z",
+      "hook": "Cold or flu? Here are three ways to tell.",
+      "hookPattern": "small-number promise",
+      "seconds": 43,
+      "words": 119,
+      "scenes": 12,
+      "characterShots": 6,
+      "sources": [
+        {
+          "publisher": "NHS",
+          "title": "Flu",
+          "url": "https://www.nhs.uk/conditions/flu/"
+        },
+        {
+          "publisher": "NHS",
+          "title": "Common cold",
+          "url": "https://www.nhs.uk/conditions/common-cold/"
+        }
+      ],
+      "post": {
+        "hook": "Cold or flu? Here are three ways to tell them apart.",
+        "hashtags": [
+          "#PulseHealth",
+          "#PreventiveCare",
+          "#HealthTips",
+          "#Telehealth",
+          "#ColdOrFlu",
+          "#FluSeason"
+        ]
+      },
+      "machineSec": 942,
+      "renderSec": 214,
+      "apiUsd": 0,
+      "headless": {
+        "usd": 1.85,
+        "turns": 56
+      },
+      "checks": {
+        "error": 0,
+        "warning": 0,
+        "info": 0
+      },
+      "mb": 5.5
     }
   ]
 }
